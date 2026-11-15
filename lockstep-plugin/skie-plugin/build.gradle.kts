@@ -1,6 +1,6 @@
 plugins {
     alias(libs.plugins.kotlin.jvm)
-    `maven-publish`
+    alias(libs.plugins.maven.publish)
 }
 
 description = "SKIE sub-plugin that generates Swift structs, enums and flow accessors for Lockstep"
@@ -8,7 +8,10 @@ description = "SKIE sub-plugin that generates Swift structs, enums and flow acce
 version = libs.versions.lockstep.get()
 apply(from = "../../gradle/publishing.gradle.kts")
 
-publishing.publications.create<MavenPublication>("maven") { from(components["java"]) }
+mavenPublishing {
+    publishToMavenCentral()
+    if (providers.gradleProperty("signingInMemoryKey").isPresent) signAllPublications()
+}
 
 configurations.compileClasspath {
     attributes {

@@ -1,3 +1,4 @@
+import com.vanniktech.maven.publish.MavenPublishBaseExtension
 import org.jetbrains.kotlin.gradle.dsl.KotlinProjectExtension
 import org.jetbrains.kotlin.gradle.dsl.abi.ExperimentalAbiValidation
 
@@ -9,6 +10,7 @@ plugins {
     alias(libs.plugins.kotlin.android) apply false
     alias(libs.plugins.kotlin.compose) apply false
     alias(libs.plugins.skie) apply false
+    alias(libs.plugins.maven.publish) apply false
     id("io.github.vad4nus.lockstep") apply false
 }
 
@@ -16,6 +18,11 @@ subprojects {
     if (!name.startsWith("lockstep")) return@subprojects
     version = rootProject.libs.versions.lockstep.get()
     apply(from = rootProject.file("gradle/publishing.gradle.kts"))
+    apply(plugin = "com.vanniktech.maven.publish")
+    extensions.configure<MavenPublishBaseExtension> {
+        publishToMavenCentral()
+        if (providers.gradleProperty("signingInMemoryKey").isPresent) signAllPublications()
+    }
     listOf("org.jetbrains.kotlin.multiplatform", "org.jetbrains.kotlin.android").forEach { kotlinPlugin ->
         pluginManager.withPlugin(kotlinPlugin) {
             extensions.configure<KotlinProjectExtension> {

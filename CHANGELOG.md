@@ -2,7 +2,7 @@
 
 Notable changes are recorded here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html). The plugin and the libraries share one version.
 
-## 0.1.0 - unreleased
+## 0.1.0 - 2026-11-16
 
 First version.
 

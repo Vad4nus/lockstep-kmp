@@ -5,6 +5,7 @@ coroutines = "1.11.0"
 skie = "0.10.14"
 skieCompilerVariant = "2.4.0"
 lockstep = "0.1.0"
+mavenPublish = "0.37.0"
 activityCompose = "1.12.4"
 material3 = "1.4.0"
 lifecycle = "2.10.0"
@@ -52,3 +53,4 @@ kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", versi
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 android-kotlin-multiplatform-library = { id = "com.android.kotlin.multiplatform.library", version.ref = "agp" }
 skie = { id = "co.touchlab.skie", version.ref = "skie" }
+maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "mavenPublish" }

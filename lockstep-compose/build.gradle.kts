@@ -1,8 +1,11 @@
+import com.vanniktech.maven.publish.AndroidSingleVariantLibrary
+import com.vanniktech.maven.publish.JavadocJar
+
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-    `maven-publish`
+    alias(libs.plugins.maven.publish)
 }
 
 description = "Jetpack Compose screen, sheet, navigation display and node renderer for Lockstep"
@@ -27,14 +30,10 @@ android {
     testOptions {
         unitTests.isIncludeAndroidResources = true
     }
-
-    publishing {
-        singleVariant("release") { withSourcesJar() }
-    }
 }
 
-publishing.publications.register<MavenPublication>("release") {
-    afterEvaluate { from(components["release"]) }
+mavenPublishing {
+    configure(AndroidSingleVariantLibrary(JavadocJar.Empty()))
 }
 
 kotlin {

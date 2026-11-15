@@ -1,12 +1,18 @@
 plugins {
     `java-gradle-plugin`
     alias(libs.plugins.kotlin.jvm)
+    alias(libs.plugins.maven.publish)
 }
 
 description = "Gradle plugin that adds the Lockstep Swift generator to SKIE"
 
 version = libs.versions.lockstep.get()
 apply(from = "../../gradle/publishing.gradle.kts")
+
+mavenPublishing {
+    publishToMavenCentral()
+    if (providers.gradleProperty("signingInMemoryKey").isPresent) signAllPublications()
+}
 
 val lockstepVersion = libs.versions.lockstep.get()
 val skieVersion = libs.versions.skie.get()

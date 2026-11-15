@@ -2,10 +2,6 @@ apply(plugin = "maven-publish")
 
 group = "io.github.vad4nus"
 
-pluginManager.withPlugin("java") {
-    configure<JavaPluginExtension> { withSourcesJar() }
-}
-
 configure<PublishingExtension> {
     publications.withType<MavenPublication>().configureEach {
         pom {

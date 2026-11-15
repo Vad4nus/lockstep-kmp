@@ -50,7 +50,8 @@ plugins {
 The Android app adds `implementation("io.github.vad4nus:lockstep-compose:0.1.0")`.
 
 - The plugin and the libraries share one version, and the generated Swift calls the libraries. The plugin fails dependency resolution when a `lockstep` library of another version is requested, directly or transitively.
-- The artifacts are not on Maven Central yet. `./gradlew publishToMavenLocal` and `./gradlew -p lockstep-plugin publishToMavenLocal` put them into `~/.m2`; a consumer then adds `mavenLocal()` to `pluginManagement.repositories` and `dependencyResolutionManagement.repositories`. Left for a Central release: signing and javadoc jars.
+- The plugin and the libraries are on Maven Central, not on the Gradle Plugin Portal: `mavenCentral()` has to be in `pluginManagement.repositories` as well as in `dependencyResolutionManagement.repositories`.
+- To try a local build, `./gradlew publishToMavenLocal` and `./gradlew -p lockstep-plugin publishToMavenLocal` put the artifacts into `~/.m2`; add `mavenLocal()` to the same two blocks.
 - `sample/` uses the sources instead: `includeBuild("lockstep-plugin")` in `settings.gradle.kts` and `api(project(":lockstep"))`.
 
 ## Kotlin
@@ -421,4 +422,4 @@ scripts/typecheck-swift.sh sample/shared/build/bin/iosX64/debugFramework sample/
 
 ## Not yet
 
-Swift-to-Kotlin mapping of ViewModel parameters, proxies for `suspend` functions, conversion of sets and maps, `kotlinx-datetime`, results addressed to the screen that asked for them, saving the navigation stack across process death, screenshot tests, a Maven Central release.
+Swift-to-Kotlin mapping of ViewModel parameters, proxies for `suspend` functions, conversion of sets and maps, `kotlinx-datetime`, results addressed to the screen that asked for them, saving the navigation stack across process death, screenshot tests.
