@@ -1,0 +1,313 @@
+// Klib ABI Dump
+// Targets: [iosArm64, iosSimulatorArm64, iosX64]
+// Rendering settings:
+// - Signature version: 2
+// - Show manifest properties: true
+// - Show declarations: true
+
+// Library unique name: <io.github.vad4nus:lockstep-mvvm>
+final enum class io.github.vad4nus.lockstep.mvvm/DialogResult : kotlin/Enum<io.github.vad4nus.lockstep.mvvm/DialogResult> { // io.github.vad4nus.lockstep.mvvm/DialogResult|null[0]
+    enum entry Confirm // io.github.vad4nus.lockstep.mvvm/DialogResult.Confirm|null[0]
+    enum entry Dismiss // io.github.vad4nus.lockstep.mvvm/DialogResult.Dismiss|null[0]
+
+    final val entries // io.github.vad4nus.lockstep.mvvm/DialogResult.entries|#static{}entries[0]
+        final fun <get-entries>(): kotlin.enums/EnumEntries<io.github.vad4nus.lockstep.mvvm/DialogResult> // io.github.vad4nus.lockstep.mvvm/DialogResult.entries.<get-entries>|<get-entries>#static(){}[0]
+
+    final fun valueOf(kotlin/String): io.github.vad4nus.lockstep.mvvm/DialogResult // io.github.vad4nus.lockstep.mvvm/DialogResult.valueOf|valueOf#static(kotlin.String){}[0]
+    final fun values(): kotlin/Array<io.github.vad4nus.lockstep.mvvm/DialogResult> // io.github.vad4nus.lockstep.mvvm/DialogResult.values|values#static(){}[0]
+}
+
+final enum class io.github.vad4nus.lockstep.mvvm/ErrorDisplay : kotlin/Enum<io.github.vad4nus.lockstep.mvvm/ErrorDisplay> { // io.github.vad4nus.lockstep.mvvm/ErrorDisplay|null[0]
+    enum entry Dialog // io.github.vad4nus.lockstep.mvvm/ErrorDisplay.Dialog|null[0]
+    enum entry Message // io.github.vad4nus.lockstep.mvvm/ErrorDisplay.Message|null[0]
+    enum entry Screen // io.github.vad4nus.lockstep.mvvm/ErrorDisplay.Screen|null[0]
+    enum entry Silent // io.github.vad4nus.lockstep.mvvm/ErrorDisplay.Silent|null[0]
+
+    final val entries // io.github.vad4nus.lockstep.mvvm/ErrorDisplay.entries|#static{}entries[0]
+        final fun <get-entries>(): kotlin.enums/EnumEntries<io.github.vad4nus.lockstep.mvvm/ErrorDisplay> // io.github.vad4nus.lockstep.mvvm/ErrorDisplay.entries.<get-entries>|<get-entries>#static(){}[0]
+
+    final fun valueOf(kotlin/String): io.github.vad4nus.lockstep.mvvm/ErrorDisplay // io.github.vad4nus.lockstep.mvvm/ErrorDisplay.valueOf|valueOf#static(kotlin.String){}[0]
+    final fun values(): kotlin/Array<io.github.vad4nus.lockstep.mvvm/ErrorDisplay> // io.github.vad4nus.lockstep.mvvm/ErrorDisplay.values|values#static(){}[0]
+}
+
+final enum class io.github.vad4nus.lockstep.mvvm/LoadingKind : kotlin/Enum<io.github.vad4nus.lockstep.mvvm/LoadingKind> { // io.github.vad4nus.lockstep.mvvm/LoadingKind|null[0]
+    enum entry Background // io.github.vad4nus.lockstep.mvvm/LoadingKind.Background|null[0]
+    enum entry Blocking // io.github.vad4nus.lockstep.mvvm/LoadingKind.Blocking|null[0]
+    enum entry Refresh // io.github.vad4nus.lockstep.mvvm/LoadingKind.Refresh|null[0]
+
+    final val entries // io.github.vad4nus.lockstep.mvvm/LoadingKind.entries|#static{}entries[0]
+        final fun <get-entries>(): kotlin.enums/EnumEntries<io.github.vad4nus.lockstep.mvvm/LoadingKind> // io.github.vad4nus.lockstep.mvvm/LoadingKind.entries.<get-entries>|<get-entries>#static(){}[0]
+
+    final fun valueOf(kotlin/String): io.github.vad4nus.lockstep.mvvm/LoadingKind // io.github.vad4nus.lockstep.mvvm/LoadingKind.valueOf|valueOf#static(kotlin.String){}[0]
+    final fun values(): kotlin/Array<io.github.vad4nus.lockstep.mvvm/LoadingKind> // io.github.vad4nus.lockstep.mvvm/LoadingKind.values|values#static(){}[0]
+}
+
+final enum class io.github.vad4nus.lockstep.mvvm/MessageKind : kotlin/Enum<io.github.vad4nus.lockstep.mvvm/MessageKind> { // io.github.vad4nus.lockstep.mvvm/MessageKind|null[0]
+    enum entry Error // io.github.vad4nus.lockstep.mvvm/MessageKind.Error|null[0]
+    enum entry Info // io.github.vad4nus.lockstep.mvvm/MessageKind.Info|null[0]
+    enum entry Success // io.github.vad4nus.lockstep.mvvm/MessageKind.Success|null[0]
+
+    final val entries // io.github.vad4nus.lockstep.mvvm/MessageKind.entries|#static{}entries[0]
+        final fun <get-entries>(): kotlin.enums/EnumEntries<io.github.vad4nus.lockstep.mvvm/MessageKind> // io.github.vad4nus.lockstep.mvvm/MessageKind.entries.<get-entries>|<get-entries>#static(){}[0]
+
+    final fun valueOf(kotlin/String): io.github.vad4nus.lockstep.mvvm/MessageKind // io.github.vad4nus.lockstep.mvvm/MessageKind.valueOf|valueOf#static(kotlin.String){}[0]
+    final fun values(): kotlin/Array<io.github.vad4nus.lockstep.mvvm/MessageKind> // io.github.vad4nus.lockstep.mvvm/MessageKind.values|values#static(){}[0]
+}
+
+final enum class io.github.vad4nus.lockstep.mvvm/RequestPolicy : kotlin/Enum<io.github.vad4nus.lockstep.mvvm/RequestPolicy> { // io.github.vad4nus.lockstep.mvvm/RequestPolicy|null[0]
+    enum entry CancelPrevious // io.github.vad4nus.lockstep.mvvm/RequestPolicy.CancelPrevious|null[0]
+    enum entry KeepRunning // io.github.vad4nus.lockstep.mvvm/RequestPolicy.KeepRunning|null[0]
+    enum entry Parallel // io.github.vad4nus.lockstep.mvvm/RequestPolicy.Parallel|null[0]
+
+    final val entries // io.github.vad4nus.lockstep.mvvm/RequestPolicy.entries|#static{}entries[0]
+        final fun <get-entries>(): kotlin.enums/EnumEntries<io.github.vad4nus.lockstep.mvvm/RequestPolicy> // io.github.vad4nus.lockstep.mvvm/RequestPolicy.entries.<get-entries>|<get-entries>#static(){}[0]
+
+    final fun valueOf(kotlin/String): io.github.vad4nus.lockstep.mvvm/RequestPolicy // io.github.vad4nus.lockstep.mvvm/RequestPolicy.valueOf|valueOf#static(kotlin.String){}[0]
+    final fun values(): kotlin/Array<io.github.vad4nus.lockstep.mvvm/RequestPolicy> // io.github.vad4nus.lockstep.mvvm/RequestPolicy.values|values#static(){}[0]
+}
+
+final enum class io.github.vad4nus.lockstep.mvvm/UiErrorKind : kotlin/Enum<io.github.vad4nus.lockstep.mvvm/UiErrorKind> { // io.github.vad4nus.lockstep.mvvm/UiErrorKind|null[0]
+    enum entry Network // io.github.vad4nus.lockstep.mvvm/UiErrorKind.Network|null[0]
+    enum entry Server // io.github.vad4nus.lockstep.mvvm/UiErrorKind.Server|null[0]
+    enum entry Unauthorized // io.github.vad4nus.lockstep.mvvm/UiErrorKind.Unauthorized|null[0]
+    enum entry Unknown // io.github.vad4nus.lockstep.mvvm/UiErrorKind.Unknown|null[0]
+
+    final val entries // io.github.vad4nus.lockstep.mvvm/UiErrorKind.entries|#static{}entries[0]
+        final fun <get-entries>(): kotlin.enums/EnumEntries<io.github.vad4nus.lockstep.mvvm/UiErrorKind> // io.github.vad4nus.lockstep.mvvm/UiErrorKind.entries.<get-entries>|<get-entries>#static(){}[0]
+
+    final fun valueOf(kotlin/String): io.github.vad4nus.lockstep.mvvm/UiErrorKind // io.github.vad4nus.lockstep.mvvm/UiErrorKind.valueOf|valueOf#static(kotlin.String){}[0]
+    final fun values(): kotlin/Array<io.github.vad4nus.lockstep.mvvm/UiErrorKind> // io.github.vad4nus.lockstep.mvvm/UiErrorKind.values|values#static(){}[0]
+}
+
+abstract fun interface io.github.vad4nus.lockstep.mvvm/ErrorPresenter { // io.github.vad4nus.lockstep.mvvm/ErrorPresenter|null[0]
+    abstract fun present(io.github.vad4nus.lockstep.result/AppError): io.github.vad4nus.lockstep.mvvm/UiError // io.github.vad4nus.lockstep.mvvm/ErrorPresenter.present|present(io.github.vad4nus.lockstep.result.AppError){}[0]
+
+    final object Companion { // io.github.vad4nus.lockstep.mvvm/ErrorPresenter.Companion|null[0]
+        final fun standard(io.github.vad4nus.lockstep.mvvm/MvvmTexts = ...): io.github.vad4nus.lockstep.mvvm/ErrorPresenter // io.github.vad4nus.lockstep.mvvm/ErrorPresenter.Companion.standard|standard(io.github.vad4nus.lockstep.mvvm.MvvmTexts){}[0]
+    }
+}
+
+abstract interface io.github.vad4nus.lockstep.mvvm.navigation/Route // io.github.vad4nus.lockstep.mvvm.navigation/Route|null[0]
+
+abstract interface io.github.vad4nus.lockstep.mvvm.navigation/SheetRoute : io.github.vad4nus.lockstep.mvvm.navigation/Route // io.github.vad4nus.lockstep.mvvm.navigation/SheetRoute|null[0]
+
+abstract class <#A: kotlin/Any, #B: kotlin/Any> io.github.vad4nus.lockstep.mvvm/MvvmViewModel : androidx.lifecycle/ViewModel { // io.github.vad4nus.lockstep.mvvm/MvvmViewModel|null[0]
+    constructor <init>(#A, io.github.vad4nus.lockstep.mvvm/MvvmEnvironment = ...) // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.<init>|<init>(1:0;io.github.vad4nus.lockstep.mvvm.MvvmEnvironment){}[0]
+
+    final val actions // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.actions|{}actions[0]
+        final fun <get-actions>(): io.github.vad4nus.lockstep/UiFlow<#B> // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.actions.<get-actions>|<get-actions>(){}[0]
+    final val chrome // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.chrome|{}chrome[0]
+        final fun <get-chrome>(): io.github.vad4nus.lockstep/UiStateFlow<io.github.vad4nus.lockstep.mvvm/ScreenChrome> // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.chrome.<get-chrome>|<get-chrome>(){}[0]
+    final val currentState // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.currentState|{}currentState[0]
+        final fun <get-currentState>(): #A // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.currentState.<get-currentState>|<get-currentState>(){}[0]
+    final val state // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.state|{}state[0]
+        final fun <get-state>(): io.github.vad4nus.lockstep/UiStateFlow<#A> // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.state.<get-state>|<get-state>(){}[0]
+
+    final fun <#A1: kotlin/Any?> request(kotlin.coroutines/SuspendFunction0<io.github.vad4nus.lockstep.result/AppResult<#A1>>, io.github.vad4nus.lockstep.mvvm/LoadingKind? = ..., kotlin/Any? = ..., io.github.vad4nus.lockstep.mvvm/RequestPolicy = ..., io.github.vad4nus.lockstep.mvvm/ErrorDisplay = ..., kotlin/Function1<io.github.vad4nus.lockstep.result/AppError, kotlin/Unit>? = ..., kotlin/Function0<kotlin/Unit>? = ..., kotlin.coroutines/SuspendFunction1<#A1, kotlin/Unit>): kotlinx.coroutines/Job // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.request|request(kotlin.coroutines.SuspendFunction0<io.github.vad4nus.lockstep.result.AppResult<0:0>>;io.github.vad4nus.lockstep.mvvm.LoadingKind?;kotlin.Any?;io.github.vad4nus.lockstep.mvvm.RequestPolicy;io.github.vad4nus.lockstep.mvvm.ErrorDisplay;kotlin.Function1<io.github.vad4nus.lockstep.result.AppError,kotlin.Unit>?;kotlin.Function0<kotlin.Unit>?;kotlin.coroutines.SuspendFunction1<0:0,kotlin.Unit>){0§<kotlin.Any?>}[0]
+    final fun dialogResult(kotlin/Long, io.github.vad4nus.lockstep.mvvm/DialogResult) // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.dialogResult|dialogResult(kotlin.Long;io.github.vad4nus.lockstep.mvvm.DialogResult){}[0]
+    final fun messageActionClicked(kotlin/Long) // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.messageActionClicked|messageActionClicked(kotlin.Long){}[0]
+    final fun messageShown(kotlin/Long) // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.messageShown|messageShown(kotlin.Long){}[0]
+    final fun retry() // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.retry|retry(){}[0]
+    final fun screenAppeared() // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.screenAppeared|screenAppeared(){}[0]
+    final fun screenDisappeared() // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.screenDisappeared|screenDisappeared(){}[0]
+    final fun sendAction(#B) // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.sendAction|sendAction(1:1){}[0]
+    final fun showDialog(dev.icerock.moko.resources.desc/StringDesc, dev.icerock.moko.resources.desc/StringDesc? = ..., dev.icerock.moko.resources.desc/StringDesc = ..., dev.icerock.moko.resources.desc/StringDesc? = ..., kotlin/Boolean = ..., kotlin/Function1<io.github.vad4nus.lockstep.mvvm/DialogResult, kotlin/Unit>) // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.showDialog|showDialog(dev.icerock.moko.resources.desc.StringDesc;dev.icerock.moko.resources.desc.StringDesc?;dev.icerock.moko.resources.desc.StringDesc;dev.icerock.moko.resources.desc.StringDesc?;kotlin.Boolean;kotlin.Function1<io.github.vad4nus.lockstep.mvvm.DialogResult,kotlin.Unit>){}[0]
+    final fun showMessage(dev.icerock.moko.resources.desc/StringDesc, io.github.vad4nus.lockstep.mvvm/MessageKind = ..., io.github.vad4nus.lockstep.mvvm/MessageAction? = ..., kotlin/Long = ...) // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.showMessage|showMessage(dev.icerock.moko.resources.desc.StringDesc;io.github.vad4nus.lockstep.mvvm.MessageKind;io.github.vad4nus.lockstep.mvvm.MessageAction?;kotlin.Long){}[0]
+    final fun updateState(kotlin/Function1<#A, #A>) // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.updateState|updateState(kotlin.Function1<1:0,1:0>){}[0]
+    open fun handleError(io.github.vad4nus.lockstep.result/AppError, io.github.vad4nus.lockstep.mvvm/ErrorDisplay) // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.handleError|handleError(io.github.vad4nus.lockstep.result.AppError;io.github.vad4nus.lockstep.mvvm.ErrorDisplay){}[0]
+    open fun onAppear() // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.onAppear|onAppear(){}[0]
+    open fun onCleared() // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.onCleared|onCleared(){}[0]
+    open fun onDisappear() // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.onDisappear|onDisappear(){}[0]
+    open fun onFirstAppear() // io.github.vad4nus.lockstep.mvvm/MvvmViewModel.onFirstAppear|onFirstAppear(){}[0]
+}
+
+final class <#A: kotlin/Any> io.github.vad4nus.lockstep.mvvm.navigation/ResultKey { // io.github.vad4nus.lockstep.mvvm.navigation/ResultKey|null[0]
+    constructor <init>(kotlin/String) // io.github.vad4nus.lockstep.mvvm.navigation/ResultKey.<init>|<init>(kotlin.String){}[0]
+
+    final val name // io.github.vad4nus.lockstep.mvvm.navigation/ResultKey.name|{}name[0]
+        final fun <get-name>(): kotlin/String // io.github.vad4nus.lockstep.mvvm.navigation/ResultKey.name.<get-name>|<get-name>(){}[0]
+
+    final fun toString(): kotlin/String // io.github.vad4nus.lockstep.mvvm.navigation/ResultKey.toString|toString(){}[0]
+}
+
+final class io.github.vad4nus.lockstep.mvvm.navigation/NavStack { // io.github.vad4nus.lockstep.mvvm.navigation/NavStack|null[0]
+    constructor <init>(io.github.vad4nus.lockstep.mvvm.navigation/Route, kotlin.collections/List<io.github.vad4nus.lockstep.mvvm.navigation/Route>, io.github.vad4nus.lockstep.mvvm.navigation/Route? = ...) // io.github.vad4nus.lockstep.mvvm.navigation/NavStack.<init>|<init>(io.github.vad4nus.lockstep.mvvm.navigation.Route;kotlin.collections.List<io.github.vad4nus.lockstep.mvvm.navigation.Route>;io.github.vad4nus.lockstep.mvvm.navigation.Route?){}[0]
+
+    final val path // io.github.vad4nus.lockstep.mvvm.navigation/NavStack.path|{}path[0]
+        final fun <get-path>(): kotlin.collections/List<io.github.vad4nus.lockstep.mvvm.navigation/Route> // io.github.vad4nus.lockstep.mvvm.navigation/NavStack.path.<get-path>|<get-path>(){}[0]
+    final val root // io.github.vad4nus.lockstep.mvvm.navigation/NavStack.root|{}root[0]
+        final fun <get-root>(): io.github.vad4nus.lockstep.mvvm.navigation/Route // io.github.vad4nus.lockstep.mvvm.navigation/NavStack.root.<get-root>|<get-root>(){}[0]
+    final val sheet // io.github.vad4nus.lockstep.mvvm.navigation/NavStack.sheet|{}sheet[0]
+        final fun <get-sheet>(): io.github.vad4nus.lockstep.mvvm.navigation/Route? // io.github.vad4nus.lockstep.mvvm.navigation/NavStack.sheet.<get-sheet>|<get-sheet>(){}[0]
+
+    final fun component1(): io.github.vad4nus.lockstep.mvvm.navigation/Route // io.github.vad4nus.lockstep.mvvm.navigation/NavStack.component1|component1(){}[0]
+    final fun component2(): kotlin.collections/List<io.github.vad4nus.lockstep.mvvm.navigation/Route> // io.github.vad4nus.lockstep.mvvm.navigation/NavStack.component2|component2(){}[0]
+    final fun component3(): io.github.vad4nus.lockstep.mvvm.navigation/Route? // io.github.vad4nus.lockstep.mvvm.navigation/NavStack.component3|component3(){}[0]
+    final fun copy(io.github.vad4nus.lockstep.mvvm.navigation/Route = ..., kotlin.collections/List<io.github.vad4nus.lockstep.mvvm.navigation/Route> = ..., io.github.vad4nus.lockstep.mvvm.navigation/Route? = ...): io.github.vad4nus.lockstep.mvvm.navigation/NavStack // io.github.vad4nus.lockstep.mvvm.navigation/NavStack.copy|copy(io.github.vad4nus.lockstep.mvvm.navigation.Route;kotlin.collections.List<io.github.vad4nus.lockstep.mvvm.navigation.Route>;io.github.vad4nus.lockstep.mvvm.navigation.Route?){}[0]
+    final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.mvvm.navigation/NavStack.equals|equals(kotlin.Any?){}[0]
+    final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.mvvm.navigation/NavStack.hashCode|hashCode(){}[0]
+    final fun toString(): kotlin/String // io.github.vad4nus.lockstep.mvvm.navigation/NavStack.toString|toString(){}[0]
+}
+
+final class io.github.vad4nus.lockstep.mvvm.navigation/StackNavigator { // io.github.vad4nus.lockstep.mvvm.navigation/StackNavigator|null[0]
+    constructor <init>(io.github.vad4nus.lockstep.mvvm.navigation/Route) // io.github.vad4nus.lockstep.mvvm.navigation/StackNavigator.<init>|<init>(io.github.vad4nus.lockstep.mvvm.navigation.Route){}[0]
+
+    final val stack // io.github.vad4nus.lockstep.mvvm.navigation/StackNavigator.stack|{}stack[0]
+        final fun <get-stack>(): io.github.vad4nus.lockstep/UiStateFlow<io.github.vad4nus.lockstep.mvvm.navigation/NavStack> // io.github.vad4nus.lockstep.mvvm.navigation/StackNavigator.stack.<get-stack>|<get-stack>(){}[0]
+
+    final fun <#A1: kotlin/Any> popWithResult(io.github.vad4nus.lockstep.mvvm.navigation/ResultKey<#A1>, #A1) // io.github.vad4nus.lockstep.mvvm.navigation/StackNavigator.popWithResult|popWithResult(io.github.vad4nus.lockstep.mvvm.navigation.ResultKey<0:0>;0:0){0§<kotlin.Any>}[0]
+    final fun <#A1: kotlin/Any> results(io.github.vad4nus.lockstep.mvvm.navigation/ResultKey<#A1>): kotlinx.coroutines.flow/Flow<#A1> // io.github.vad4nus.lockstep.mvvm.navigation/StackNavigator.results|results(io.github.vad4nus.lockstep.mvvm.navigation.ResultKey<0:0>){0§<kotlin.Any>}[0]
+    final fun onSystemDismissSheet(io.github.vad4nus.lockstep.mvvm.navigation/Route) // io.github.vad4nus.lockstep.mvvm.navigation/StackNavigator.onSystemDismissSheet|onSystemDismissSheet(io.github.vad4nus.lockstep.mvvm.navigation.Route){}[0]
+    final fun onSystemPop(kotlin.collections/List<io.github.vad4nus.lockstep.mvvm.navigation/Route>) // io.github.vad4nus.lockstep.mvvm.navigation/StackNavigator.onSystemPop|onSystemPop(kotlin.collections.List<io.github.vad4nus.lockstep.mvvm.navigation.Route>){}[0]
+    final fun pop(): kotlin/Boolean // io.github.vad4nus.lockstep.mvvm.navigation/StackNavigator.pop|pop(){}[0]
+    final fun popTo(io.github.vad4nus.lockstep.mvvm.navigation/Route, kotlin/Boolean = ...): kotlin/Boolean // io.github.vad4nus.lockstep.mvvm.navigation/StackNavigator.popTo|popTo(io.github.vad4nus.lockstep.mvvm.navigation.Route;kotlin.Boolean){}[0]
+    final fun push(io.github.vad4nus.lockstep.mvvm.navigation/Route) // io.github.vad4nus.lockstep.mvvm.navigation/StackNavigator.push|push(io.github.vad4nus.lockstep.mvvm.navigation.Route){}[0]
+    final fun replaceAll(io.github.vad4nus.lockstep.mvvm.navigation/Route, kotlin.collections/List<io.github.vad4nus.lockstep.mvvm.navigation/Route> = ...) // io.github.vad4nus.lockstep.mvvm.navigation/StackNavigator.replaceAll|replaceAll(io.github.vad4nus.lockstep.mvvm.navigation.Route;kotlin.collections.List<io.github.vad4nus.lockstep.mvvm.navigation.Route>){}[0]
+    final fun setPath(kotlin.collections/List<io.github.vad4nus.lockstep.mvvm.navigation/Route>) // io.github.vad4nus.lockstep.mvvm.navigation/StackNavigator.setPath|setPath(kotlin.collections.List<io.github.vad4nus.lockstep.mvvm.navigation.Route>){}[0]
+}
+
+final class io.github.vad4nus.lockstep.mvvm/MessageAction { // io.github.vad4nus.lockstep.mvvm/MessageAction|null[0]
+    constructor <init>(dev.icerock.moko.resources.desc/StringDesc, kotlin/Function0<kotlin/Unit>) // io.github.vad4nus.lockstep.mvvm/MessageAction.<init>|<init>(dev.icerock.moko.resources.desc.StringDesc;kotlin.Function0<kotlin.Unit>){}[0]
+
+    final val label // io.github.vad4nus.lockstep.mvvm/MessageAction.label|{}label[0]
+        final fun <get-label>(): dev.icerock.moko.resources.desc/StringDesc // io.github.vad4nus.lockstep.mvvm/MessageAction.label.<get-label>|<get-label>(){}[0]
+    final val onClick // io.github.vad4nus.lockstep.mvvm/MessageAction.onClick|{}onClick[0]
+        final fun <get-onClick>(): kotlin/Function0<kotlin/Unit> // io.github.vad4nus.lockstep.mvvm/MessageAction.onClick.<get-onClick>|<get-onClick>(){}[0]
+}
+
+final class io.github.vad4nus.lockstep.mvvm/MvvmEnvironment { // io.github.vad4nus.lockstep.mvvm/MvvmEnvironment|null[0]
+    constructor <init>(io.github.vad4nus.lockstep.result/ErrorMapper = ..., io.github.vad4nus.lockstep.mvvm/MvvmTexts = ..., io.github.vad4nus.lockstep.mvvm/ErrorPresenter = ..., kotlin/Function1<io.github.vad4nus.lockstep.result/AppError, kotlin/Unit> = ...) // io.github.vad4nus.lockstep.mvvm/MvvmEnvironment.<init>|<init>(io.github.vad4nus.lockstep.result.ErrorMapper;io.github.vad4nus.lockstep.mvvm.MvvmTexts;io.github.vad4nus.lockstep.mvvm.ErrorPresenter;kotlin.Function1<io.github.vad4nus.lockstep.result.AppError,kotlin.Unit>){}[0]
+
+    final val errorMapper // io.github.vad4nus.lockstep.mvvm/MvvmEnvironment.errorMapper|{}errorMapper[0]
+        final fun <get-errorMapper>(): io.github.vad4nus.lockstep.result/ErrorMapper // io.github.vad4nus.lockstep.mvvm/MvvmEnvironment.errorMapper.<get-errorMapper>|<get-errorMapper>(){}[0]
+    final val errorPresenter // io.github.vad4nus.lockstep.mvvm/MvvmEnvironment.errorPresenter|{}errorPresenter[0]
+        final fun <get-errorPresenter>(): io.github.vad4nus.lockstep.mvvm/ErrorPresenter // io.github.vad4nus.lockstep.mvvm/MvvmEnvironment.errorPresenter.<get-errorPresenter>|<get-errorPresenter>(){}[0]
+    final val errorReporter // io.github.vad4nus.lockstep.mvvm/MvvmEnvironment.errorReporter|{}errorReporter[0]
+        final fun <get-errorReporter>(): kotlin/Function1<io.github.vad4nus.lockstep.result/AppError, kotlin/Unit> // io.github.vad4nus.lockstep.mvvm/MvvmEnvironment.errorReporter.<get-errorReporter>|<get-errorReporter>(){}[0]
+    final val texts // io.github.vad4nus.lockstep.mvvm/MvvmEnvironment.texts|{}texts[0]
+        final fun <get-texts>(): io.github.vad4nus.lockstep.mvvm/MvvmTexts // io.github.vad4nus.lockstep.mvvm/MvvmEnvironment.texts.<get-texts>|<get-texts>(){}[0]
+
+    final object Companion { // io.github.vad4nus.lockstep.mvvm/MvvmEnvironment.Companion|null[0]
+        final var Default // io.github.vad4nus.lockstep.mvvm/MvvmEnvironment.Companion.Default|{}Default[0]
+            final fun <get-Default>(): io.github.vad4nus.lockstep.mvvm/MvvmEnvironment // io.github.vad4nus.lockstep.mvvm/MvvmEnvironment.Companion.Default.<get-Default>|<get-Default>(){}[0]
+            final fun <set-Default>(io.github.vad4nus.lockstep.mvvm/MvvmEnvironment) // io.github.vad4nus.lockstep.mvvm/MvvmEnvironment.Companion.Default.<set-Default>|<set-Default>(io.github.vad4nus.lockstep.mvvm.MvvmEnvironment){}[0]
+    }
+}
+
+final class io.github.vad4nus.lockstep.mvvm/MvvmTexts { // io.github.vad4nus.lockstep.mvvm/MvvmTexts|null[0]
+    constructor <init>(dev.icerock.moko.resources.desc/StringDesc = ..., dev.icerock.moko.resources.desc/StringDesc = ..., dev.icerock.moko.resources.desc/StringDesc = ..., dev.icerock.moko.resources.desc/StringDesc = ..., dev.icerock.moko.resources.desc/StringDesc = ..., kotlin/Function1<kotlin/Int, dev.icerock.moko.resources.desc/StringDesc> = ..., dev.icerock.moko.resources.desc/StringDesc = ...) // io.github.vad4nus.lockstep.mvvm/MvvmTexts.<init>|<init>(dev.icerock.moko.resources.desc.StringDesc;dev.icerock.moko.resources.desc.StringDesc;dev.icerock.moko.resources.desc.StringDesc;dev.icerock.moko.resources.desc.StringDesc;dev.icerock.moko.resources.desc.StringDesc;kotlin.Function1<kotlin.Int,dev.icerock.moko.resources.desc.StringDesc>;dev.icerock.moko.resources.desc.StringDesc){}[0]
+
+    final val noConnection // io.github.vad4nus.lockstep.mvvm/MvvmTexts.noConnection|{}noConnection[0]
+        final fun <get-noConnection>(): dev.icerock.moko.resources.desc/StringDesc // io.github.vad4nus.lockstep.mvvm/MvvmTexts.noConnection.<get-noConnection>|<get-noConnection>(){}[0]
+    final val ok // io.github.vad4nus.lockstep.mvvm/MvvmTexts.ok|{}ok[0]
+        final fun <get-ok>(): dev.icerock.moko.resources.desc/StringDesc // io.github.vad4nus.lockstep.mvvm/MvvmTexts.ok.<get-ok>|<get-ok>(){}[0]
+    final val retry // io.github.vad4nus.lockstep.mvvm/MvvmTexts.retry|{}retry[0]
+        final fun <get-retry>(): dev.icerock.moko.resources.desc/StringDesc // io.github.vad4nus.lockstep.mvvm/MvvmTexts.retry.<get-retry>|<get-retry>(){}[0]
+    final val serverError // io.github.vad4nus.lockstep.mvvm/MvvmTexts.serverError|{}serverError[0]
+        final fun <get-serverError>(): kotlin/Function1<kotlin/Int, dev.icerock.moko.resources.desc/StringDesc> // io.github.vad4nus.lockstep.mvvm/MvvmTexts.serverError.<get-serverError>|<get-serverError>(){}[0]
+    final val timeout // io.github.vad4nus.lockstep.mvvm/MvvmTexts.timeout|{}timeout[0]
+        final fun <get-timeout>(): dev.icerock.moko.resources.desc/StringDesc // io.github.vad4nus.lockstep.mvvm/MvvmTexts.timeout.<get-timeout>|<get-timeout>(){}[0]
+    final val unauthorized // io.github.vad4nus.lockstep.mvvm/MvvmTexts.unauthorized|{}unauthorized[0]
+        final fun <get-unauthorized>(): dev.icerock.moko.resources.desc/StringDesc // io.github.vad4nus.lockstep.mvvm/MvvmTexts.unauthorized.<get-unauthorized>|<get-unauthorized>(){}[0]
+    final val unknownError // io.github.vad4nus.lockstep.mvvm/MvvmTexts.unknownError|{}unknownError[0]
+        final fun <get-unknownError>(): dev.icerock.moko.resources.desc/StringDesc // io.github.vad4nus.lockstep.mvvm/MvvmTexts.unknownError.<get-unknownError>|<get-unknownError>(){}[0]
+}
+
+final class io.github.vad4nus.lockstep.mvvm/ScreenChrome { // io.github.vad4nus.lockstep.mvvm/ScreenChrome|null[0]
+    constructor <init>(io.github.vad4nus.lockstep.mvvm/LoadingKind? = ..., kotlin/Boolean = ..., io.github.vad4nus.lockstep.mvvm/UiError? = ..., kotlin.collections/List<io.github.vad4nus.lockstep.mvvm/UiMessage> = ..., io.github.vad4nus.lockstep.mvvm/UiDialog? = ...) // io.github.vad4nus.lockstep.mvvm/ScreenChrome.<init>|<init>(io.github.vad4nus.lockstep.mvvm.LoadingKind?;kotlin.Boolean;io.github.vad4nus.lockstep.mvvm.UiError?;kotlin.collections.List<io.github.vad4nus.lockstep.mvvm.UiMessage>;io.github.vad4nus.lockstep.mvvm.UiDialog?){}[0]
+
+    final val backgroundLoading // io.github.vad4nus.lockstep.mvvm/ScreenChrome.backgroundLoading|{}backgroundLoading[0]
+        final fun <get-backgroundLoading>(): kotlin/Boolean // io.github.vad4nus.lockstep.mvvm/ScreenChrome.backgroundLoading.<get-backgroundLoading>|<get-backgroundLoading>(){}[0]
+    final val dialog // io.github.vad4nus.lockstep.mvvm/ScreenChrome.dialog|{}dialog[0]
+        final fun <get-dialog>(): io.github.vad4nus.lockstep.mvvm/UiDialog? // io.github.vad4nus.lockstep.mvvm/ScreenChrome.dialog.<get-dialog>|<get-dialog>(){}[0]
+    final val error // io.github.vad4nus.lockstep.mvvm/ScreenChrome.error|{}error[0]
+        final fun <get-error>(): io.github.vad4nus.lockstep.mvvm/UiError? // io.github.vad4nus.lockstep.mvvm/ScreenChrome.error.<get-error>|<get-error>(){}[0]
+    final val loading // io.github.vad4nus.lockstep.mvvm/ScreenChrome.loading|{}loading[0]
+        final fun <get-loading>(): io.github.vad4nus.lockstep.mvvm/LoadingKind? // io.github.vad4nus.lockstep.mvvm/ScreenChrome.loading.<get-loading>|<get-loading>(){}[0]
+    final val messages // io.github.vad4nus.lockstep.mvvm/ScreenChrome.messages|{}messages[0]
+        final fun <get-messages>(): kotlin.collections/List<io.github.vad4nus.lockstep.mvvm/UiMessage> // io.github.vad4nus.lockstep.mvvm/ScreenChrome.messages.<get-messages>|<get-messages>(){}[0]
+
+    final fun component1(): io.github.vad4nus.lockstep.mvvm/LoadingKind? // io.github.vad4nus.lockstep.mvvm/ScreenChrome.component1|component1(){}[0]
+    final fun component2(): kotlin/Boolean // io.github.vad4nus.lockstep.mvvm/ScreenChrome.component2|component2(){}[0]
+    final fun component3(): io.github.vad4nus.lockstep.mvvm/UiError? // io.github.vad4nus.lockstep.mvvm/ScreenChrome.component3|component3(){}[0]
+    final fun component4(): kotlin.collections/List<io.github.vad4nus.lockstep.mvvm/UiMessage> // io.github.vad4nus.lockstep.mvvm/ScreenChrome.component4|component4(){}[0]
+    final fun component5(): io.github.vad4nus.lockstep.mvvm/UiDialog? // io.github.vad4nus.lockstep.mvvm/ScreenChrome.component5|component5(){}[0]
+    final fun copy(io.github.vad4nus.lockstep.mvvm/LoadingKind? = ..., kotlin/Boolean = ..., io.github.vad4nus.lockstep.mvvm/UiError? = ..., kotlin.collections/List<io.github.vad4nus.lockstep.mvvm/UiMessage> = ..., io.github.vad4nus.lockstep.mvvm/UiDialog? = ...): io.github.vad4nus.lockstep.mvvm/ScreenChrome // io.github.vad4nus.lockstep.mvvm/ScreenChrome.copy|copy(io.github.vad4nus.lockstep.mvvm.LoadingKind?;kotlin.Boolean;io.github.vad4nus.lockstep.mvvm.UiError?;kotlin.collections.List<io.github.vad4nus.lockstep.mvvm.UiMessage>;io.github.vad4nus.lockstep.mvvm.UiDialog?){}[0]
+    final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.mvvm/ScreenChrome.equals|equals(kotlin.Any?){}[0]
+    final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.mvvm/ScreenChrome.hashCode|hashCode(){}[0]
+    final fun toString(): kotlin/String // io.github.vad4nus.lockstep.mvvm/ScreenChrome.toString|toString(){}[0]
+}
+
+final class io.github.vad4nus.lockstep.mvvm/UiDialog { // io.github.vad4nus.lockstep.mvvm/UiDialog|null[0]
+    constructor <init>(kotlin/Long, dev.icerock.moko.resources.desc/StringDesc?, dev.icerock.moko.resources.desc/StringDesc, dev.icerock.moko.resources.desc/StringDesc, dev.icerock.moko.resources.desc/StringDesc?, kotlin/Boolean) // io.github.vad4nus.lockstep.mvvm/UiDialog.<init>|<init>(kotlin.Long;dev.icerock.moko.resources.desc.StringDesc?;dev.icerock.moko.resources.desc.StringDesc;dev.icerock.moko.resources.desc.StringDesc;dev.icerock.moko.resources.desc.StringDesc?;kotlin.Boolean){}[0]
+
+    final val confirm // io.github.vad4nus.lockstep.mvvm/UiDialog.confirm|{}confirm[0]
+        final fun <get-confirm>(): dev.icerock.moko.resources.desc/StringDesc // io.github.vad4nus.lockstep.mvvm/UiDialog.confirm.<get-confirm>|<get-confirm>(){}[0]
+    final val destructive // io.github.vad4nus.lockstep.mvvm/UiDialog.destructive|{}destructive[0]
+        final fun <get-destructive>(): kotlin/Boolean // io.github.vad4nus.lockstep.mvvm/UiDialog.destructive.<get-destructive>|<get-destructive>(){}[0]
+    final val dismiss // io.github.vad4nus.lockstep.mvvm/UiDialog.dismiss|{}dismiss[0]
+        final fun <get-dismiss>(): dev.icerock.moko.resources.desc/StringDesc? // io.github.vad4nus.lockstep.mvvm/UiDialog.dismiss.<get-dismiss>|<get-dismiss>(){}[0]
+    final val id // io.github.vad4nus.lockstep.mvvm/UiDialog.id|{}id[0]
+        final fun <get-id>(): kotlin/Long // io.github.vad4nus.lockstep.mvvm/UiDialog.id.<get-id>|<get-id>(){}[0]
+    final val text // io.github.vad4nus.lockstep.mvvm/UiDialog.text|{}text[0]
+        final fun <get-text>(): dev.icerock.moko.resources.desc/StringDesc // io.github.vad4nus.lockstep.mvvm/UiDialog.text.<get-text>|<get-text>(){}[0]
+    final val title // io.github.vad4nus.lockstep.mvvm/UiDialog.title|{}title[0]
+        final fun <get-title>(): dev.icerock.moko.resources.desc/StringDesc? // io.github.vad4nus.lockstep.mvvm/UiDialog.title.<get-title>|<get-title>(){}[0]
+
+    final fun component1(): kotlin/Long // io.github.vad4nus.lockstep.mvvm/UiDialog.component1|component1(){}[0]
+    final fun component2(): dev.icerock.moko.resources.desc/StringDesc? // io.github.vad4nus.lockstep.mvvm/UiDialog.component2|component2(){}[0]
+    final fun component3(): dev.icerock.moko.resources.desc/StringDesc // io.github.vad4nus.lockstep.mvvm/UiDialog.component3|component3(){}[0]
+    final fun component4(): dev.icerock.moko.resources.desc/StringDesc // io.github.vad4nus.lockstep.mvvm/UiDialog.component4|component4(){}[0]
+    final fun component5(): dev.icerock.moko.resources.desc/StringDesc? // io.github.vad4nus.lockstep.mvvm/UiDialog.component5|component5(){}[0]
+    final fun component6(): kotlin/Boolean // io.github.vad4nus.lockstep.mvvm/UiDialog.component6|component6(){}[0]
+    final fun copy(kotlin/Long = ..., dev.icerock.moko.resources.desc/StringDesc? = ..., dev.icerock.moko.resources.desc/StringDesc = ..., dev.icerock.moko.resources.desc/StringDesc = ..., dev.icerock.moko.resources.desc/StringDesc? = ..., kotlin/Boolean = ...): io.github.vad4nus.lockstep.mvvm/UiDialog // io.github.vad4nus.lockstep.mvvm/UiDialog.copy|copy(kotlin.Long;dev.icerock.moko.resources.desc.StringDesc?;dev.icerock.moko.resources.desc.StringDesc;dev.icerock.moko.resources.desc.StringDesc;dev.icerock.moko.resources.desc.StringDesc?;kotlin.Boolean){}[0]
+    final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.mvvm/UiDialog.equals|equals(kotlin.Any?){}[0]
+    final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.mvvm/UiDialog.hashCode|hashCode(){}[0]
+    final fun toString(): kotlin/String // io.github.vad4nus.lockstep.mvvm/UiDialog.toString|toString(){}[0]
+}
+
+final class io.github.vad4nus.lockstep.mvvm/UiError { // io.github.vad4nus.lockstep.mvvm/UiError|null[0]
+    constructor <init>(dev.icerock.moko.resources.desc/StringDesc, io.github.vad4nus.lockstep.mvvm/UiErrorKind, dev.icerock.moko.resources.desc/StringDesc? = ...) // io.github.vad4nus.lockstep.mvvm/UiError.<init>|<init>(dev.icerock.moko.resources.desc.StringDesc;io.github.vad4nus.lockstep.mvvm.UiErrorKind;dev.icerock.moko.resources.desc.StringDesc?){}[0]
+
+    final val kind // io.github.vad4nus.lockstep.mvvm/UiError.kind|{}kind[0]
+        final fun <get-kind>(): io.github.vad4nus.lockstep.mvvm/UiErrorKind // io.github.vad4nus.lockstep.mvvm/UiError.kind.<get-kind>|<get-kind>(){}[0]
+    final val message // io.github.vad4nus.lockstep.mvvm/UiError.message|{}message[0]
+        final fun <get-message>(): dev.icerock.moko.resources.desc/StringDesc // io.github.vad4nus.lockstep.mvvm/UiError.message.<get-message>|<get-message>(){}[0]
+    final val retryLabel // io.github.vad4nus.lockstep.mvvm/UiError.retryLabel|{}retryLabel[0]
+        final fun <get-retryLabel>(): dev.icerock.moko.resources.desc/StringDesc? // io.github.vad4nus.lockstep.mvvm/UiError.retryLabel.<get-retryLabel>|<get-retryLabel>(){}[0]
+
+    final fun component1(): dev.icerock.moko.resources.desc/StringDesc // io.github.vad4nus.lockstep.mvvm/UiError.component1|component1(){}[0]
+    final fun component2(): io.github.vad4nus.lockstep.mvvm/UiErrorKind // io.github.vad4nus.lockstep.mvvm/UiError.component2|component2(){}[0]
+    final fun component3(): dev.icerock.moko.resources.desc/StringDesc? // io.github.vad4nus.lockstep.mvvm/UiError.component3|component3(){}[0]
+    final fun copy(dev.icerock.moko.resources.desc/StringDesc = ..., io.github.vad4nus.lockstep.mvvm/UiErrorKind = ..., dev.icerock.moko.resources.desc/StringDesc? = ...): io.github.vad4nus.lockstep.mvvm/UiError // io.github.vad4nus.lockstep.mvvm/UiError.copy|copy(dev.icerock.moko.resources.desc.StringDesc;io.github.vad4nus.lockstep.mvvm.UiErrorKind;dev.icerock.moko.resources.desc.StringDesc?){}[0]
+    final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.mvvm/UiError.equals|equals(kotlin.Any?){}[0]
+    final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.mvvm/UiError.hashCode|hashCode(){}[0]
+    final fun toString(): kotlin/String // io.github.vad4nus.lockstep.mvvm/UiError.toString|toString(){}[0]
+}
+
+final class io.github.vad4nus.lockstep.mvvm/UiMessage { // io.github.vad4nus.lockstep.mvvm/UiMessage|null[0]
+    constructor <init>(kotlin/Long, dev.icerock.moko.resources.desc/StringDesc, io.github.vad4nus.lockstep.mvvm/MessageKind, dev.icerock.moko.resources.desc/StringDesc?, kotlin/Long) // io.github.vad4nus.lockstep.mvvm/UiMessage.<init>|<init>(kotlin.Long;dev.icerock.moko.resources.desc.StringDesc;io.github.vad4nus.lockstep.mvvm.MessageKind;dev.icerock.moko.resources.desc.StringDesc?;kotlin.Long){}[0]
+
+    final val actionLabel // io.github.vad4nus.lockstep.mvvm/UiMessage.actionLabel|{}actionLabel[0]
+        final fun <get-actionLabel>(): dev.icerock.moko.resources.desc/StringDesc? // io.github.vad4nus.lockstep.mvvm/UiMessage.actionLabel.<get-actionLabel>|<get-actionLabel>(){}[0]
+    final val durationMillis // io.github.vad4nus.lockstep.mvvm/UiMessage.durationMillis|{}durationMillis[0]
+        final fun <get-durationMillis>(): kotlin/Long // io.github.vad4nus.lockstep.mvvm/UiMessage.durationMillis.<get-durationMillis>|<get-durationMillis>(){}[0]
+    final val id // io.github.vad4nus.lockstep.mvvm/UiMessage.id|{}id[0]
+        final fun <get-id>(): kotlin/Long // io.github.vad4nus.lockstep.mvvm/UiMessage.id.<get-id>|<get-id>(){}[0]
+    final val kind // io.github.vad4nus.lockstep.mvvm/UiMessage.kind|{}kind[0]
+        final fun <get-kind>(): io.github.vad4nus.lockstep.mvvm/MessageKind // io.github.vad4nus.lockstep.mvvm/UiMessage.kind.<get-kind>|<get-kind>(){}[0]
+    final val text // io.github.vad4nus.lockstep.mvvm/UiMessage.text|{}text[0]
+        final fun <get-text>(): dev.icerock.moko.resources.desc/StringDesc // io.github.vad4nus.lockstep.mvvm/UiMessage.text.<get-text>|<get-text>(){}[0]
+
+    final fun component1(): kotlin/Long // io.github.vad4nus.lockstep.mvvm/UiMessage.component1|component1(){}[0]
+    final fun component2(): dev.icerock.moko.resources.desc/StringDesc // io.github.vad4nus.lockstep.mvvm/UiMessage.component2|component2(){}[0]
+    final fun component3(): io.github.vad4nus.lockstep.mvvm/MessageKind // io.github.vad4nus.lockstep.mvvm/UiMessage.component3|component3(){}[0]
+    final fun component4(): dev.icerock.moko.resources.desc/StringDesc? // io.github.vad4nus.lockstep.mvvm/UiMessage.component4|component4(){}[0]
+    final fun component5(): kotlin/Long // io.github.vad4nus.lockstep.mvvm/UiMessage.component5|component5(){}[0]
+    final fun copy(kotlin/Long = ..., dev.icerock.moko.resources.desc/StringDesc = ..., io.github.vad4nus.lockstep.mvvm/MessageKind = ..., dev.icerock.moko.resources.desc/StringDesc? = ..., kotlin/Long = ...): io.github.vad4nus.lockstep.mvvm/UiMessage // io.github.vad4nus.lockstep.mvvm/UiMessage.copy|copy(kotlin.Long;dev.icerock.moko.resources.desc.StringDesc;io.github.vad4nus.lockstep.mvvm.MessageKind;dev.icerock.moko.resources.desc.StringDesc?;kotlin.Long){}[0]
+    final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.mvvm/UiMessage.equals|equals(kotlin.Any?){}[0]
+    final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.mvvm/UiMessage.hashCode|hashCode(){}[0]
+    final fun toString(): kotlin/String // io.github.vad4nus.lockstep.mvvm/UiMessage.toString|toString(){}[0]
+}
+
+final fun <#A: androidx.lifecycle/ViewModel> (androidx.lifecycle/ViewModelStore).io.github.vad4nus.lockstep.mvvm/getOrPut(kotlin/String, kotlin/Function0<#A>): #A // io.github.vad4nus.lockstep.mvvm/getOrPut|getOrPut@androidx.lifecycle.ViewModelStore(kotlin.String;kotlin.Function0<0:0>){0§<androidx.lifecycle.ViewModel>}[0]

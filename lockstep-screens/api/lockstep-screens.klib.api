@@ -1,0 +1,1066 @@
+// Klib ABI Dump
+// Targets: [iosArm64, iosSimulatorArm64, iosX64]
+// Rendering settings:
+// - Signature version: 2
+// - Show manifest properties: true
+// - Show declarations: true
+
+// Library unique name: <io.github.vad4nus:lockstep-screens>
+open annotation class io.github.vad4nus.lockstep.screens/ScreenDsl : kotlin/Annotation { // io.github.vad4nus.lockstep.screens/ScreenDsl|null[0]
+    constructor <init>() // io.github.vad4nus.lockstep.screens/ScreenDsl.<init>|<init>(){}[0]
+}
+
+final enum class io.github.vad4nus.lockstep.screens/ButtonVariant : kotlin/Enum<io.github.vad4nus.lockstep.screens/ButtonVariant> { // io.github.vad4nus.lockstep.screens/ButtonVariant|null[0]
+    enum entry Primary // io.github.vad4nus.lockstep.screens/ButtonVariant.Primary|null[0]
+    enum entry Secondary // io.github.vad4nus.lockstep.screens/ButtonVariant.Secondary|null[0]
+    enum entry Text // io.github.vad4nus.lockstep.screens/ButtonVariant.Text|null[0]
+
+    final val entries // io.github.vad4nus.lockstep.screens/ButtonVariant.entries|#static{}entries[0]
+        final fun <get-entries>(): kotlin.enums/EnumEntries<io.github.vad4nus.lockstep.screens/ButtonVariant> // io.github.vad4nus.lockstep.screens/ButtonVariant.entries.<get-entries>|<get-entries>#static(){}[0]
+
+    final fun valueOf(kotlin/String): io.github.vad4nus.lockstep.screens/ButtonVariant // io.github.vad4nus.lockstep.screens/ButtonVariant.valueOf|valueOf#static(kotlin.String){}[0]
+    final fun values(): kotlin/Array<io.github.vad4nus.lockstep.screens/ButtonVariant> // io.github.vad4nus.lockstep.screens/ButtonVariant.values|values#static(){}[0]
+}
+
+final enum class io.github.vad4nus.lockstep.screens/ColorToken : kotlin/Enum<io.github.vad4nus.lockstep.screens/ColorToken> { // io.github.vad4nus.lockstep.screens/ColorToken|null[0]
+    enum entry Background // io.github.vad4nus.lockstep.screens/ColorToken.Background|null[0]
+    enum entry Error // io.github.vad4nus.lockstep.screens/ColorToken.Error|null[0]
+    enum entry Primary // io.github.vad4nus.lockstep.screens/ColorToken.Primary|null[0]
+    enum entry Secondary // io.github.vad4nus.lockstep.screens/ColorToken.Secondary|null[0]
+    enum entry Surface // io.github.vad4nus.lockstep.screens/ColorToken.Surface|null[0]
+
+    final val entries // io.github.vad4nus.lockstep.screens/ColorToken.entries|#static{}entries[0]
+        final fun <get-entries>(): kotlin.enums/EnumEntries<io.github.vad4nus.lockstep.screens/ColorToken> // io.github.vad4nus.lockstep.screens/ColorToken.entries.<get-entries>|<get-entries>#static(){}[0]
+
+    final fun valueOf(kotlin/String): io.github.vad4nus.lockstep.screens/ColorToken // io.github.vad4nus.lockstep.screens/ColorToken.valueOf|valueOf#static(kotlin.String){}[0]
+    final fun values(): kotlin/Array<io.github.vad4nus.lockstep.screens/ColorToken> // io.github.vad4nus.lockstep.screens/ColorToken.values|values#static(){}[0]
+}
+
+final enum class io.github.vad4nus.lockstep.screens/HAlign : kotlin/Enum<io.github.vad4nus.lockstep.screens/HAlign> { // io.github.vad4nus.lockstep.screens/HAlign|null[0]
+    enum entry Center // io.github.vad4nus.lockstep.screens/HAlign.Center|null[0]
+    enum entry End // io.github.vad4nus.lockstep.screens/HAlign.End|null[0]
+    enum entry Start // io.github.vad4nus.lockstep.screens/HAlign.Start|null[0]
+
+    final val entries // io.github.vad4nus.lockstep.screens/HAlign.entries|#static{}entries[0]
+        final fun <get-entries>(): kotlin.enums/EnumEntries<io.github.vad4nus.lockstep.screens/HAlign> // io.github.vad4nus.lockstep.screens/HAlign.entries.<get-entries>|<get-entries>#static(){}[0]
+
+    final fun valueOf(kotlin/String): io.github.vad4nus.lockstep.screens/HAlign // io.github.vad4nus.lockstep.screens/HAlign.valueOf|valueOf#static(kotlin.String){}[0]
+    final fun values(): kotlin/Array<io.github.vad4nus.lockstep.screens/HAlign> // io.github.vad4nus.lockstep.screens/HAlign.values|values#static(){}[0]
+}
+
+final enum class io.github.vad4nus.lockstep.screens/InputKind : kotlin/Enum<io.github.vad4nus.lockstep.screens/InputKind> { // io.github.vad4nus.lockstep.screens/InputKind|null[0]
+    enum entry Email // io.github.vad4nus.lockstep.screens/InputKind.Email|null[0]
+    enum entry Number // io.github.vad4nus.lockstep.screens/InputKind.Number|null[0]
+    enum entry Password // io.github.vad4nus.lockstep.screens/InputKind.Password|null[0]
+    enum entry Text // io.github.vad4nus.lockstep.screens/InputKind.Text|null[0]
+
+    final val entries // io.github.vad4nus.lockstep.screens/InputKind.entries|#static{}entries[0]
+        final fun <get-entries>(): kotlin.enums/EnumEntries<io.github.vad4nus.lockstep.screens/InputKind> // io.github.vad4nus.lockstep.screens/InputKind.entries.<get-entries>|<get-entries>#static(){}[0]
+
+    final fun valueOf(kotlin/String): io.github.vad4nus.lockstep.screens/InputKind // io.github.vad4nus.lockstep.screens/InputKind.valueOf|valueOf#static(kotlin.String){}[0]
+    final fun values(): kotlin/Array<io.github.vad4nus.lockstep.screens/InputKind> // io.github.vad4nus.lockstep.screens/InputKind.values|values#static(){}[0]
+}
+
+final enum class io.github.vad4nus.lockstep.screens/ListAxis : kotlin/Enum<io.github.vad4nus.lockstep.screens/ListAxis> { // io.github.vad4nus.lockstep.screens/ListAxis|null[0]
+    enum entry Horizontal // io.github.vad4nus.lockstep.screens/ListAxis.Horizontal|null[0]
+    enum entry Vertical // io.github.vad4nus.lockstep.screens/ListAxis.Vertical|null[0]
+
+    final val entries // io.github.vad4nus.lockstep.screens/ListAxis.entries|#static{}entries[0]
+        final fun <get-entries>(): kotlin.enums/EnumEntries<io.github.vad4nus.lockstep.screens/ListAxis> // io.github.vad4nus.lockstep.screens/ListAxis.entries.<get-entries>|<get-entries>#static(){}[0]
+
+    final fun valueOf(kotlin/String): io.github.vad4nus.lockstep.screens/ListAxis // io.github.vad4nus.lockstep.screens/ListAxis.valueOf|valueOf#static(kotlin.String){}[0]
+    final fun values(): kotlin/Array<io.github.vad4nus.lockstep.screens/ListAxis> // io.github.vad4nus.lockstep.screens/ListAxis.values|values#static(){}[0]
+}
+
+final enum class io.github.vad4nus.lockstep.screens/Space : kotlin/Enum<io.github.vad4nus.lockstep.screens/Space> { // io.github.vad4nus.lockstep.screens/Space|null[0]
+    enum entry L // io.github.vad4nus.lockstep.screens/Space.L|null[0]
+    enum entry M // io.github.vad4nus.lockstep.screens/Space.M|null[0]
+    enum entry S // io.github.vad4nus.lockstep.screens/Space.S|null[0]
+    enum entry Xl // io.github.vad4nus.lockstep.screens/Space.Xl|null[0]
+    enum entry Xs // io.github.vad4nus.lockstep.screens/Space.Xs|null[0]
+
+    final val entries // io.github.vad4nus.lockstep.screens/Space.entries|#static{}entries[0]
+        final fun <get-entries>(): kotlin.enums/EnumEntries<io.github.vad4nus.lockstep.screens/Space> // io.github.vad4nus.lockstep.screens/Space.entries.<get-entries>|<get-entries>#static(){}[0]
+
+    final fun valueOf(kotlin/String): io.github.vad4nus.lockstep.screens/Space // io.github.vad4nus.lockstep.screens/Space.valueOf|valueOf#static(kotlin.String){}[0]
+    final fun values(): kotlin/Array<io.github.vad4nus.lockstep.screens/Space> // io.github.vad4nus.lockstep.screens/Space.values|values#static(){}[0]
+}
+
+final enum class io.github.vad4nus.lockstep.screens/TextStyleToken : kotlin/Enum<io.github.vad4nus.lockstep.screens/TextStyleToken> { // io.github.vad4nus.lockstep.screens/TextStyleToken|null[0]
+    enum entry Body // io.github.vad4nus.lockstep.screens/TextStyleToken.Body|null[0]
+    enum entry Caption // io.github.vad4nus.lockstep.screens/TextStyleToken.Caption|null[0]
+    enum entry Headline // io.github.vad4nus.lockstep.screens/TextStyleToken.Headline|null[0]
+    enum entry Title // io.github.vad4nus.lockstep.screens/TextStyleToken.Title|null[0]
+
+    final val entries // io.github.vad4nus.lockstep.screens/TextStyleToken.entries|#static{}entries[0]
+        final fun <get-entries>(): kotlin.enums/EnumEntries<io.github.vad4nus.lockstep.screens/TextStyleToken> // io.github.vad4nus.lockstep.screens/TextStyleToken.entries.<get-entries>|<get-entries>#static(){}[0]
+
+    final fun valueOf(kotlin/String): io.github.vad4nus.lockstep.screens/TextStyleToken // io.github.vad4nus.lockstep.screens/TextStyleToken.valueOf|valueOf#static(kotlin.String){}[0]
+    final fun values(): kotlin/Array<io.github.vad4nus.lockstep.screens/TextStyleToken> // io.github.vad4nus.lockstep.screens/TextStyleToken.values|values#static(){}[0]
+}
+
+final enum class io.github.vad4nus.lockstep.screens/VAlign : kotlin/Enum<io.github.vad4nus.lockstep.screens/VAlign> { // io.github.vad4nus.lockstep.screens/VAlign|null[0]
+    enum entry Bottom // io.github.vad4nus.lockstep.screens/VAlign.Bottom|null[0]
+    enum entry Center // io.github.vad4nus.lockstep.screens/VAlign.Center|null[0]
+    enum entry Top // io.github.vad4nus.lockstep.screens/VAlign.Top|null[0]
+
+    final val entries // io.github.vad4nus.lockstep.screens/VAlign.entries|#static{}entries[0]
+        final fun <get-entries>(): kotlin.enums/EnumEntries<io.github.vad4nus.lockstep.screens/VAlign> // io.github.vad4nus.lockstep.screens/VAlign.entries.<get-entries>|<get-entries>#static(){}[0]
+
+    final fun valueOf(kotlin/String): io.github.vad4nus.lockstep.screens/VAlign // io.github.vad4nus.lockstep.screens/VAlign.valueOf|valueOf#static(kotlin.String){}[0]
+    final fun values(): kotlin/Array<io.github.vad4nus.lockstep.screens/VAlign> // io.github.vad4nus.lockstep.screens/VAlign.values|values#static(){}[0]
+}
+
+sealed interface io.github.vad4nus.lockstep.screens/Bounded // io.github.vad4nus.lockstep.screens/Bounded|null[0]
+
+sealed interface io.github.vad4nus.lockstep.screens/InputRule { // io.github.vad4nus.lockstep.screens/InputRule|null[0]
+    abstract val message // io.github.vad4nus.lockstep.screens/InputRule.message|{}message[0]
+        abstract fun <get-message>(): kotlin/String // io.github.vad4nus.lockstep.screens/InputRule.message.<get-message>|<get-message>(){}[0]
+
+    final class MinLength : io.github.vad4nus.lockstep.screens/InputRule { // io.github.vad4nus.lockstep.screens/InputRule.MinLength|null[0]
+        constructor <init>(kotlin/Int, kotlin/String) // io.github.vad4nus.lockstep.screens/InputRule.MinLength.<init>|<init>(kotlin.Int;kotlin.String){}[0]
+
+        final val length // io.github.vad4nus.lockstep.screens/InputRule.MinLength.length|{}length[0]
+            final fun <get-length>(): kotlin/Int // io.github.vad4nus.lockstep.screens/InputRule.MinLength.length.<get-length>|<get-length>(){}[0]
+        final val message // io.github.vad4nus.lockstep.screens/InputRule.MinLength.message|{}message[0]
+            final fun <get-message>(): kotlin/String // io.github.vad4nus.lockstep.screens/InputRule.MinLength.message.<get-message>|<get-message>(){}[0]
+
+        final fun component1(): kotlin/Int // io.github.vad4nus.lockstep.screens/InputRule.MinLength.component1|component1(){}[0]
+        final fun component2(): kotlin/String // io.github.vad4nus.lockstep.screens/InputRule.MinLength.component2|component2(){}[0]
+        final fun copy(kotlin/Int = ..., kotlin/String = ...): io.github.vad4nus.lockstep.screens/InputRule.MinLength // io.github.vad4nus.lockstep.screens/InputRule.MinLength.copy|copy(kotlin.Int;kotlin.String){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/InputRule.MinLength.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/InputRule.MinLength.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/InputRule.MinLength.toString|toString(){}[0]
+
+        final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/InputRule.MinLength> { // io.github.vad4nus.lockstep.screens/InputRule.MinLength.$serializer|null[0]
+            final val descriptor // io.github.vad4nus.lockstep.screens/InputRule.MinLength.$serializer.descriptor|{}descriptor[0]
+                final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/InputRule.MinLength.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+            final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/InputRule.MinLength.$serializer.childSerializers|childSerializers(){}[0]
+            final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/InputRule.MinLength // io.github.vad4nus.lockstep.screens/InputRule.MinLength.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+            final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/InputRule.MinLength) // io.github.vad4nus.lockstep.screens/InputRule.MinLength.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.InputRule.MinLength){}[0]
+        }
+
+        final object Companion { // io.github.vad4nus.lockstep.screens/InputRule.MinLength.Companion|null[0]
+            final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/InputRule.MinLength> // io.github.vad4nus.lockstep.screens/InputRule.MinLength.Companion.serializer|serializer(){}[0]
+        }
+    }
+
+    final class Pattern : io.github.vad4nus.lockstep.screens/InputRule { // io.github.vad4nus.lockstep.screens/InputRule.Pattern|null[0]
+        constructor <init>(kotlin/String, kotlin/String) // io.github.vad4nus.lockstep.screens/InputRule.Pattern.<init>|<init>(kotlin.String;kotlin.String){}[0]
+
+        final val message // io.github.vad4nus.lockstep.screens/InputRule.Pattern.message|{}message[0]
+            final fun <get-message>(): kotlin/String // io.github.vad4nus.lockstep.screens/InputRule.Pattern.message.<get-message>|<get-message>(){}[0]
+        final val regex // io.github.vad4nus.lockstep.screens/InputRule.Pattern.regex|{}regex[0]
+            final fun <get-regex>(): kotlin/String // io.github.vad4nus.lockstep.screens/InputRule.Pattern.regex.<get-regex>|<get-regex>(){}[0]
+
+        final fun component1(): kotlin/String // io.github.vad4nus.lockstep.screens/InputRule.Pattern.component1|component1(){}[0]
+        final fun component2(): kotlin/String // io.github.vad4nus.lockstep.screens/InputRule.Pattern.component2|component2(){}[0]
+        final fun copy(kotlin/String = ..., kotlin/String = ...): io.github.vad4nus.lockstep.screens/InputRule.Pattern // io.github.vad4nus.lockstep.screens/InputRule.Pattern.copy|copy(kotlin.String;kotlin.String){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/InputRule.Pattern.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/InputRule.Pattern.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/InputRule.Pattern.toString|toString(){}[0]
+
+        final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/InputRule.Pattern> { // io.github.vad4nus.lockstep.screens/InputRule.Pattern.$serializer|null[0]
+            final val descriptor // io.github.vad4nus.lockstep.screens/InputRule.Pattern.$serializer.descriptor|{}descriptor[0]
+                final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/InputRule.Pattern.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+            final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/InputRule.Pattern.$serializer.childSerializers|childSerializers(){}[0]
+            final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/InputRule.Pattern // io.github.vad4nus.lockstep.screens/InputRule.Pattern.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+            final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/InputRule.Pattern) // io.github.vad4nus.lockstep.screens/InputRule.Pattern.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.InputRule.Pattern){}[0]
+        }
+
+        final object Companion { // io.github.vad4nus.lockstep.screens/InputRule.Pattern.Companion|null[0]
+            final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/InputRule.Pattern> // io.github.vad4nus.lockstep.screens/InputRule.Pattern.Companion.serializer|serializer(){}[0]
+        }
+    }
+
+    final class Required : io.github.vad4nus.lockstep.screens/InputRule { // io.github.vad4nus.lockstep.screens/InputRule.Required|null[0]
+        constructor <init>(kotlin/String) // io.github.vad4nus.lockstep.screens/InputRule.Required.<init>|<init>(kotlin.String){}[0]
+
+        final val message // io.github.vad4nus.lockstep.screens/InputRule.Required.message|{}message[0]
+            final fun <get-message>(): kotlin/String // io.github.vad4nus.lockstep.screens/InputRule.Required.message.<get-message>|<get-message>(){}[0]
+
+        final fun component1(): kotlin/String // io.github.vad4nus.lockstep.screens/InputRule.Required.component1|component1(){}[0]
+        final fun copy(kotlin/String = ...): io.github.vad4nus.lockstep.screens/InputRule.Required // io.github.vad4nus.lockstep.screens/InputRule.Required.copy|copy(kotlin.String){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/InputRule.Required.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/InputRule.Required.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/InputRule.Required.toString|toString(){}[0]
+
+        final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/InputRule.Required> { // io.github.vad4nus.lockstep.screens/InputRule.Required.$serializer|null[0]
+            final val descriptor // io.github.vad4nus.lockstep.screens/InputRule.Required.$serializer.descriptor|{}descriptor[0]
+                final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/InputRule.Required.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+            final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/InputRule.Required.$serializer.childSerializers|childSerializers(){}[0]
+            final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/InputRule.Required // io.github.vad4nus.lockstep.screens/InputRule.Required.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+            final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/InputRule.Required) // io.github.vad4nus.lockstep.screens/InputRule.Required.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.InputRule.Required){}[0]
+        }
+
+        final object Companion { // io.github.vad4nus.lockstep.screens/InputRule.Required.Companion|null[0]
+            final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/InputRule.Required> // io.github.vad4nus.lockstep.screens/InputRule.Required.Companion.serializer|serializer(){}[0]
+        }
+    }
+
+    final class Unknown : io.github.vad4nus.lockstep.screens/InputRule { // io.github.vad4nus.lockstep.screens/InputRule.Unknown|null[0]
+        constructor <init>(kotlin/String = ...) // io.github.vad4nus.lockstep.screens/InputRule.Unknown.<init>|<init>(kotlin.String){}[0]
+
+        final val message // io.github.vad4nus.lockstep.screens/InputRule.Unknown.message|{}message[0]
+            final fun <get-message>(): kotlin/String // io.github.vad4nus.lockstep.screens/InputRule.Unknown.message.<get-message>|<get-message>(){}[0]
+
+        final fun component1(): kotlin/String // io.github.vad4nus.lockstep.screens/InputRule.Unknown.component1|component1(){}[0]
+        final fun copy(kotlin/String = ...): io.github.vad4nus.lockstep.screens/InputRule.Unknown // io.github.vad4nus.lockstep.screens/InputRule.Unknown.copy|copy(kotlin.String){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/InputRule.Unknown.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/InputRule.Unknown.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/InputRule.Unknown.toString|toString(){}[0]
+
+        final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/InputRule.Unknown> { // io.github.vad4nus.lockstep.screens/InputRule.Unknown.$serializer|null[0]
+            final val descriptor // io.github.vad4nus.lockstep.screens/InputRule.Unknown.$serializer.descriptor|{}descriptor[0]
+                final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/InputRule.Unknown.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+            final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/InputRule.Unknown.$serializer.childSerializers|childSerializers(){}[0]
+            final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/InputRule.Unknown // io.github.vad4nus.lockstep.screens/InputRule.Unknown.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+            final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/InputRule.Unknown) // io.github.vad4nus.lockstep.screens/InputRule.Unknown.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.InputRule.Unknown){}[0]
+        }
+
+        final object Companion { // io.github.vad4nus.lockstep.screens/InputRule.Unknown.Companion|null[0]
+            final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/InputRule.Unknown> // io.github.vad4nus.lockstep.screens/InputRule.Unknown.Companion.serializer|serializer(){}[0]
+        }
+    }
+
+    final object Companion : kotlinx.serialization.internal/SerializerFactory { // io.github.vad4nus.lockstep.screens/InputRule.Companion|null[0]
+        final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/InputRule> // io.github.vad4nus.lockstep.screens/InputRule.Companion.serializer|serializer(){}[0]
+        final fun serializer(kotlin/Array<out kotlinx.serialization/KSerializer<*>>...): kotlinx.serialization/KSerializer<*> // io.github.vad4nus.lockstep.screens/InputRule.Companion.serializer|serializer(kotlin.Array<out|kotlinx.serialization.KSerializer<*>>...){}[0]
+    }
+}
+
+sealed interface io.github.vad4nus.lockstep.screens/Node { // io.github.vad4nus.lockstep.screens/Node|null[0]
+    abstract val a11y // io.github.vad4nus.lockstep.screens/Node.a11y|{}a11y[0]
+        abstract fun <get-a11y>(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.a11y.<get-a11y>|<get-a11y>(){}[0]
+    abstract val id // io.github.vad4nus.lockstep.screens/Node.id|{}id[0]
+        abstract fun <get-id>(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.id.<get-id>|<get-id>(){}[0]
+    abstract val style // io.github.vad4nus.lockstep.screens/Node.style|{}style[0]
+        abstract fun <get-style>(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.style.<get-style>|<get-style>(){}[0]
+
+    final class Box : io.github.vad4nus.lockstep.screens/Node { // io.github.vad4nus.lockstep.screens/Node.Box|null[0]
+        constructor <init>(kotlin/String, kotlin.collections/List<io.github.vad4nus.lockstep.screens/Node>, io.github.vad4nus.lockstep.screens/NodeEvent? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...) // io.github.vad4nus.lockstep.screens/Node.Box.<init>|<init>(kotlin.String;kotlin.collections.List<io.github.vad4nus.lockstep.screens.Node>;io.github.vad4nus.lockstep.screens.NodeEvent?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+
+        final val a11y // io.github.vad4nus.lockstep.screens/Node.Box.a11y|{}a11y[0]
+            final fun <get-a11y>(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Box.a11y.<get-a11y>|<get-a11y>(){}[0]
+        final val children // io.github.vad4nus.lockstep.screens/Node.Box.children|{}children[0]
+            final fun <get-children>(): kotlin.collections/List<io.github.vad4nus.lockstep.screens/Node> // io.github.vad4nus.lockstep.screens/Node.Box.children.<get-children>|<get-children>(){}[0]
+        final val event // io.github.vad4nus.lockstep.screens/Node.Box.event|{}event[0]
+            final fun <get-event>(): io.github.vad4nus.lockstep.screens/NodeEvent? // io.github.vad4nus.lockstep.screens/Node.Box.event.<get-event>|<get-event>(){}[0]
+        final val id // io.github.vad4nus.lockstep.screens/Node.Box.id|{}id[0]
+            final fun <get-id>(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Box.id.<get-id>|<get-id>(){}[0]
+        final val style // io.github.vad4nus.lockstep.screens/Node.Box.style|{}style[0]
+            final fun <get-style>(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Box.style.<get-style>|<get-style>(){}[0]
+
+        final fun component1(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Box.component1|component1(){}[0]
+        final fun component2(): kotlin.collections/List<io.github.vad4nus.lockstep.screens/Node> // io.github.vad4nus.lockstep.screens/Node.Box.component2|component2(){}[0]
+        final fun component3(): io.github.vad4nus.lockstep.screens/NodeEvent? // io.github.vad4nus.lockstep.screens/Node.Box.component3|component3(){}[0]
+        final fun component4(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Box.component4|component4(){}[0]
+        final fun component5(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Box.component5|component5(){}[0]
+        final fun copy(kotlin/String = ..., kotlin.collections/List<io.github.vad4nus.lockstep.screens/Node> = ..., io.github.vad4nus.lockstep.screens/NodeEvent? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...): io.github.vad4nus.lockstep.screens/Node.Box // io.github.vad4nus.lockstep.screens/Node.Box.copy|copy(kotlin.String;kotlin.collections.List<io.github.vad4nus.lockstep.screens.Node>;io.github.vad4nus.lockstep.screens.NodeEvent?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/Node.Box.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/Node.Box.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Box.toString|toString(){}[0]
+
+        final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/Node.Box> { // io.github.vad4nus.lockstep.screens/Node.Box.$serializer|null[0]
+            final val descriptor // io.github.vad4nus.lockstep.screens/Node.Box.$serializer.descriptor|{}descriptor[0]
+                final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/Node.Box.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+            final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/Node.Box.$serializer.childSerializers|childSerializers(){}[0]
+            final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/Node.Box // io.github.vad4nus.lockstep.screens/Node.Box.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+            final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/Node.Box) // io.github.vad4nus.lockstep.screens/Node.Box.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.Node.Box){}[0]
+        }
+
+        final object Companion { // io.github.vad4nus.lockstep.screens/Node.Box.Companion|null[0]
+            final val $childSerializers // io.github.vad4nus.lockstep.screens/Node.Box.Companion.$childSerializers|{}$childSerializers[0]
+
+            final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/Node.Box> // io.github.vad4nus.lockstep.screens/Node.Box.Companion.serializer|serializer(){}[0]
+        }
+    }
+
+    final class Button : io.github.vad4nus.lockstep.screens/Node { // io.github.vad4nus.lockstep.screens/Node.Button|null[0]
+        constructor <init>(kotlin/String, kotlin/String, io.github.vad4nus.lockstep.screens/NodeEvent, io.github.vad4nus.lockstep.screens/ButtonVariant = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...) // io.github.vad4nus.lockstep.screens/Node.Button.<init>|<init>(kotlin.String;kotlin.String;io.github.vad4nus.lockstep.screens.NodeEvent;io.github.vad4nus.lockstep.screens.ButtonVariant;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+
+        final val a11y // io.github.vad4nus.lockstep.screens/Node.Button.a11y|{}a11y[0]
+            final fun <get-a11y>(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Button.a11y.<get-a11y>|<get-a11y>(){}[0]
+        final val event // io.github.vad4nus.lockstep.screens/Node.Button.event|{}event[0]
+            final fun <get-event>(): io.github.vad4nus.lockstep.screens/NodeEvent // io.github.vad4nus.lockstep.screens/Node.Button.event.<get-event>|<get-event>(){}[0]
+        final val id // io.github.vad4nus.lockstep.screens/Node.Button.id|{}id[0]
+            final fun <get-id>(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Button.id.<get-id>|<get-id>(){}[0]
+        final val label // io.github.vad4nus.lockstep.screens/Node.Button.label|{}label[0]
+            final fun <get-label>(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Button.label.<get-label>|<get-label>(){}[0]
+        final val style // io.github.vad4nus.lockstep.screens/Node.Button.style|{}style[0]
+            final fun <get-style>(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Button.style.<get-style>|<get-style>(){}[0]
+        final val variant // io.github.vad4nus.lockstep.screens/Node.Button.variant|{}variant[0]
+            final fun <get-variant>(): io.github.vad4nus.lockstep.screens/ButtonVariant // io.github.vad4nus.lockstep.screens/Node.Button.variant.<get-variant>|<get-variant>(){}[0]
+
+        final fun component1(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Button.component1|component1(){}[0]
+        final fun component2(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Button.component2|component2(){}[0]
+        final fun component3(): io.github.vad4nus.lockstep.screens/NodeEvent // io.github.vad4nus.lockstep.screens/Node.Button.component3|component3(){}[0]
+        final fun component4(): io.github.vad4nus.lockstep.screens/ButtonVariant // io.github.vad4nus.lockstep.screens/Node.Button.component4|component4(){}[0]
+        final fun component5(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Button.component5|component5(){}[0]
+        final fun component6(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Button.component6|component6(){}[0]
+        final fun copy(kotlin/String = ..., kotlin/String = ..., io.github.vad4nus.lockstep.screens/NodeEvent = ..., io.github.vad4nus.lockstep.screens/ButtonVariant = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...): io.github.vad4nus.lockstep.screens/Node.Button // io.github.vad4nus.lockstep.screens/Node.Button.copy|copy(kotlin.String;kotlin.String;io.github.vad4nus.lockstep.screens.NodeEvent;io.github.vad4nus.lockstep.screens.ButtonVariant;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/Node.Button.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/Node.Button.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Button.toString|toString(){}[0]
+
+        final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/Node.Button> { // io.github.vad4nus.lockstep.screens/Node.Button.$serializer|null[0]
+            final val descriptor // io.github.vad4nus.lockstep.screens/Node.Button.$serializer.descriptor|{}descriptor[0]
+                final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/Node.Button.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+            final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/Node.Button.$serializer.childSerializers|childSerializers(){}[0]
+            final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/Node.Button // io.github.vad4nus.lockstep.screens/Node.Button.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+            final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/Node.Button) // io.github.vad4nus.lockstep.screens/Node.Button.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.Node.Button){}[0]
+        }
+
+        final object Companion { // io.github.vad4nus.lockstep.screens/Node.Button.Companion|null[0]
+            final val $childSerializers // io.github.vad4nus.lockstep.screens/Node.Button.Companion.$childSerializers|{}$childSerializers[0]
+
+            final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/Node.Button> // io.github.vad4nus.lockstep.screens/Node.Button.Companion.serializer|serializer(){}[0]
+        }
+    }
+
+    final class Column : io.github.vad4nus.lockstep.screens/Node { // io.github.vad4nus.lockstep.screens/Node.Column|null[0]
+        constructor <init>(kotlin/String, kotlin.collections/List<io.github.vad4nus.lockstep.screens/Node>, io.github.vad4nus.lockstep.screens/Space? = ..., io.github.vad4nus.lockstep.screens/HAlign = ..., kotlin/Boolean = ..., io.github.vad4nus.lockstep.screens/NodeEvent? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...) // io.github.vad4nus.lockstep.screens/Node.Column.<init>|<init>(kotlin.String;kotlin.collections.List<io.github.vad4nus.lockstep.screens.Node>;io.github.vad4nus.lockstep.screens.Space?;io.github.vad4nus.lockstep.screens.HAlign;kotlin.Boolean;io.github.vad4nus.lockstep.screens.NodeEvent?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+
+        final val a11y // io.github.vad4nus.lockstep.screens/Node.Column.a11y|{}a11y[0]
+            final fun <get-a11y>(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Column.a11y.<get-a11y>|<get-a11y>(){}[0]
+        final val align // io.github.vad4nus.lockstep.screens/Node.Column.align|{}align[0]
+            final fun <get-align>(): io.github.vad4nus.lockstep.screens/HAlign // io.github.vad4nus.lockstep.screens/Node.Column.align.<get-align>|<get-align>(){}[0]
+        final val children // io.github.vad4nus.lockstep.screens/Node.Column.children|{}children[0]
+            final fun <get-children>(): kotlin.collections/List<io.github.vad4nus.lockstep.screens/Node> // io.github.vad4nus.lockstep.screens/Node.Column.children.<get-children>|<get-children>(){}[0]
+        final val event // io.github.vad4nus.lockstep.screens/Node.Column.event|{}event[0]
+            final fun <get-event>(): io.github.vad4nus.lockstep.screens/NodeEvent? // io.github.vad4nus.lockstep.screens/Node.Column.event.<get-event>|<get-event>(){}[0]
+        final val id // io.github.vad4nus.lockstep.screens/Node.Column.id|{}id[0]
+            final fun <get-id>(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Column.id.<get-id>|<get-id>(){}[0]
+        final val scroll // io.github.vad4nus.lockstep.screens/Node.Column.scroll|{}scroll[0]
+            final fun <get-scroll>(): kotlin/Boolean // io.github.vad4nus.lockstep.screens/Node.Column.scroll.<get-scroll>|<get-scroll>(){}[0]
+        final val spacing // io.github.vad4nus.lockstep.screens/Node.Column.spacing|{}spacing[0]
+            final fun <get-spacing>(): io.github.vad4nus.lockstep.screens/Space? // io.github.vad4nus.lockstep.screens/Node.Column.spacing.<get-spacing>|<get-spacing>(){}[0]
+        final val style // io.github.vad4nus.lockstep.screens/Node.Column.style|{}style[0]
+            final fun <get-style>(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Column.style.<get-style>|<get-style>(){}[0]
+
+        final fun component1(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Column.component1|component1(){}[0]
+        final fun component2(): kotlin.collections/List<io.github.vad4nus.lockstep.screens/Node> // io.github.vad4nus.lockstep.screens/Node.Column.component2|component2(){}[0]
+        final fun component3(): io.github.vad4nus.lockstep.screens/Space? // io.github.vad4nus.lockstep.screens/Node.Column.component3|component3(){}[0]
+        final fun component4(): io.github.vad4nus.lockstep.screens/HAlign // io.github.vad4nus.lockstep.screens/Node.Column.component4|component4(){}[0]
+        final fun component5(): kotlin/Boolean // io.github.vad4nus.lockstep.screens/Node.Column.component5|component5(){}[0]
+        final fun component6(): io.github.vad4nus.lockstep.screens/NodeEvent? // io.github.vad4nus.lockstep.screens/Node.Column.component6|component6(){}[0]
+        final fun component7(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Column.component7|component7(){}[0]
+        final fun component8(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Column.component8|component8(){}[0]
+        final fun copy(kotlin/String = ..., kotlin.collections/List<io.github.vad4nus.lockstep.screens/Node> = ..., io.github.vad4nus.lockstep.screens/Space? = ..., io.github.vad4nus.lockstep.screens/HAlign = ..., kotlin/Boolean = ..., io.github.vad4nus.lockstep.screens/NodeEvent? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...): io.github.vad4nus.lockstep.screens/Node.Column // io.github.vad4nus.lockstep.screens/Node.Column.copy|copy(kotlin.String;kotlin.collections.List<io.github.vad4nus.lockstep.screens.Node>;io.github.vad4nus.lockstep.screens.Space?;io.github.vad4nus.lockstep.screens.HAlign;kotlin.Boolean;io.github.vad4nus.lockstep.screens.NodeEvent?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/Node.Column.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/Node.Column.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Column.toString|toString(){}[0]
+
+        final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/Node.Column> { // io.github.vad4nus.lockstep.screens/Node.Column.$serializer|null[0]
+            final val descriptor // io.github.vad4nus.lockstep.screens/Node.Column.$serializer.descriptor|{}descriptor[0]
+                final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/Node.Column.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+            final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/Node.Column.$serializer.childSerializers|childSerializers(){}[0]
+            final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/Node.Column // io.github.vad4nus.lockstep.screens/Node.Column.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+            final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/Node.Column) // io.github.vad4nus.lockstep.screens/Node.Column.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.Node.Column){}[0]
+        }
+
+        final object Companion { // io.github.vad4nus.lockstep.screens/Node.Column.Companion|null[0]
+            final val $childSerializers // io.github.vad4nus.lockstep.screens/Node.Column.Companion.$childSerializers|{}$childSerializers[0]
+
+            final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/Node.Column> // io.github.vad4nus.lockstep.screens/Node.Column.Companion.serializer|serializer(){}[0]
+        }
+    }
+
+    final class Custom : io.github.vad4nus.lockstep.screens/Node { // io.github.vad4nus.lockstep.screens/Node.Custom|null[0]
+        constructor <init>(kotlin/String, kotlin/String, kotlin.collections/Map<kotlin/String, kotlin/String> = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...) // io.github.vad4nus.lockstep.screens/Node.Custom.<init>|<init>(kotlin.String;kotlin.String;kotlin.collections.Map<kotlin.String,kotlin.String>;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+
+        final val a11y // io.github.vad4nus.lockstep.screens/Node.Custom.a11y|{}a11y[0]
+            final fun <get-a11y>(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Custom.a11y.<get-a11y>|<get-a11y>(){}[0]
+        final val id // io.github.vad4nus.lockstep.screens/Node.Custom.id|{}id[0]
+            final fun <get-id>(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Custom.id.<get-id>|<get-id>(){}[0]
+        final val key // io.github.vad4nus.lockstep.screens/Node.Custom.key|{}key[0]
+            final fun <get-key>(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Custom.key.<get-key>|<get-key>(){}[0]
+        final val props // io.github.vad4nus.lockstep.screens/Node.Custom.props|{}props[0]
+            final fun <get-props>(): kotlin.collections/Map<kotlin/String, kotlin/String> // io.github.vad4nus.lockstep.screens/Node.Custom.props.<get-props>|<get-props>(){}[0]
+        final val style // io.github.vad4nus.lockstep.screens/Node.Custom.style|{}style[0]
+            final fun <get-style>(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Custom.style.<get-style>|<get-style>(){}[0]
+
+        final fun component1(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Custom.component1|component1(){}[0]
+        final fun component2(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Custom.component2|component2(){}[0]
+        final fun component3(): kotlin.collections/Map<kotlin/String, kotlin/String> // io.github.vad4nus.lockstep.screens/Node.Custom.component3|component3(){}[0]
+        final fun component4(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Custom.component4|component4(){}[0]
+        final fun component5(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Custom.component5|component5(){}[0]
+        final fun copy(kotlin/String = ..., kotlin/String = ..., kotlin.collections/Map<kotlin/String, kotlin/String> = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...): io.github.vad4nus.lockstep.screens/Node.Custom // io.github.vad4nus.lockstep.screens/Node.Custom.copy|copy(kotlin.String;kotlin.String;kotlin.collections.Map<kotlin.String,kotlin.String>;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/Node.Custom.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/Node.Custom.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Custom.toString|toString(){}[0]
+
+        final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/Node.Custom> { // io.github.vad4nus.lockstep.screens/Node.Custom.$serializer|null[0]
+            final val descriptor // io.github.vad4nus.lockstep.screens/Node.Custom.$serializer.descriptor|{}descriptor[0]
+                final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/Node.Custom.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+            final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/Node.Custom.$serializer.childSerializers|childSerializers(){}[0]
+            final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/Node.Custom // io.github.vad4nus.lockstep.screens/Node.Custom.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+            final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/Node.Custom) // io.github.vad4nus.lockstep.screens/Node.Custom.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.Node.Custom){}[0]
+        }
+
+        final object Companion { // io.github.vad4nus.lockstep.screens/Node.Custom.Companion|null[0]
+            final val $childSerializers // io.github.vad4nus.lockstep.screens/Node.Custom.Companion.$childSerializers|{}$childSerializers[0]
+
+            final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/Node.Custom> // io.github.vad4nus.lockstep.screens/Node.Custom.Companion.serializer|serializer(){}[0]
+        }
+    }
+
+    final class Image : io.github.vad4nus.lockstep.screens/Node { // io.github.vad4nus.lockstep.screens/Node.Image|null[0]
+        constructor <init>(kotlin/String, kotlin/String, kotlin/Int = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...) // io.github.vad4nus.lockstep.screens/Node.Image.<init>|<init>(kotlin.String;kotlin.String;kotlin.Int;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+
+        final val a11y // io.github.vad4nus.lockstep.screens/Node.Image.a11y|{}a11y[0]
+            final fun <get-a11y>(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Image.a11y.<get-a11y>|<get-a11y>(){}[0]
+        final val id // io.github.vad4nus.lockstep.screens/Node.Image.id|{}id[0]
+            final fun <get-id>(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Image.id.<get-id>|<get-id>(){}[0]
+        final val name // io.github.vad4nus.lockstep.screens/Node.Image.name|{}name[0]
+            final fun <get-name>(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Image.name.<get-name>|<get-name>(){}[0]
+        final val size // io.github.vad4nus.lockstep.screens/Node.Image.size|{}size[0]
+            final fun <get-size>(): kotlin/Int // io.github.vad4nus.lockstep.screens/Node.Image.size.<get-size>|<get-size>(){}[0]
+        final val style // io.github.vad4nus.lockstep.screens/Node.Image.style|{}style[0]
+            final fun <get-style>(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Image.style.<get-style>|<get-style>(){}[0]
+
+        final fun component1(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Image.component1|component1(){}[0]
+        final fun component2(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Image.component2|component2(){}[0]
+        final fun component3(): kotlin/Int // io.github.vad4nus.lockstep.screens/Node.Image.component3|component3(){}[0]
+        final fun component4(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Image.component4|component4(){}[0]
+        final fun component5(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Image.component5|component5(){}[0]
+        final fun copy(kotlin/String = ..., kotlin/String = ..., kotlin/Int = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...): io.github.vad4nus.lockstep.screens/Node.Image // io.github.vad4nus.lockstep.screens/Node.Image.copy|copy(kotlin.String;kotlin.String;kotlin.Int;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/Node.Image.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/Node.Image.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Image.toString|toString(){}[0]
+
+        final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/Node.Image> { // io.github.vad4nus.lockstep.screens/Node.Image.$serializer|null[0]
+            final val descriptor // io.github.vad4nus.lockstep.screens/Node.Image.$serializer.descriptor|{}descriptor[0]
+                final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/Node.Image.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+            final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/Node.Image.$serializer.childSerializers|childSerializers(){}[0]
+            final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/Node.Image // io.github.vad4nus.lockstep.screens/Node.Image.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+            final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/Node.Image) // io.github.vad4nus.lockstep.screens/Node.Image.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.Node.Image){}[0]
+        }
+
+        final object Companion { // io.github.vad4nus.lockstep.screens/Node.Image.Companion|null[0]
+            final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/Node.Image> // io.github.vad4nus.lockstep.screens/Node.Image.Companion.serializer|serializer(){}[0]
+        }
+    }
+
+    final class Input : io.github.vad4nus.lockstep.screens/Node { // io.github.vad4nus.lockstep.screens/Node.Input|null[0]
+        constructor <init>(kotlin/String, kotlin/String, kotlin/String, io.github.vad4nus.lockstep.screens/InputKind = ..., kotlin.collections/List<io.github.vad4nus.lockstep.screens/InputRule> = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...) // io.github.vad4nus.lockstep.screens/Node.Input.<init>|<init>(kotlin.String;kotlin.String;kotlin.String;io.github.vad4nus.lockstep.screens.InputKind;kotlin.collections.List<io.github.vad4nus.lockstep.screens.InputRule>;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+
+        final val a11y // io.github.vad4nus.lockstep.screens/Node.Input.a11y|{}a11y[0]
+            final fun <get-a11y>(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Input.a11y.<get-a11y>|<get-a11y>(){}[0]
+        final val field // io.github.vad4nus.lockstep.screens/Node.Input.field|{}field[0]
+            final fun <get-field>(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Input.field.<get-field>|<get-field>(){}[0]
+        final val id // io.github.vad4nus.lockstep.screens/Node.Input.id|{}id[0]
+            final fun <get-id>(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Input.id.<get-id>|<get-id>(){}[0]
+        final val kind // io.github.vad4nus.lockstep.screens/Node.Input.kind|{}kind[0]
+            final fun <get-kind>(): io.github.vad4nus.lockstep.screens/InputKind // io.github.vad4nus.lockstep.screens/Node.Input.kind.<get-kind>|<get-kind>(){}[0]
+        final val label // io.github.vad4nus.lockstep.screens/Node.Input.label|{}label[0]
+            final fun <get-label>(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Input.label.<get-label>|<get-label>(){}[0]
+        final val rules // io.github.vad4nus.lockstep.screens/Node.Input.rules|{}rules[0]
+            final fun <get-rules>(): kotlin.collections/List<io.github.vad4nus.lockstep.screens/InputRule> // io.github.vad4nus.lockstep.screens/Node.Input.rules.<get-rules>|<get-rules>(){}[0]
+        final val style // io.github.vad4nus.lockstep.screens/Node.Input.style|{}style[0]
+            final fun <get-style>(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Input.style.<get-style>|<get-style>(){}[0]
+
+        final fun component1(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Input.component1|component1(){}[0]
+        final fun component2(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Input.component2|component2(){}[0]
+        final fun component3(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Input.component3|component3(){}[0]
+        final fun component4(): io.github.vad4nus.lockstep.screens/InputKind // io.github.vad4nus.lockstep.screens/Node.Input.component4|component4(){}[0]
+        final fun component5(): kotlin.collections/List<io.github.vad4nus.lockstep.screens/InputRule> // io.github.vad4nus.lockstep.screens/Node.Input.component5|component5(){}[0]
+        final fun component6(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Input.component6|component6(){}[0]
+        final fun component7(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Input.component7|component7(){}[0]
+        final fun copy(kotlin/String = ..., kotlin/String = ..., kotlin/String = ..., io.github.vad4nus.lockstep.screens/InputKind = ..., kotlin.collections/List<io.github.vad4nus.lockstep.screens/InputRule> = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...): io.github.vad4nus.lockstep.screens/Node.Input // io.github.vad4nus.lockstep.screens/Node.Input.copy|copy(kotlin.String;kotlin.String;kotlin.String;io.github.vad4nus.lockstep.screens.InputKind;kotlin.collections.List<io.github.vad4nus.lockstep.screens.InputRule>;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/Node.Input.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/Node.Input.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Input.toString|toString(){}[0]
+
+        final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/Node.Input> { // io.github.vad4nus.lockstep.screens/Node.Input.$serializer|null[0]
+            final val descriptor // io.github.vad4nus.lockstep.screens/Node.Input.$serializer.descriptor|{}descriptor[0]
+                final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/Node.Input.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+            final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/Node.Input.$serializer.childSerializers|childSerializers(){}[0]
+            final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/Node.Input // io.github.vad4nus.lockstep.screens/Node.Input.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+            final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/Node.Input) // io.github.vad4nus.lockstep.screens/Node.Input.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.Node.Input){}[0]
+        }
+
+        final object Companion { // io.github.vad4nus.lockstep.screens/Node.Input.Companion|null[0]
+            final val $childSerializers // io.github.vad4nus.lockstep.screens/Node.Input.Companion.$childSerializers|{}$childSerializers[0]
+
+            final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/Node.Input> // io.github.vad4nus.lockstep.screens/Node.Input.Companion.serializer|serializer(){}[0]
+        }
+    }
+
+    final class LazyList : io.github.vad4nus.lockstep.screens/Node { // io.github.vad4nus.lockstep.screens/Node.LazyList|null[0]
+        constructor <init>(kotlin/String, kotlin.collections/List<io.github.vad4nus.lockstep.screens/Node>, io.github.vad4nus.lockstep.screens/ListAxis = ..., io.github.vad4nus.lockstep.screens/Space? = ..., kotlin/Int? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...) // io.github.vad4nus.lockstep.screens/Node.LazyList.<init>|<init>(kotlin.String;kotlin.collections.List<io.github.vad4nus.lockstep.screens.Node>;io.github.vad4nus.lockstep.screens.ListAxis;io.github.vad4nus.lockstep.screens.Space?;kotlin.Int?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+
+        final val a11y // io.github.vad4nus.lockstep.screens/Node.LazyList.a11y|{}a11y[0]
+            final fun <get-a11y>(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.LazyList.a11y.<get-a11y>|<get-a11y>(){}[0]
+        final val axis // io.github.vad4nus.lockstep.screens/Node.LazyList.axis|{}axis[0]
+            final fun <get-axis>(): io.github.vad4nus.lockstep.screens/ListAxis // io.github.vad4nus.lockstep.screens/Node.LazyList.axis.<get-axis>|<get-axis>(){}[0]
+        final val id // io.github.vad4nus.lockstep.screens/Node.LazyList.id|{}id[0]
+            final fun <get-id>(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.LazyList.id.<get-id>|<get-id>(){}[0]
+        final val items // io.github.vad4nus.lockstep.screens/Node.LazyList.items|{}items[0]
+            final fun <get-items>(): kotlin.collections/List<io.github.vad4nus.lockstep.screens/Node> // io.github.vad4nus.lockstep.screens/Node.LazyList.items.<get-items>|<get-items>(){}[0]
+        final val size // io.github.vad4nus.lockstep.screens/Node.LazyList.size|{}size[0]
+            final fun <get-size>(): kotlin/Int? // io.github.vad4nus.lockstep.screens/Node.LazyList.size.<get-size>|<get-size>(){}[0]
+        final val spacing // io.github.vad4nus.lockstep.screens/Node.LazyList.spacing|{}spacing[0]
+            final fun <get-spacing>(): io.github.vad4nus.lockstep.screens/Space? // io.github.vad4nus.lockstep.screens/Node.LazyList.spacing.<get-spacing>|<get-spacing>(){}[0]
+        final val style // io.github.vad4nus.lockstep.screens/Node.LazyList.style|{}style[0]
+            final fun <get-style>(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.LazyList.style.<get-style>|<get-style>(){}[0]
+
+        final fun component1(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.LazyList.component1|component1(){}[0]
+        final fun component2(): kotlin.collections/List<io.github.vad4nus.lockstep.screens/Node> // io.github.vad4nus.lockstep.screens/Node.LazyList.component2|component2(){}[0]
+        final fun component3(): io.github.vad4nus.lockstep.screens/ListAxis // io.github.vad4nus.lockstep.screens/Node.LazyList.component3|component3(){}[0]
+        final fun component4(): io.github.vad4nus.lockstep.screens/Space? // io.github.vad4nus.lockstep.screens/Node.LazyList.component4|component4(){}[0]
+        final fun component5(): kotlin/Int? // io.github.vad4nus.lockstep.screens/Node.LazyList.component5|component5(){}[0]
+        final fun component6(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.LazyList.component6|component6(){}[0]
+        final fun component7(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.LazyList.component7|component7(){}[0]
+        final fun copy(kotlin/String = ..., kotlin.collections/List<io.github.vad4nus.lockstep.screens/Node> = ..., io.github.vad4nus.lockstep.screens/ListAxis = ..., io.github.vad4nus.lockstep.screens/Space? = ..., kotlin/Int? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...): io.github.vad4nus.lockstep.screens/Node.LazyList // io.github.vad4nus.lockstep.screens/Node.LazyList.copy|copy(kotlin.String;kotlin.collections.List<io.github.vad4nus.lockstep.screens.Node>;io.github.vad4nus.lockstep.screens.ListAxis;io.github.vad4nus.lockstep.screens.Space?;kotlin.Int?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/Node.LazyList.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/Node.LazyList.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.LazyList.toString|toString(){}[0]
+
+        final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/Node.LazyList> { // io.github.vad4nus.lockstep.screens/Node.LazyList.$serializer|null[0]
+            final val descriptor // io.github.vad4nus.lockstep.screens/Node.LazyList.$serializer.descriptor|{}descriptor[0]
+                final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/Node.LazyList.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+            final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/Node.LazyList.$serializer.childSerializers|childSerializers(){}[0]
+            final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/Node.LazyList // io.github.vad4nus.lockstep.screens/Node.LazyList.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+            final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/Node.LazyList) // io.github.vad4nus.lockstep.screens/Node.LazyList.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.Node.LazyList){}[0]
+        }
+
+        final object Companion { // io.github.vad4nus.lockstep.screens/Node.LazyList.Companion|null[0]
+            final val $childSerializers // io.github.vad4nus.lockstep.screens/Node.LazyList.Companion.$childSerializers|{}$childSerializers[0]
+
+            final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/Node.LazyList> // io.github.vad4nus.lockstep.screens/Node.LazyList.Companion.serializer|serializer(){}[0]
+        }
+    }
+
+    final class Row : io.github.vad4nus.lockstep.screens/Node { // io.github.vad4nus.lockstep.screens/Node.Row|null[0]
+        constructor <init>(kotlin/String, kotlin.collections/List<io.github.vad4nus.lockstep.screens/Node>, io.github.vad4nus.lockstep.screens/Space? = ..., io.github.vad4nus.lockstep.screens/VAlign = ..., kotlin/Boolean = ..., io.github.vad4nus.lockstep.screens/NodeEvent? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...) // io.github.vad4nus.lockstep.screens/Node.Row.<init>|<init>(kotlin.String;kotlin.collections.List<io.github.vad4nus.lockstep.screens.Node>;io.github.vad4nus.lockstep.screens.Space?;io.github.vad4nus.lockstep.screens.VAlign;kotlin.Boolean;io.github.vad4nus.lockstep.screens.NodeEvent?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+
+        final val a11y // io.github.vad4nus.lockstep.screens/Node.Row.a11y|{}a11y[0]
+            final fun <get-a11y>(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Row.a11y.<get-a11y>|<get-a11y>(){}[0]
+        final val align // io.github.vad4nus.lockstep.screens/Node.Row.align|{}align[0]
+            final fun <get-align>(): io.github.vad4nus.lockstep.screens/VAlign // io.github.vad4nus.lockstep.screens/Node.Row.align.<get-align>|<get-align>(){}[0]
+        final val children // io.github.vad4nus.lockstep.screens/Node.Row.children|{}children[0]
+            final fun <get-children>(): kotlin.collections/List<io.github.vad4nus.lockstep.screens/Node> // io.github.vad4nus.lockstep.screens/Node.Row.children.<get-children>|<get-children>(){}[0]
+        final val event // io.github.vad4nus.lockstep.screens/Node.Row.event|{}event[0]
+            final fun <get-event>(): io.github.vad4nus.lockstep.screens/NodeEvent? // io.github.vad4nus.lockstep.screens/Node.Row.event.<get-event>|<get-event>(){}[0]
+        final val id // io.github.vad4nus.lockstep.screens/Node.Row.id|{}id[0]
+            final fun <get-id>(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Row.id.<get-id>|<get-id>(){}[0]
+        final val scroll // io.github.vad4nus.lockstep.screens/Node.Row.scroll|{}scroll[0]
+            final fun <get-scroll>(): kotlin/Boolean // io.github.vad4nus.lockstep.screens/Node.Row.scroll.<get-scroll>|<get-scroll>(){}[0]
+        final val spacing // io.github.vad4nus.lockstep.screens/Node.Row.spacing|{}spacing[0]
+            final fun <get-spacing>(): io.github.vad4nus.lockstep.screens/Space? // io.github.vad4nus.lockstep.screens/Node.Row.spacing.<get-spacing>|<get-spacing>(){}[0]
+        final val style // io.github.vad4nus.lockstep.screens/Node.Row.style|{}style[0]
+            final fun <get-style>(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Row.style.<get-style>|<get-style>(){}[0]
+
+        final fun component1(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Row.component1|component1(){}[0]
+        final fun component2(): kotlin.collections/List<io.github.vad4nus.lockstep.screens/Node> // io.github.vad4nus.lockstep.screens/Node.Row.component2|component2(){}[0]
+        final fun component3(): io.github.vad4nus.lockstep.screens/Space? // io.github.vad4nus.lockstep.screens/Node.Row.component3|component3(){}[0]
+        final fun component4(): io.github.vad4nus.lockstep.screens/VAlign // io.github.vad4nus.lockstep.screens/Node.Row.component4|component4(){}[0]
+        final fun component5(): kotlin/Boolean // io.github.vad4nus.lockstep.screens/Node.Row.component5|component5(){}[0]
+        final fun component6(): io.github.vad4nus.lockstep.screens/NodeEvent? // io.github.vad4nus.lockstep.screens/Node.Row.component6|component6(){}[0]
+        final fun component7(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Row.component7|component7(){}[0]
+        final fun component8(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Row.component8|component8(){}[0]
+        final fun copy(kotlin/String = ..., kotlin.collections/List<io.github.vad4nus.lockstep.screens/Node> = ..., io.github.vad4nus.lockstep.screens/Space? = ..., io.github.vad4nus.lockstep.screens/VAlign = ..., kotlin/Boolean = ..., io.github.vad4nus.lockstep.screens/NodeEvent? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...): io.github.vad4nus.lockstep.screens/Node.Row // io.github.vad4nus.lockstep.screens/Node.Row.copy|copy(kotlin.String;kotlin.collections.List<io.github.vad4nus.lockstep.screens.Node>;io.github.vad4nus.lockstep.screens.Space?;io.github.vad4nus.lockstep.screens.VAlign;kotlin.Boolean;io.github.vad4nus.lockstep.screens.NodeEvent?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/Node.Row.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/Node.Row.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Row.toString|toString(){}[0]
+
+        final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/Node.Row> { // io.github.vad4nus.lockstep.screens/Node.Row.$serializer|null[0]
+            final val descriptor // io.github.vad4nus.lockstep.screens/Node.Row.$serializer.descriptor|{}descriptor[0]
+                final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/Node.Row.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+            final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/Node.Row.$serializer.childSerializers|childSerializers(){}[0]
+            final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/Node.Row // io.github.vad4nus.lockstep.screens/Node.Row.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+            final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/Node.Row) // io.github.vad4nus.lockstep.screens/Node.Row.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.Node.Row){}[0]
+        }
+
+        final object Companion { // io.github.vad4nus.lockstep.screens/Node.Row.Companion|null[0]
+            final val $childSerializers // io.github.vad4nus.lockstep.screens/Node.Row.Companion.$childSerializers|{}$childSerializers[0]
+
+            final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/Node.Row> // io.github.vad4nus.lockstep.screens/Node.Row.Companion.serializer|serializer(){}[0]
+        }
+    }
+
+    final class Spacer : io.github.vad4nus.lockstep.screens/Node { // io.github.vad4nus.lockstep.screens/Node.Spacer|null[0]
+        constructor <init>(kotlin/String, io.github.vad4nus.lockstep.screens/Space? = ..., kotlin/Boolean = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...) // io.github.vad4nus.lockstep.screens/Node.Spacer.<init>|<init>(kotlin.String;io.github.vad4nus.lockstep.screens.Space?;kotlin.Boolean;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+
+        final val a11y // io.github.vad4nus.lockstep.screens/Node.Spacer.a11y|{}a11y[0]
+            final fun <get-a11y>(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Spacer.a11y.<get-a11y>|<get-a11y>(){}[0]
+        final val flexible // io.github.vad4nus.lockstep.screens/Node.Spacer.flexible|{}flexible[0]
+            final fun <get-flexible>(): kotlin/Boolean // io.github.vad4nus.lockstep.screens/Node.Spacer.flexible.<get-flexible>|<get-flexible>(){}[0]
+        final val id // io.github.vad4nus.lockstep.screens/Node.Spacer.id|{}id[0]
+            final fun <get-id>(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Spacer.id.<get-id>|<get-id>(){}[0]
+        final val size // io.github.vad4nus.lockstep.screens/Node.Spacer.size|{}size[0]
+            final fun <get-size>(): io.github.vad4nus.lockstep.screens/Space? // io.github.vad4nus.lockstep.screens/Node.Spacer.size.<get-size>|<get-size>(){}[0]
+        final val style // io.github.vad4nus.lockstep.screens/Node.Spacer.style|{}style[0]
+            final fun <get-style>(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Spacer.style.<get-style>|<get-style>(){}[0]
+
+        final fun component1(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Spacer.component1|component1(){}[0]
+        final fun component2(): io.github.vad4nus.lockstep.screens/Space? // io.github.vad4nus.lockstep.screens/Node.Spacer.component2|component2(){}[0]
+        final fun component3(): kotlin/Boolean // io.github.vad4nus.lockstep.screens/Node.Spacer.component3|component3(){}[0]
+        final fun component4(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Spacer.component4|component4(){}[0]
+        final fun component5(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Spacer.component5|component5(){}[0]
+        final fun copy(kotlin/String = ..., io.github.vad4nus.lockstep.screens/Space? = ..., kotlin/Boolean = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...): io.github.vad4nus.lockstep.screens/Node.Spacer // io.github.vad4nus.lockstep.screens/Node.Spacer.copy|copy(kotlin.String;io.github.vad4nus.lockstep.screens.Space?;kotlin.Boolean;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/Node.Spacer.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/Node.Spacer.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Spacer.toString|toString(){}[0]
+
+        final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/Node.Spacer> { // io.github.vad4nus.lockstep.screens/Node.Spacer.$serializer|null[0]
+            final val descriptor // io.github.vad4nus.lockstep.screens/Node.Spacer.$serializer.descriptor|{}descriptor[0]
+                final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/Node.Spacer.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+            final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/Node.Spacer.$serializer.childSerializers|childSerializers(){}[0]
+            final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/Node.Spacer // io.github.vad4nus.lockstep.screens/Node.Spacer.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+            final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/Node.Spacer) // io.github.vad4nus.lockstep.screens/Node.Spacer.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.Node.Spacer){}[0]
+        }
+
+        final object Companion { // io.github.vad4nus.lockstep.screens/Node.Spacer.Companion|null[0]
+            final val $childSerializers // io.github.vad4nus.lockstep.screens/Node.Spacer.Companion.$childSerializers|{}$childSerializers[0]
+
+            final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/Node.Spacer> // io.github.vad4nus.lockstep.screens/Node.Spacer.Companion.serializer|serializer(){}[0]
+        }
+    }
+
+    final class Text : io.github.vad4nus.lockstep.screens/Node { // io.github.vad4nus.lockstep.screens/Node.Text|null[0]
+        constructor <init>(kotlin/String, kotlin/String, io.github.vad4nus.lockstep.screens/TextStyleToken = ..., io.github.vad4nus.lockstep.screens/ColorToken? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...) // io.github.vad4nus.lockstep.screens/Node.Text.<init>|<init>(kotlin.String;kotlin.String;io.github.vad4nus.lockstep.screens.TextStyleToken;io.github.vad4nus.lockstep.screens.ColorToken?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+
+        final val a11y // io.github.vad4nus.lockstep.screens/Node.Text.a11y|{}a11y[0]
+            final fun <get-a11y>(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Text.a11y.<get-a11y>|<get-a11y>(){}[0]
+        final val color // io.github.vad4nus.lockstep.screens/Node.Text.color|{}color[0]
+            final fun <get-color>(): io.github.vad4nus.lockstep.screens/ColorToken? // io.github.vad4nus.lockstep.screens/Node.Text.color.<get-color>|<get-color>(){}[0]
+        final val id // io.github.vad4nus.lockstep.screens/Node.Text.id|{}id[0]
+            final fun <get-id>(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Text.id.<get-id>|<get-id>(){}[0]
+        final val style // io.github.vad4nus.lockstep.screens/Node.Text.style|{}style[0]
+            final fun <get-style>(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Text.style.<get-style>|<get-style>(){}[0]
+        final val text // io.github.vad4nus.lockstep.screens/Node.Text.text|{}text[0]
+            final fun <get-text>(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Text.text.<get-text>|<get-text>(){}[0]
+        final val textStyle // io.github.vad4nus.lockstep.screens/Node.Text.textStyle|{}textStyle[0]
+            final fun <get-textStyle>(): io.github.vad4nus.lockstep.screens/TextStyleToken // io.github.vad4nus.lockstep.screens/Node.Text.textStyle.<get-textStyle>|<get-textStyle>(){}[0]
+
+        final fun component1(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Text.component1|component1(){}[0]
+        final fun component2(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Text.component2|component2(){}[0]
+        final fun component3(): io.github.vad4nus.lockstep.screens/TextStyleToken // io.github.vad4nus.lockstep.screens/Node.Text.component3|component3(){}[0]
+        final fun component4(): io.github.vad4nus.lockstep.screens/ColorToken? // io.github.vad4nus.lockstep.screens/Node.Text.component4|component4(){}[0]
+        final fun component5(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Text.component5|component5(){}[0]
+        final fun component6(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Text.component6|component6(){}[0]
+        final fun copy(kotlin/String = ..., kotlin/String = ..., io.github.vad4nus.lockstep.screens/TextStyleToken = ..., io.github.vad4nus.lockstep.screens/ColorToken? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...): io.github.vad4nus.lockstep.screens/Node.Text // io.github.vad4nus.lockstep.screens/Node.Text.copy|copy(kotlin.String;kotlin.String;io.github.vad4nus.lockstep.screens.TextStyleToken;io.github.vad4nus.lockstep.screens.ColorToken?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/Node.Text.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/Node.Text.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Text.toString|toString(){}[0]
+
+        final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/Node.Text> { // io.github.vad4nus.lockstep.screens/Node.Text.$serializer|null[0]
+            final val descriptor // io.github.vad4nus.lockstep.screens/Node.Text.$serializer.descriptor|{}descriptor[0]
+                final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/Node.Text.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+            final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/Node.Text.$serializer.childSerializers|childSerializers(){}[0]
+            final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/Node.Text // io.github.vad4nus.lockstep.screens/Node.Text.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+            final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/Node.Text) // io.github.vad4nus.lockstep.screens/Node.Text.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.Node.Text){}[0]
+        }
+
+        final object Companion { // io.github.vad4nus.lockstep.screens/Node.Text.Companion|null[0]
+            final val $childSerializers // io.github.vad4nus.lockstep.screens/Node.Text.Companion.$childSerializers|{}$childSerializers[0]
+
+            final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/Node.Text> // io.github.vad4nus.lockstep.screens/Node.Text.Companion.serializer|serializer(){}[0]
+        }
+    }
+
+    final class Toggle : io.github.vad4nus.lockstep.screens/Node { // io.github.vad4nus.lockstep.screens/Node.Toggle|null[0]
+        constructor <init>(kotlin/String, kotlin/String, kotlin/String, io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...) // io.github.vad4nus.lockstep.screens/Node.Toggle.<init>|<init>(kotlin.String;kotlin.String;kotlin.String;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+
+        final val a11y // io.github.vad4nus.lockstep.screens/Node.Toggle.a11y|{}a11y[0]
+            final fun <get-a11y>(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Toggle.a11y.<get-a11y>|<get-a11y>(){}[0]
+        final val field // io.github.vad4nus.lockstep.screens/Node.Toggle.field|{}field[0]
+            final fun <get-field>(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Toggle.field.<get-field>|<get-field>(){}[0]
+        final val id // io.github.vad4nus.lockstep.screens/Node.Toggle.id|{}id[0]
+            final fun <get-id>(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Toggle.id.<get-id>|<get-id>(){}[0]
+        final val label // io.github.vad4nus.lockstep.screens/Node.Toggle.label|{}label[0]
+            final fun <get-label>(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Toggle.label.<get-label>|<get-label>(){}[0]
+        final val style // io.github.vad4nus.lockstep.screens/Node.Toggle.style|{}style[0]
+            final fun <get-style>(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Toggle.style.<get-style>|<get-style>(){}[0]
+
+        final fun component1(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Toggle.component1|component1(){}[0]
+        final fun component2(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Toggle.component2|component2(){}[0]
+        final fun component3(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Toggle.component3|component3(){}[0]
+        final fun component4(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Toggle.component4|component4(){}[0]
+        final fun component5(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Toggle.component5|component5(){}[0]
+        final fun copy(kotlin/String = ..., kotlin/String = ..., kotlin/String = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...): io.github.vad4nus.lockstep.screens/Node.Toggle // io.github.vad4nus.lockstep.screens/Node.Toggle.copy|copy(kotlin.String;kotlin.String;kotlin.String;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/Node.Toggle.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/Node.Toggle.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Toggle.toString|toString(){}[0]
+
+        final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/Node.Toggle> { // io.github.vad4nus.lockstep.screens/Node.Toggle.$serializer|null[0]
+            final val descriptor // io.github.vad4nus.lockstep.screens/Node.Toggle.$serializer.descriptor|{}descriptor[0]
+                final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/Node.Toggle.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+            final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/Node.Toggle.$serializer.childSerializers|childSerializers(){}[0]
+            final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/Node.Toggle // io.github.vad4nus.lockstep.screens/Node.Toggle.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+            final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/Node.Toggle) // io.github.vad4nus.lockstep.screens/Node.Toggle.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.Node.Toggle){}[0]
+        }
+
+        final object Companion { // io.github.vad4nus.lockstep.screens/Node.Toggle.Companion|null[0]
+            final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/Node.Toggle> // io.github.vad4nus.lockstep.screens/Node.Toggle.Companion.serializer|serializer(){}[0]
+        }
+    }
+
+    final class Unknown : io.github.vad4nus.lockstep.screens/Node { // io.github.vad4nus.lockstep.screens/Node.Unknown|null[0]
+        constructor <init>(kotlin/String = ..., io.github.vad4nus.lockstep.screens/Node? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ..., kotlin/String? = ...) // io.github.vad4nus.lockstep.screens/Node.Unknown.<init>|<init>(kotlin.String;io.github.vad4nus.lockstep.screens.Node?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?;kotlin.String?){}[0]
+
+        final val a11y // io.github.vad4nus.lockstep.screens/Node.Unknown.a11y|{}a11y[0]
+            final fun <get-a11y>(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Unknown.a11y.<get-a11y>|<get-a11y>(){}[0]
+        final val error // io.github.vad4nus.lockstep.screens/Node.Unknown.error|{}error[0]
+            final fun <get-error>(): kotlin/String? // io.github.vad4nus.lockstep.screens/Node.Unknown.error.<get-error>|<get-error>(){}[0]
+        final val fallback // io.github.vad4nus.lockstep.screens/Node.Unknown.fallback|{}fallback[0]
+            final fun <get-fallback>(): io.github.vad4nus.lockstep.screens/Node? // io.github.vad4nus.lockstep.screens/Node.Unknown.fallback.<get-fallback>|<get-fallback>(){}[0]
+        final val id // io.github.vad4nus.lockstep.screens/Node.Unknown.id|{}id[0]
+            final fun <get-id>(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Unknown.id.<get-id>|<get-id>(){}[0]
+        final val style // io.github.vad4nus.lockstep.screens/Node.Unknown.style|{}style[0]
+            final fun <get-style>(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Unknown.style.<get-style>|<get-style>(){}[0]
+
+        final fun component1(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Unknown.component1|component1(){}[0]
+        final fun component2(): io.github.vad4nus.lockstep.screens/Node? // io.github.vad4nus.lockstep.screens/Node.Unknown.component2|component2(){}[0]
+        final fun component3(): io.github.vad4nus.lockstep.screens/Style? // io.github.vad4nus.lockstep.screens/Node.Unknown.component3|component3(){}[0]
+        final fun component4(): io.github.vad4nus.lockstep.screens/A11y? // io.github.vad4nus.lockstep.screens/Node.Unknown.component4|component4(){}[0]
+        final fun component5(): kotlin/String? // io.github.vad4nus.lockstep.screens/Node.Unknown.component5|component5(){}[0]
+        final fun copy(kotlin/String = ..., io.github.vad4nus.lockstep.screens/Node? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ..., kotlin/String? = ...): io.github.vad4nus.lockstep.screens/Node.Unknown // io.github.vad4nus.lockstep.screens/Node.Unknown.copy|copy(kotlin.String;io.github.vad4nus.lockstep.screens.Node?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?;kotlin.String?){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/Node.Unknown.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/Node.Unknown.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/Node.Unknown.toString|toString(){}[0]
+
+        final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/Node.Unknown> { // io.github.vad4nus.lockstep.screens/Node.Unknown.$serializer|null[0]
+            final val descriptor // io.github.vad4nus.lockstep.screens/Node.Unknown.$serializer.descriptor|{}descriptor[0]
+                final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/Node.Unknown.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+            final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/Node.Unknown.$serializer.childSerializers|childSerializers(){}[0]
+            final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/Node.Unknown // io.github.vad4nus.lockstep.screens/Node.Unknown.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+            final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/Node.Unknown) // io.github.vad4nus.lockstep.screens/Node.Unknown.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.Node.Unknown){}[0]
+        }
+
+        final object Companion { // io.github.vad4nus.lockstep.screens/Node.Unknown.Companion|null[0]
+            final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/Node.Unknown> // io.github.vad4nus.lockstep.screens/Node.Unknown.Companion.serializer|serializer(){}[0]
+        }
+    }
+
+    final object Companion : kotlinx.serialization.internal/SerializerFactory { // io.github.vad4nus.lockstep.screens/Node.Companion|null[0]
+        final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/Node> // io.github.vad4nus.lockstep.screens/Node.Companion.serializer|serializer(){}[0]
+        final fun serializer(kotlin/Array<out kotlinx.serialization/KSerializer<*>>...): kotlinx.serialization/KSerializer<*> // io.github.vad4nus.lockstep.screens/Node.Companion.serializer|serializer(kotlin.Array<out|kotlinx.serialization.KSerializer<*>>...){}[0]
+    }
+}
+
+sealed interface io.github.vad4nus.lockstep.screens/NodeEvent { // io.github.vad4nus.lockstep.screens/NodeEvent|null[0]
+    final class Click : io.github.vad4nus.lockstep.screens/NodeEvent { // io.github.vad4nus.lockstep.screens/NodeEvent.Click|null[0]
+        constructor <init>(kotlin/String) // io.github.vad4nus.lockstep.screens/NodeEvent.Click.<init>|<init>(kotlin.String){}[0]
+
+        final val id // io.github.vad4nus.lockstep.screens/NodeEvent.Click.id|{}id[0]
+            final fun <get-id>(): kotlin/String // io.github.vad4nus.lockstep.screens/NodeEvent.Click.id.<get-id>|<get-id>(){}[0]
+
+        final fun component1(): kotlin/String // io.github.vad4nus.lockstep.screens/NodeEvent.Click.component1|component1(){}[0]
+        final fun copy(kotlin/String = ...): io.github.vad4nus.lockstep.screens/NodeEvent.Click // io.github.vad4nus.lockstep.screens/NodeEvent.Click.copy|copy(kotlin.String){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/NodeEvent.Click.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/NodeEvent.Click.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/NodeEvent.Click.toString|toString(){}[0]
+
+        final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/NodeEvent.Click> { // io.github.vad4nus.lockstep.screens/NodeEvent.Click.$serializer|null[0]
+            final val descriptor // io.github.vad4nus.lockstep.screens/NodeEvent.Click.$serializer.descriptor|{}descriptor[0]
+                final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/NodeEvent.Click.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+            final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/NodeEvent.Click.$serializer.childSerializers|childSerializers(){}[0]
+            final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/NodeEvent.Click // io.github.vad4nus.lockstep.screens/NodeEvent.Click.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+            final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/NodeEvent.Click) // io.github.vad4nus.lockstep.screens/NodeEvent.Click.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.NodeEvent.Click){}[0]
+        }
+
+        final object Companion { // io.github.vad4nus.lockstep.screens/NodeEvent.Click.Companion|null[0]
+            final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/NodeEvent.Click> // io.github.vad4nus.lockstep.screens/NodeEvent.Click.Companion.serializer|serializer(){}[0]
+        }
+    }
+
+    final class Custom : io.github.vad4nus.lockstep.screens/NodeEvent { // io.github.vad4nus.lockstep.screens/NodeEvent.Custom|null[0]
+        constructor <init>(kotlin/String, kotlin.collections/Map<kotlin/String, kotlin/String> = ...) // io.github.vad4nus.lockstep.screens/NodeEvent.Custom.<init>|<init>(kotlin.String;kotlin.collections.Map<kotlin.String,kotlin.String>){}[0]
+
+        final val key // io.github.vad4nus.lockstep.screens/NodeEvent.Custom.key|{}key[0]
+            final fun <get-key>(): kotlin/String // io.github.vad4nus.lockstep.screens/NodeEvent.Custom.key.<get-key>|<get-key>(){}[0]
+        final val payload // io.github.vad4nus.lockstep.screens/NodeEvent.Custom.payload|{}payload[0]
+            final fun <get-payload>(): kotlin.collections/Map<kotlin/String, kotlin/String> // io.github.vad4nus.lockstep.screens/NodeEvent.Custom.payload.<get-payload>|<get-payload>(){}[0]
+
+        final fun component1(): kotlin/String // io.github.vad4nus.lockstep.screens/NodeEvent.Custom.component1|component1(){}[0]
+        final fun component2(): kotlin.collections/Map<kotlin/String, kotlin/String> // io.github.vad4nus.lockstep.screens/NodeEvent.Custom.component2|component2(){}[0]
+        final fun copy(kotlin/String = ..., kotlin.collections/Map<kotlin/String, kotlin/String> = ...): io.github.vad4nus.lockstep.screens/NodeEvent.Custom // io.github.vad4nus.lockstep.screens/NodeEvent.Custom.copy|copy(kotlin.String;kotlin.collections.Map<kotlin.String,kotlin.String>){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/NodeEvent.Custom.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/NodeEvent.Custom.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/NodeEvent.Custom.toString|toString(){}[0]
+
+        final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/NodeEvent.Custom> { // io.github.vad4nus.lockstep.screens/NodeEvent.Custom.$serializer|null[0]
+            final val descriptor // io.github.vad4nus.lockstep.screens/NodeEvent.Custom.$serializer.descriptor|{}descriptor[0]
+                final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/NodeEvent.Custom.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+            final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/NodeEvent.Custom.$serializer.childSerializers|childSerializers(){}[0]
+            final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/NodeEvent.Custom // io.github.vad4nus.lockstep.screens/NodeEvent.Custom.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+            final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/NodeEvent.Custom) // io.github.vad4nus.lockstep.screens/NodeEvent.Custom.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.NodeEvent.Custom){}[0]
+        }
+
+        final object Companion { // io.github.vad4nus.lockstep.screens/NodeEvent.Custom.Companion|null[0]
+            final val $childSerializers // io.github.vad4nus.lockstep.screens/NodeEvent.Custom.Companion.$childSerializers|{}$childSerializers[0]
+
+            final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/NodeEvent.Custom> // io.github.vad4nus.lockstep.screens/NodeEvent.Custom.Companion.serializer|serializer(){}[0]
+        }
+    }
+
+    final class Navigate : io.github.vad4nus.lockstep.screens/NodeEvent { // io.github.vad4nus.lockstep.screens/NodeEvent.Navigate|null[0]
+        constructor <init>(kotlin/String) // io.github.vad4nus.lockstep.screens/NodeEvent.Navigate.<init>|<init>(kotlin.String){}[0]
+
+        final val destination // io.github.vad4nus.lockstep.screens/NodeEvent.Navigate.destination|{}destination[0]
+            final fun <get-destination>(): kotlin/String // io.github.vad4nus.lockstep.screens/NodeEvent.Navigate.destination.<get-destination>|<get-destination>(){}[0]
+
+        final fun component1(): kotlin/String // io.github.vad4nus.lockstep.screens/NodeEvent.Navigate.component1|component1(){}[0]
+        final fun copy(kotlin/String = ...): io.github.vad4nus.lockstep.screens/NodeEvent.Navigate // io.github.vad4nus.lockstep.screens/NodeEvent.Navigate.copy|copy(kotlin.String){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/NodeEvent.Navigate.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/NodeEvent.Navigate.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/NodeEvent.Navigate.toString|toString(){}[0]
+
+        final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/NodeEvent.Navigate> { // io.github.vad4nus.lockstep.screens/NodeEvent.Navigate.$serializer|null[0]
+            final val descriptor // io.github.vad4nus.lockstep.screens/NodeEvent.Navigate.$serializer.descriptor|{}descriptor[0]
+                final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/NodeEvent.Navigate.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+            final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/NodeEvent.Navigate.$serializer.childSerializers|childSerializers(){}[0]
+            final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/NodeEvent.Navigate // io.github.vad4nus.lockstep.screens/NodeEvent.Navigate.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+            final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/NodeEvent.Navigate) // io.github.vad4nus.lockstep.screens/NodeEvent.Navigate.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.NodeEvent.Navigate){}[0]
+        }
+
+        final object Companion { // io.github.vad4nus.lockstep.screens/NodeEvent.Navigate.Companion|null[0]
+            final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/NodeEvent.Navigate> // io.github.vad4nus.lockstep.screens/NodeEvent.Navigate.Companion.serializer|serializer(){}[0]
+        }
+    }
+
+    final class ValueChanged : io.github.vad4nus.lockstep.screens/NodeEvent { // io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged|null[0]
+        constructor <init>(kotlin/String, kotlin/String) // io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged.<init>|<init>(kotlin.String;kotlin.String){}[0]
+
+        final val field // io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged.field|{}field[0]
+            final fun <get-field>(): kotlin/String // io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged.field.<get-field>|<get-field>(){}[0]
+        final val value // io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged.value|{}value[0]
+            final fun <get-value>(): kotlin/String // io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged.value.<get-value>|<get-value>(){}[0]
+
+        final fun component1(): kotlin/String // io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged.component1|component1(){}[0]
+        final fun component2(): kotlin/String // io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged.component2|component2(){}[0]
+        final fun copy(kotlin/String = ..., kotlin/String = ...): io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged // io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged.copy|copy(kotlin.String;kotlin.String){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged.toString|toString(){}[0]
+
+        final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged> { // io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged.$serializer|null[0]
+            final val descriptor // io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged.$serializer.descriptor|{}descriptor[0]
+                final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+            final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged.$serializer.childSerializers|childSerializers(){}[0]
+            final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged // io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+            final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged) // io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.NodeEvent.ValueChanged){}[0]
+        }
+
+        final object Companion { // io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged.Companion|null[0]
+            final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged> // io.github.vad4nus.lockstep.screens/NodeEvent.ValueChanged.Companion.serializer|serializer(){}[0]
+        }
+    }
+
+    final object Companion : kotlinx.serialization.internal/SerializerFactory { // io.github.vad4nus.lockstep.screens/NodeEvent.Companion|null[0]
+        final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/NodeEvent> // io.github.vad4nus.lockstep.screens/NodeEvent.Companion.serializer|serializer(){}[0]
+        final fun serializer(kotlin/Array<out kotlinx.serialization/KSerializer<*>>...): kotlinx.serialization/KSerializer<*> // io.github.vad4nus.lockstep.screens/NodeEvent.Companion.serializer|serializer(kotlin.Array<out|kotlinx.serialization.KSerializer<*>>...){}[0]
+    }
+
+    final object Submit : io.github.vad4nus.lockstep.screens/NodeEvent, kotlinx.serialization.internal/SerializerFactory { // io.github.vad4nus.lockstep.screens/NodeEvent.Submit|null[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/NodeEvent.Submit.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/NodeEvent.Submit.hashCode|hashCode(){}[0]
+        final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/NodeEvent.Submit> // io.github.vad4nus.lockstep.screens/NodeEvent.Submit.serializer|serializer(){}[0]
+        final fun serializer(kotlin/Array<out kotlinx.serialization/KSerializer<*>>...): kotlinx.serialization/KSerializer<*> // io.github.vad4nus.lockstep.screens/NodeEvent.Submit.serializer|serializer(kotlin.Array<out|kotlinx.serialization.KSerializer<*>>...){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/NodeEvent.Submit.toString|toString(){}[0]
+    }
+
+    final object Unknown : io.github.vad4nus.lockstep.screens/NodeEvent, kotlinx.serialization.internal/SerializerFactory { // io.github.vad4nus.lockstep.screens/NodeEvent.Unknown|null[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/NodeEvent.Unknown.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/NodeEvent.Unknown.hashCode|hashCode(){}[0]
+        final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/NodeEvent.Unknown> // io.github.vad4nus.lockstep.screens/NodeEvent.Unknown.serializer|serializer(){}[0]
+        final fun serializer(kotlin/Array<out kotlinx.serialization/KSerializer<*>>...): kotlinx.serialization/KSerializer<*> // io.github.vad4nus.lockstep.screens/NodeEvent.Unknown.serializer|serializer(kotlin.Array<out|kotlinx.serialization.KSerializer<*>>...){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/NodeEvent.Unknown.toString|toString(){}[0]
+    }
+}
+
+sealed interface io.github.vad4nus.lockstep.screens/Scrolled // io.github.vad4nus.lockstep.screens/Scrolled|null[0]
+
+final class <#A: kotlin/Any?, #B: kotlin/Any?> io.github.vad4nus.lockstep.screens/NodeColumnScope : io.github.vad4nus.lockstep.screens/NodeScope<#A, #B> // io.github.vad4nus.lockstep.screens/NodeColumnScope|null[0]
+
+final class <#A: kotlin/Any?, #B: kotlin/Any?> io.github.vad4nus.lockstep.screens/NodeRowScope : io.github.vad4nus.lockstep.screens/NodeScope<#A, #B> // io.github.vad4nus.lockstep.screens/NodeRowScope|null[0]
+
+final class io.github.vad4nus.lockstep.screens/A11y { // io.github.vad4nus.lockstep.screens/A11y|null[0]
+    constructor <init>(kotlin/String? = ..., kotlin/Boolean = ..., kotlin/Boolean = ...) // io.github.vad4nus.lockstep.screens/A11y.<init>|<init>(kotlin.String?;kotlin.Boolean;kotlin.Boolean){}[0]
+
+    final val heading // io.github.vad4nus.lockstep.screens/A11y.heading|{}heading[0]
+        final fun <get-heading>(): kotlin/Boolean // io.github.vad4nus.lockstep.screens/A11y.heading.<get-heading>|<get-heading>(){}[0]
+    final val hidden // io.github.vad4nus.lockstep.screens/A11y.hidden|{}hidden[0]
+        final fun <get-hidden>(): kotlin/Boolean // io.github.vad4nus.lockstep.screens/A11y.hidden.<get-hidden>|<get-hidden>(){}[0]
+    final val label // io.github.vad4nus.lockstep.screens/A11y.label|{}label[0]
+        final fun <get-label>(): kotlin/String? // io.github.vad4nus.lockstep.screens/A11y.label.<get-label>|<get-label>(){}[0]
+
+    final fun component1(): kotlin/String? // io.github.vad4nus.lockstep.screens/A11y.component1|component1(){}[0]
+    final fun component2(): kotlin/Boolean // io.github.vad4nus.lockstep.screens/A11y.component2|component2(){}[0]
+    final fun component3(): kotlin/Boolean // io.github.vad4nus.lockstep.screens/A11y.component3|component3(){}[0]
+    final fun copy(kotlin/String? = ..., kotlin/Boolean = ..., kotlin/Boolean = ...): io.github.vad4nus.lockstep.screens/A11y // io.github.vad4nus.lockstep.screens/A11y.copy|copy(kotlin.String?;kotlin.Boolean;kotlin.Boolean){}[0]
+    final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/A11y.equals|equals(kotlin.Any?){}[0]
+    final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/A11y.hashCode|hashCode(){}[0]
+    final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/A11y.toString|toString(){}[0]
+
+    final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/A11y> { // io.github.vad4nus.lockstep.screens/A11y.$serializer|null[0]
+        final val descriptor // io.github.vad4nus.lockstep.screens/A11y.$serializer.descriptor|{}descriptor[0]
+            final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/A11y.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+        final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/A11y.$serializer.childSerializers|childSerializers(){}[0]
+        final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/A11y // io.github.vad4nus.lockstep.screens/A11y.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+        final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/A11y) // io.github.vad4nus.lockstep.screens/A11y.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.A11y){}[0]
+    }
+
+    final object Companion { // io.github.vad4nus.lockstep.screens/A11y.Companion|null[0]
+        final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/A11y> // io.github.vad4nus.lockstep.screens/A11y.Companion.serializer|serializer(){}[0]
+    }
+}
+
+final class io.github.vad4nus.lockstep.screens/FormState { // io.github.vad4nus.lockstep.screens/FormState|null[0]
+    constructor <init>(kotlin.collections/Map<kotlin/String, kotlin/String> = ..., kotlin.collections/Map<kotlin/String, kotlin/String> = ...) // io.github.vad4nus.lockstep.screens/FormState.<init>|<init>(kotlin.collections.Map<kotlin.String,kotlin.String>;kotlin.collections.Map<kotlin.String,kotlin.String>){}[0]
+
+    final val errors // io.github.vad4nus.lockstep.screens/FormState.errors|{}errors[0]
+        final fun <get-errors>(): kotlin.collections/Map<kotlin/String, kotlin/String> // io.github.vad4nus.lockstep.screens/FormState.errors.<get-errors>|<get-errors>(){}[0]
+    final val values // io.github.vad4nus.lockstep.screens/FormState.values|{}values[0]
+        final fun <get-values>(): kotlin.collections/Map<kotlin/String, kotlin/String> // io.github.vad4nus.lockstep.screens/FormState.values.<get-values>|<get-values>(){}[0]
+
+    final fun component1(): kotlin.collections/Map<kotlin/String, kotlin/String> // io.github.vad4nus.lockstep.screens/FormState.component1|component1(){}[0]
+    final fun component2(): kotlin.collections/Map<kotlin/String, kotlin/String> // io.github.vad4nus.lockstep.screens/FormState.component2|component2(){}[0]
+    final fun copy(kotlin.collections/Map<kotlin/String, kotlin/String> = ..., kotlin.collections/Map<kotlin/String, kotlin/String> = ...): io.github.vad4nus.lockstep.screens/FormState // io.github.vad4nus.lockstep.screens/FormState.copy|copy(kotlin.collections.Map<kotlin.String,kotlin.String>;kotlin.collections.Map<kotlin.String,kotlin.String>){}[0]
+    final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/FormState.equals|equals(kotlin.Any?){}[0]
+    final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/FormState.hashCode|hashCode(){}[0]
+    final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/FormState.toString|toString(){}[0]
+}
+
+final class io.github.vad4nus.lockstep.screens/LayoutViolation { // io.github.vad4nus.lockstep.screens/LayoutViolation|null[0]
+    constructor <init>(kotlin/String, kotlin/String) // io.github.vad4nus.lockstep.screens/LayoutViolation.<init>|<init>(kotlin.String;kotlin.String){}[0]
+
+    final val message // io.github.vad4nus.lockstep.screens/LayoutViolation.message|{}message[0]
+        final fun <get-message>(): kotlin/String // io.github.vad4nus.lockstep.screens/LayoutViolation.message.<get-message>|<get-message>(){}[0]
+    final val nodeId // io.github.vad4nus.lockstep.screens/LayoutViolation.nodeId|{}nodeId[0]
+        final fun <get-nodeId>(): kotlin/String // io.github.vad4nus.lockstep.screens/LayoutViolation.nodeId.<get-nodeId>|<get-nodeId>(){}[0]
+
+    final fun component1(): kotlin/String // io.github.vad4nus.lockstep.screens/LayoutViolation.component1|component1(){}[0]
+    final fun component2(): kotlin/String // io.github.vad4nus.lockstep.screens/LayoutViolation.component2|component2(){}[0]
+    final fun copy(kotlin/String = ..., kotlin/String = ...): io.github.vad4nus.lockstep.screens/LayoutViolation // io.github.vad4nus.lockstep.screens/LayoutViolation.copy|copy(kotlin.String;kotlin.String){}[0]
+    final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/LayoutViolation.equals|equals(kotlin.Any?){}[0]
+    final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/LayoutViolation.hashCode|hashCode(){}[0]
+    final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/LayoutViolation.toString|toString(){}[0]
+}
+
+final class io.github.vad4nus.lockstep.screens/ScreenSpec { // io.github.vad4nus.lockstep.screens/ScreenSpec|null[0]
+    constructor <init>(kotlin/String, io.github.vad4nus.lockstep.screens/Node, kotlin/Int = ...) // io.github.vad4nus.lockstep.screens/ScreenSpec.<init>|<init>(kotlin.String;io.github.vad4nus.lockstep.screens.Node;kotlin.Int){}[0]
+
+    final val id // io.github.vad4nus.lockstep.screens/ScreenSpec.id|{}id[0]
+        final fun <get-id>(): kotlin/String // io.github.vad4nus.lockstep.screens/ScreenSpec.id.<get-id>|<get-id>(){}[0]
+    final val root // io.github.vad4nus.lockstep.screens/ScreenSpec.root|{}root[0]
+        final fun <get-root>(): io.github.vad4nus.lockstep.screens/Node // io.github.vad4nus.lockstep.screens/ScreenSpec.root.<get-root>|<get-root>(){}[0]
+    final val schema // io.github.vad4nus.lockstep.screens/ScreenSpec.schema|{}schema[0]
+        final fun <get-schema>(): kotlin/Int // io.github.vad4nus.lockstep.screens/ScreenSpec.schema.<get-schema>|<get-schema>(){}[0]
+
+    final fun component1(): kotlin/String // io.github.vad4nus.lockstep.screens/ScreenSpec.component1|component1(){}[0]
+    final fun component2(): io.github.vad4nus.lockstep.screens/Node // io.github.vad4nus.lockstep.screens/ScreenSpec.component2|component2(){}[0]
+    final fun component3(): kotlin/Int // io.github.vad4nus.lockstep.screens/ScreenSpec.component3|component3(){}[0]
+    final fun copy(kotlin/String = ..., io.github.vad4nus.lockstep.screens/Node = ..., kotlin/Int = ...): io.github.vad4nus.lockstep.screens/ScreenSpec // io.github.vad4nus.lockstep.screens/ScreenSpec.copy|copy(kotlin.String;io.github.vad4nus.lockstep.screens.Node;kotlin.Int){}[0]
+    final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/ScreenSpec.equals|equals(kotlin.Any?){}[0]
+    final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/ScreenSpec.hashCode|hashCode(){}[0]
+    final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/ScreenSpec.toString|toString(){}[0]
+
+    final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/ScreenSpec> { // io.github.vad4nus.lockstep.screens/ScreenSpec.$serializer|null[0]
+        final val descriptor // io.github.vad4nus.lockstep.screens/ScreenSpec.$serializer.descriptor|{}descriptor[0]
+            final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/ScreenSpec.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+        final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/ScreenSpec.$serializer.childSerializers|childSerializers(){}[0]
+        final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/ScreenSpec // io.github.vad4nus.lockstep.screens/ScreenSpec.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+        final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/ScreenSpec) // io.github.vad4nus.lockstep.screens/ScreenSpec.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.ScreenSpec){}[0]
+    }
+
+    final object Companion { // io.github.vad4nus.lockstep.screens/ScreenSpec.Companion|null[0]
+        final const val SCHEMA // io.github.vad4nus.lockstep.screens/ScreenSpec.Companion.SCHEMA|{}SCHEMA[0]
+            final fun <get-SCHEMA>(): kotlin/Int // io.github.vad4nus.lockstep.screens/ScreenSpec.Companion.SCHEMA.<get-SCHEMA>|<get-SCHEMA>(){}[0]
+
+        final fun decode(kotlin/String, kotlin/Function1<io.github.vad4nus.lockstep.screens/LayoutViolation, kotlin/Unit> = ...): io.github.vad4nus.lockstep.screens/ScreenSpec // io.github.vad4nus.lockstep.screens/ScreenSpec.Companion.decode|decode(kotlin.String;kotlin.Function1<io.github.vad4nus.lockstep.screens.LayoutViolation,kotlin.Unit>){}[0]
+        final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/ScreenSpec> // io.github.vad4nus.lockstep.screens/ScreenSpec.Companion.serializer|serializer(){}[0]
+    }
+}
+
+final class io.github.vad4nus.lockstep.screens/Style { // io.github.vad4nus.lockstep.screens/Style|null[0]
+    constructor <init>(io.github.vad4nus.lockstep.screens/Space? = ..., io.github.vad4nus.lockstep.screens/ColorToken? = ..., io.github.vad4nus.lockstep.screens/Space? = ...) // io.github.vad4nus.lockstep.screens/Style.<init>|<init>(io.github.vad4nus.lockstep.screens.Space?;io.github.vad4nus.lockstep.screens.ColorToken?;io.github.vad4nus.lockstep.screens.Space?){}[0]
+
+    final val background // io.github.vad4nus.lockstep.screens/Style.background|{}background[0]
+        final fun <get-background>(): io.github.vad4nus.lockstep.screens/ColorToken? // io.github.vad4nus.lockstep.screens/Style.background.<get-background>|<get-background>(){}[0]
+    final val corner // io.github.vad4nus.lockstep.screens/Style.corner|{}corner[0]
+        final fun <get-corner>(): io.github.vad4nus.lockstep.screens/Space? // io.github.vad4nus.lockstep.screens/Style.corner.<get-corner>|<get-corner>(){}[0]
+    final val padding // io.github.vad4nus.lockstep.screens/Style.padding|{}padding[0]
+        final fun <get-padding>(): io.github.vad4nus.lockstep.screens/Space? // io.github.vad4nus.lockstep.screens/Style.padding.<get-padding>|<get-padding>(){}[0]
+
+    final fun component1(): io.github.vad4nus.lockstep.screens/Space? // io.github.vad4nus.lockstep.screens/Style.component1|component1(){}[0]
+    final fun component2(): io.github.vad4nus.lockstep.screens/ColorToken? // io.github.vad4nus.lockstep.screens/Style.component2|component2(){}[0]
+    final fun component3(): io.github.vad4nus.lockstep.screens/Space? // io.github.vad4nus.lockstep.screens/Style.component3|component3(){}[0]
+    final fun copy(io.github.vad4nus.lockstep.screens/Space? = ..., io.github.vad4nus.lockstep.screens/ColorToken? = ..., io.github.vad4nus.lockstep.screens/Space? = ...): io.github.vad4nus.lockstep.screens/Style // io.github.vad4nus.lockstep.screens/Style.copy|copy(io.github.vad4nus.lockstep.screens.Space?;io.github.vad4nus.lockstep.screens.ColorToken?;io.github.vad4nus.lockstep.screens.Space?){}[0]
+    final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.screens/Style.equals|equals(kotlin.Any?){}[0]
+    final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.screens/Style.hashCode|hashCode(){}[0]
+    final fun toString(): kotlin/String // io.github.vad4nus.lockstep.screens/Style.toString|toString(){}[0]
+
+    final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<io.github.vad4nus.lockstep.screens/Style> { // io.github.vad4nus.lockstep.screens/Style.$serializer|null[0]
+        final val descriptor // io.github.vad4nus.lockstep.screens/Style.$serializer.descriptor|{}descriptor[0]
+            final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // io.github.vad4nus.lockstep.screens/Style.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+        final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // io.github.vad4nus.lockstep.screens/Style.$serializer.childSerializers|childSerializers(){}[0]
+        final fun deserialize(kotlinx.serialization.encoding/Decoder): io.github.vad4nus.lockstep.screens/Style // io.github.vad4nus.lockstep.screens/Style.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+        final fun serialize(kotlinx.serialization.encoding/Encoder, io.github.vad4nus.lockstep.screens/Style) // io.github.vad4nus.lockstep.screens/Style.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;io.github.vad4nus.lockstep.screens.Style){}[0]
+    }
+
+    final object Companion { // io.github.vad4nus.lockstep.screens/Style.Companion|null[0]
+        final val $childSerializers // io.github.vad4nus.lockstep.screens/Style.Companion.$childSerializers|{}$childSerializers[0]
+
+        final fun serializer(): kotlinx.serialization/KSerializer<io.github.vad4nus.lockstep.screens/Style> // io.github.vad4nus.lockstep.screens/Style.Companion.serializer|serializer(){}[0]
+    }
+}
+
+open class <#A: kotlin/Any?, #B: kotlin/Any?> io.github.vad4nus.lockstep.screens/NodeScope // io.github.vad4nus.lockstep.screens/NodeScope|null[0]
+
+final val io.github.vad4nus.lockstep.screens/ScreenJson // io.github.vad4nus.lockstep.screens/ScreenJson|{}ScreenJson[0]
+    final fun <get-ScreenJson>(): kotlinx.serialization.json/Json // io.github.vad4nus.lockstep.screens/ScreenJson.<get-ScreenJson>|<get-ScreenJson>(){}[0]
+
+final fun (io.github.vad4nus.lockstep.screens/FormState).io.github.vad4nus.lockstep.screens/reduce(io.github.vad4nus.lockstep.screens/NodeEvent, io.github.vad4nus.lockstep.screens/Node): io.github.vad4nus.lockstep.screens/FormState // io.github.vad4nus.lockstep.screens/reduce|reduce@io.github.vad4nus.lockstep.screens.FormState(io.github.vad4nus.lockstep.screens.NodeEvent;io.github.vad4nus.lockstep.screens.Node){}[0]
+final fun (io.github.vad4nus.lockstep.screens/Node).io.github.vad4nus.lockstep.screens/violations(): kotlin.collections/List<io.github.vad4nus.lockstep.screens/LayoutViolation> // io.github.vad4nus.lockstep.screens/violations|violations@io.github.vad4nus.lockstep.screens.Node(){}[0]
+final fun (io.github.vad4nus.lockstep.screens/NodeScope<*, *>).io.github.vad4nus.lockstep.screens/button(kotlin/String, kotlin/String, io.github.vad4nus.lockstep.screens/NodeEvent, io.github.vad4nus.lockstep.screens/ButtonVariant = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...) // io.github.vad4nus.lockstep.screens/button|button@io.github.vad4nus.lockstep.screens.NodeScope<*,*>(kotlin.String;kotlin.String;io.github.vad4nus.lockstep.screens.NodeEvent;io.github.vad4nus.lockstep.screens.ButtonVariant;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+final fun (io.github.vad4nus.lockstep.screens/NodeScope<*, *>).io.github.vad4nus.lockstep.screens/custom(kotlin/String, kotlin/String, kotlin.collections/Map<kotlin/String, kotlin/String> = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...) // io.github.vad4nus.lockstep.screens/custom|custom@io.github.vad4nus.lockstep.screens.NodeScope<*,*>(kotlin.String;kotlin.String;kotlin.collections.Map<kotlin.String,kotlin.String>;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+final fun (io.github.vad4nus.lockstep.screens/NodeScope<*, *>).io.github.vad4nus.lockstep.screens/flexibleSpacer(kotlin/String) // io.github.vad4nus.lockstep.screens/flexibleSpacer|flexibleSpacer@io.github.vad4nus.lockstep.screens.NodeScope<*,*>(kotlin.String){}[0]
+final fun (io.github.vad4nus.lockstep.screens/NodeScope<*, *>).io.github.vad4nus.lockstep.screens/image(kotlin/String, kotlin/String, kotlin/Int = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...) // io.github.vad4nus.lockstep.screens/image|image@io.github.vad4nus.lockstep.screens.NodeScope<*,*>(kotlin.String;kotlin.String;kotlin.Int;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+final fun (io.github.vad4nus.lockstep.screens/NodeScope<*, *>).io.github.vad4nus.lockstep.screens/input(kotlin/String, kotlin/String, kotlin/String, io.github.vad4nus.lockstep.screens/InputKind = ..., kotlin.collections/List<io.github.vad4nus.lockstep.screens/InputRule> = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...) // io.github.vad4nus.lockstep.screens/input|input@io.github.vad4nus.lockstep.screens.NodeScope<*,*>(kotlin.String;kotlin.String;kotlin.String;io.github.vad4nus.lockstep.screens.InputKind;kotlin.collections.List<io.github.vad4nus.lockstep.screens.InputRule>;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+final fun (io.github.vad4nus.lockstep.screens/NodeScope<*, *>).io.github.vad4nus.lockstep.screens/spacer(kotlin/String, io.github.vad4nus.lockstep.screens/Space) // io.github.vad4nus.lockstep.screens/spacer|spacer@io.github.vad4nus.lockstep.screens.NodeScope<*,*>(kotlin.String;io.github.vad4nus.lockstep.screens.Space){}[0]
+final fun (io.github.vad4nus.lockstep.screens/NodeScope<*, *>).io.github.vad4nus.lockstep.screens/text(kotlin/String, kotlin/String, io.github.vad4nus.lockstep.screens/TextStyleToken = ..., io.github.vad4nus.lockstep.screens/ColorToken? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...) // io.github.vad4nus.lockstep.screens/text|text@io.github.vad4nus.lockstep.screens.NodeScope<*,*>(kotlin.String;kotlin.String;io.github.vad4nus.lockstep.screens.TextStyleToken;io.github.vad4nus.lockstep.screens.ColorToken?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+final fun (io.github.vad4nus.lockstep.screens/NodeScope<*, *>).io.github.vad4nus.lockstep.screens/toggle(kotlin/String, kotlin/String, kotlin/String, io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ...) // io.github.vad4nus.lockstep.screens/toggle|toggle@io.github.vad4nus.lockstep.screens.NodeScope<*,*>(kotlin.String;kotlin.String;kotlin.String;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?){}[0]
+final fun (io.github.vad4nus.lockstep.screens/ScreenSpec).io.github.vad4nus.lockstep.screens/checked(kotlin/Function1<io.github.vad4nus.lockstep.screens/LayoutViolation, kotlin/Unit> = ...): io.github.vad4nus.lockstep.screens/ScreenSpec // io.github.vad4nus.lockstep.screens/checked|checked@io.github.vad4nus.lockstep.screens.ScreenSpec(kotlin.Function1<io.github.vad4nus.lockstep.screens.LayoutViolation,kotlin.Unit>){}[0]
+final fun <#A: kotlin/Any?, #B: kotlin/Any?> (io.github.vad4nus.lockstep.screens/NodeScope<#A, #B>).io.github.vad4nus.lockstep.screens/box(kotlin/String, io.github.vad4nus.lockstep.screens/NodeEvent? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ..., kotlin/Function1<io.github.vad4nus.lockstep.screens/NodeScope<#A, #B>, kotlin/Unit>) // io.github.vad4nus.lockstep.screens/box|box@io.github.vad4nus.lockstep.screens.NodeScope<0:0,0:1>(kotlin.String;io.github.vad4nus.lockstep.screens.NodeEvent?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?;kotlin.Function1<io.github.vad4nus.lockstep.screens.NodeScope<0:0,0:1>,kotlin.Unit>){0§<kotlin.Any?>;1§<kotlin.Any?>}[0]
+final fun <#A: kotlin/Any?, #B: kotlin/Any?> (io.github.vad4nus.lockstep.screens/NodeScope<#A, #B>).io.github.vad4nus.lockstep.screens/column(kotlin/String, io.github.vad4nus.lockstep.screens/Space? = ..., io.github.vad4nus.lockstep.screens/HAlign = ..., io.github.vad4nus.lockstep.screens/NodeEvent? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ..., kotlin/Function1<io.github.vad4nus.lockstep.screens/NodeColumnScope<#A, #B>, kotlin/Unit>) // io.github.vad4nus.lockstep.screens/column|column@io.github.vad4nus.lockstep.screens.NodeScope<0:0,0:1>(kotlin.String;io.github.vad4nus.lockstep.screens.Space?;io.github.vad4nus.lockstep.screens.HAlign;io.github.vad4nus.lockstep.screens.NodeEvent?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?;kotlin.Function1<io.github.vad4nus.lockstep.screens.NodeColumnScope<0:0,0:1>,kotlin.Unit>){0§<kotlin.Any?>;1§<kotlin.Any?>}[0]
+final fun <#A: kotlin/Any?, #B: kotlin/Any?> (io.github.vad4nus.lockstep.screens/NodeScope<#A, #B>).io.github.vad4nus.lockstep.screens/lazyColumn(kotlin/String, kotlin/Int, io.github.vad4nus.lockstep.screens/Space? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ..., kotlin/Function1<io.github.vad4nus.lockstep.screens/NodeScope<io.github.vad4nus.lockstep.screens/Scrolled, #B>, kotlin/Unit>) // io.github.vad4nus.lockstep.screens/lazyColumn|lazyColumn@io.github.vad4nus.lockstep.screens.NodeScope<0:0,0:1>(kotlin.String;kotlin.Int;io.github.vad4nus.lockstep.screens.Space?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?;kotlin.Function1<io.github.vad4nus.lockstep.screens.NodeScope<io.github.vad4nus.lockstep.screens.Scrolled,0:1>,kotlin.Unit>){0§<kotlin.Any?>;1§<kotlin.Any?>}[0]
+final fun <#A: kotlin/Any?, #B: kotlin/Any?> (io.github.vad4nus.lockstep.screens/NodeScope<#A, #B>).io.github.vad4nus.lockstep.screens/lazyRow(kotlin/String, kotlin/Int, io.github.vad4nus.lockstep.screens/Space? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ..., kotlin/Function1<io.github.vad4nus.lockstep.screens/NodeScope<#A, io.github.vad4nus.lockstep.screens/Scrolled>, kotlin/Unit>) // io.github.vad4nus.lockstep.screens/lazyRow|lazyRow@io.github.vad4nus.lockstep.screens.NodeScope<0:0,0:1>(kotlin.String;kotlin.Int;io.github.vad4nus.lockstep.screens.Space?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?;kotlin.Function1<io.github.vad4nus.lockstep.screens.NodeScope<0:0,io.github.vad4nus.lockstep.screens.Scrolled>,kotlin.Unit>){0§<kotlin.Any?>;1§<kotlin.Any?>}[0]
+final fun <#A: kotlin/Any?, #B: kotlin/Any?> (io.github.vad4nus.lockstep.screens/NodeScope<#A, #B>).io.github.vad4nus.lockstep.screens/row(kotlin/String, io.github.vad4nus.lockstep.screens/Space? = ..., io.github.vad4nus.lockstep.screens/VAlign = ..., io.github.vad4nus.lockstep.screens/NodeEvent? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ..., kotlin/Function1<io.github.vad4nus.lockstep.screens/NodeRowScope<#A, #B>, kotlin/Unit>) // io.github.vad4nus.lockstep.screens/row|row@io.github.vad4nus.lockstep.screens.NodeScope<0:0,0:1>(kotlin.String;io.github.vad4nus.lockstep.screens.Space?;io.github.vad4nus.lockstep.screens.VAlign;io.github.vad4nus.lockstep.screens.NodeEvent?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?;kotlin.Function1<io.github.vad4nus.lockstep.screens.NodeRowScope<0:0,0:1>,kotlin.Unit>){0§<kotlin.Any?>;1§<kotlin.Any?>}[0]
+final fun <#A: kotlin/Any?> (io.github.vad4nus.lockstep.screens/NodeColumnScope<io.github.vad4nus.lockstep.screens/Bounded, #A>).io.github.vad4nus.lockstep.screens/flexibleSpacer(kotlin/String) // io.github.vad4nus.lockstep.screens/flexibleSpacer|flexibleSpacer@io.github.vad4nus.lockstep.screens.NodeColumnScope<io.github.vad4nus.lockstep.screens.Bounded,0:0>(kotlin.String){0§<kotlin.Any?>}[0]
+final fun <#A: kotlin/Any?> (io.github.vad4nus.lockstep.screens/NodeRowScope<#A, io.github.vad4nus.lockstep.screens/Bounded>).io.github.vad4nus.lockstep.screens/flexibleSpacer(kotlin/String) // io.github.vad4nus.lockstep.screens/flexibleSpacer|flexibleSpacer@io.github.vad4nus.lockstep.screens.NodeRowScope<0:0,io.github.vad4nus.lockstep.screens.Bounded>(kotlin.String){0§<kotlin.Any?>}[0]
+final fun <#A: kotlin/Any?> (io.github.vad4nus.lockstep.screens/NodeScope<#A, io.github.vad4nus.lockstep.screens/Bounded>).io.github.vad4nus.lockstep.screens/lazyRow(kotlin/String, io.github.vad4nus.lockstep.screens/Space? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ..., kotlin/Function1<io.github.vad4nus.lockstep.screens/NodeScope<#A, io.github.vad4nus.lockstep.screens/Scrolled>, kotlin/Unit>) // io.github.vad4nus.lockstep.screens/lazyRow|lazyRow@io.github.vad4nus.lockstep.screens.NodeScope<0:0,io.github.vad4nus.lockstep.screens.Bounded>(kotlin.String;io.github.vad4nus.lockstep.screens.Space?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?;kotlin.Function1<io.github.vad4nus.lockstep.screens.NodeScope<0:0,io.github.vad4nus.lockstep.screens.Scrolled>,kotlin.Unit>){0§<kotlin.Any?>}[0]
+final fun <#A: kotlin/Any?> (io.github.vad4nus.lockstep.screens/NodeScope<#A, io.github.vad4nus.lockstep.screens/Bounded>).io.github.vad4nus.lockstep.screens/scrollRow(kotlin/String, io.github.vad4nus.lockstep.screens/Space? = ..., io.github.vad4nus.lockstep.screens/VAlign = ..., io.github.vad4nus.lockstep.screens/NodeEvent? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ..., kotlin/Function1<io.github.vad4nus.lockstep.screens/NodeRowScope<#A, io.github.vad4nus.lockstep.screens/Scrolled>, kotlin/Unit>) // io.github.vad4nus.lockstep.screens/scrollRow|scrollRow@io.github.vad4nus.lockstep.screens.NodeScope<0:0,io.github.vad4nus.lockstep.screens.Bounded>(kotlin.String;io.github.vad4nus.lockstep.screens.Space?;io.github.vad4nus.lockstep.screens.VAlign;io.github.vad4nus.lockstep.screens.NodeEvent?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?;kotlin.Function1<io.github.vad4nus.lockstep.screens.NodeRowScope<0:0,io.github.vad4nus.lockstep.screens.Scrolled>,kotlin.Unit>){0§<kotlin.Any?>}[0]
+final fun <#A: kotlin/Any?> (io.github.vad4nus.lockstep.screens/NodeScope<#A, io.github.vad4nus.lockstep.screens/Scrolled>).io.github.vad4nus.lockstep.screens/lazyRow(kotlin/String, io.github.vad4nus.lockstep.screens/Space? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ..., kotlin/Function1<io.github.vad4nus.lockstep.screens/NodeScope<#A, io.github.vad4nus.lockstep.screens/Scrolled>, kotlin/Unit>) // io.github.vad4nus.lockstep.screens/lazyRow|lazyRow@io.github.vad4nus.lockstep.screens.NodeScope<0:0,io.github.vad4nus.lockstep.screens.Scrolled>(kotlin.String;io.github.vad4nus.lockstep.screens.Space?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?;kotlin.Function1<io.github.vad4nus.lockstep.screens.NodeScope<0:0,io.github.vad4nus.lockstep.screens.Scrolled>,kotlin.Unit>){0§<kotlin.Any?>}[0]
+final fun <#A: kotlin/Any?> (io.github.vad4nus.lockstep.screens/NodeScope<#A, io.github.vad4nus.lockstep.screens/Scrolled>).io.github.vad4nus.lockstep.screens/scrollRow(kotlin/String, io.github.vad4nus.lockstep.screens/Space? = ..., io.github.vad4nus.lockstep.screens/VAlign = ..., io.github.vad4nus.lockstep.screens/NodeEvent? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ..., kotlin/Function1<io.github.vad4nus.lockstep.screens/NodeRowScope<#A, io.github.vad4nus.lockstep.screens/Scrolled>, kotlin/Unit>) // io.github.vad4nus.lockstep.screens/scrollRow|scrollRow@io.github.vad4nus.lockstep.screens.NodeScope<0:0,io.github.vad4nus.lockstep.screens.Scrolled>(kotlin.String;io.github.vad4nus.lockstep.screens.Space?;io.github.vad4nus.lockstep.screens.VAlign;io.github.vad4nus.lockstep.screens.NodeEvent?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?;kotlin.Function1<io.github.vad4nus.lockstep.screens.NodeRowScope<0:0,io.github.vad4nus.lockstep.screens.Scrolled>,kotlin.Unit>){0§<kotlin.Any?>}[0]
+final fun <#A: kotlin/Any?> (io.github.vad4nus.lockstep.screens/NodeScope<io.github.vad4nus.lockstep.screens/Bounded, #A>).io.github.vad4nus.lockstep.screens/lazyColumn(kotlin/String, io.github.vad4nus.lockstep.screens/Space? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ..., kotlin/Function1<io.github.vad4nus.lockstep.screens/NodeScope<io.github.vad4nus.lockstep.screens/Scrolled, #A>, kotlin/Unit>) // io.github.vad4nus.lockstep.screens/lazyColumn|lazyColumn@io.github.vad4nus.lockstep.screens.NodeScope<io.github.vad4nus.lockstep.screens.Bounded,0:0>(kotlin.String;io.github.vad4nus.lockstep.screens.Space?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?;kotlin.Function1<io.github.vad4nus.lockstep.screens.NodeScope<io.github.vad4nus.lockstep.screens.Scrolled,0:0>,kotlin.Unit>){0§<kotlin.Any?>}[0]
+final fun <#A: kotlin/Any?> (io.github.vad4nus.lockstep.screens/NodeScope<io.github.vad4nus.lockstep.screens/Bounded, #A>).io.github.vad4nus.lockstep.screens/scrollColumn(kotlin/String, io.github.vad4nus.lockstep.screens/Space? = ..., io.github.vad4nus.lockstep.screens/HAlign = ..., io.github.vad4nus.lockstep.screens/NodeEvent? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ..., kotlin/Function1<io.github.vad4nus.lockstep.screens/NodeColumnScope<io.github.vad4nus.lockstep.screens/Scrolled, #A>, kotlin/Unit>) // io.github.vad4nus.lockstep.screens/scrollColumn|scrollColumn@io.github.vad4nus.lockstep.screens.NodeScope<io.github.vad4nus.lockstep.screens.Bounded,0:0>(kotlin.String;io.github.vad4nus.lockstep.screens.Space?;io.github.vad4nus.lockstep.screens.HAlign;io.github.vad4nus.lockstep.screens.NodeEvent?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?;kotlin.Function1<io.github.vad4nus.lockstep.screens.NodeColumnScope<io.github.vad4nus.lockstep.screens.Scrolled,0:0>,kotlin.Unit>){0§<kotlin.Any?>}[0]
+final fun <#A: kotlin/Any?> (io.github.vad4nus.lockstep.screens/NodeScope<io.github.vad4nus.lockstep.screens/Scrolled, #A>).io.github.vad4nus.lockstep.screens/lazyColumn(kotlin/String, io.github.vad4nus.lockstep.screens/Space? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ..., kotlin/Function1<io.github.vad4nus.lockstep.screens/NodeScope<io.github.vad4nus.lockstep.screens/Scrolled, #A>, kotlin/Unit>) // io.github.vad4nus.lockstep.screens/lazyColumn|lazyColumn@io.github.vad4nus.lockstep.screens.NodeScope<io.github.vad4nus.lockstep.screens.Scrolled,0:0>(kotlin.String;io.github.vad4nus.lockstep.screens.Space?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?;kotlin.Function1<io.github.vad4nus.lockstep.screens.NodeScope<io.github.vad4nus.lockstep.screens.Scrolled,0:0>,kotlin.Unit>){0§<kotlin.Any?>}[0]
+final fun <#A: kotlin/Any?> (io.github.vad4nus.lockstep.screens/NodeScope<io.github.vad4nus.lockstep.screens/Scrolled, #A>).io.github.vad4nus.lockstep.screens/scrollColumn(kotlin/String, io.github.vad4nus.lockstep.screens/Space? = ..., io.github.vad4nus.lockstep.screens/HAlign = ..., io.github.vad4nus.lockstep.screens/NodeEvent? = ..., io.github.vad4nus.lockstep.screens/Style? = ..., io.github.vad4nus.lockstep.screens/A11y? = ..., kotlin/Function1<io.github.vad4nus.lockstep.screens/NodeColumnScope<io.github.vad4nus.lockstep.screens/Scrolled, #A>, kotlin/Unit>) // io.github.vad4nus.lockstep.screens/scrollColumn|scrollColumn@io.github.vad4nus.lockstep.screens.NodeScope<io.github.vad4nus.lockstep.screens.Scrolled,0:0>(kotlin.String;io.github.vad4nus.lockstep.screens.Space?;io.github.vad4nus.lockstep.screens.HAlign;io.github.vad4nus.lockstep.screens.NodeEvent?;io.github.vad4nus.lockstep.screens.Style?;io.github.vad4nus.lockstep.screens.A11y?;kotlin.Function1<io.github.vad4nus.lockstep.screens.NodeColumnScope<io.github.vad4nus.lockstep.screens.Scrolled,0:0>,kotlin.Unit>){0§<kotlin.Any?>}[0]
+final fun io.github.vad4nus.lockstep.screens/screen(kotlin/String, kotlin/Function1<io.github.vad4nus.lockstep.screens/LayoutViolation, kotlin/Unit> = ..., kotlin/Function1<io.github.vad4nus.lockstep.screens/NodeScope<io.github.vad4nus.lockstep.screens/Bounded, io.github.vad4nus.lockstep.screens/Bounded>, kotlin/Unit>): io.github.vad4nus.lockstep.screens/ScreenSpec // io.github.vad4nus.lockstep.screens/screen|screen(kotlin.String;kotlin.Function1<io.github.vad4nus.lockstep.screens.LayoutViolation,kotlin.Unit>;kotlin.Function1<io.github.vad4nus.lockstep.screens.NodeScope<io.github.vad4nus.lockstep.screens.Bounded,io.github.vad4nus.lockstep.screens.Bounded>,kotlin.Unit>){}[0]

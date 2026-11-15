@@ -1,0 +1,249 @@
+public final class io/github/vad4nus/lockstep/mvvm/DialogResult : java/lang/Enum {
+	public static final field Confirm Lio/github/vad4nus/lockstep/mvvm/DialogResult;
+	public static final field Dismiss Lio/github/vad4nus/lockstep/mvvm/DialogResult;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lio/github/vad4nus/lockstep/mvvm/DialogResult;
+	public static fun values ()[Lio/github/vad4nus/lockstep/mvvm/DialogResult;
+}
+
+public final class io/github/vad4nus/lockstep/mvvm/ErrorDisplay : java/lang/Enum {
+	public static final field Dialog Lio/github/vad4nus/lockstep/mvvm/ErrorDisplay;
+	public static final field Message Lio/github/vad4nus/lockstep/mvvm/ErrorDisplay;
+	public static final field Screen Lio/github/vad4nus/lockstep/mvvm/ErrorDisplay;
+	public static final field Silent Lio/github/vad4nus/lockstep/mvvm/ErrorDisplay;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lio/github/vad4nus/lockstep/mvvm/ErrorDisplay;
+	public static fun values ()[Lio/github/vad4nus/lockstep/mvvm/ErrorDisplay;
+}
+
+public abstract interface class io/github/vad4nus/lockstep/mvvm/ErrorPresenter {
+	public static final field Companion Lio/github/vad4nus/lockstep/mvvm/ErrorPresenter$Companion;
+	public abstract fun present (Lio/github/vad4nus/lockstep/result/AppError;)Lio/github/vad4nus/lockstep/mvvm/UiError;
+}
+
+public final class io/github/vad4nus/lockstep/mvvm/ErrorPresenter$Companion {
+	public final fun standard (Lio/github/vad4nus/lockstep/mvvm/MvvmTexts;)Lio/github/vad4nus/lockstep/mvvm/ErrorPresenter;
+	public static synthetic fun standard$default (Lio/github/vad4nus/lockstep/mvvm/ErrorPresenter$Companion;Lio/github/vad4nus/lockstep/mvvm/MvvmTexts;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/mvvm/ErrorPresenter;
+}
+
+public final class io/github/vad4nus/lockstep/mvvm/LoadingKind : java/lang/Enum {
+	public static final field Background Lio/github/vad4nus/lockstep/mvvm/LoadingKind;
+	public static final field Blocking Lio/github/vad4nus/lockstep/mvvm/LoadingKind;
+	public static final field Refresh Lio/github/vad4nus/lockstep/mvvm/LoadingKind;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lio/github/vad4nus/lockstep/mvvm/LoadingKind;
+	public static fun values ()[Lio/github/vad4nus/lockstep/mvvm/LoadingKind;
+}
+
+public final class io/github/vad4nus/lockstep/mvvm/MessageAction {
+	public fun <init> (Ldev/icerock/moko/resources/desc/StringDesc;Lkotlin/jvm/functions/Function0;)V
+	public final fun getLabel ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public final fun getOnClick ()Lkotlin/jvm/functions/Function0;
+}
+
+public final class io/github/vad4nus/lockstep/mvvm/MessageKind : java/lang/Enum {
+	public static final field Error Lio/github/vad4nus/lockstep/mvvm/MessageKind;
+	public static final field Info Lio/github/vad4nus/lockstep/mvvm/MessageKind;
+	public static final field Success Lio/github/vad4nus/lockstep/mvvm/MessageKind;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lio/github/vad4nus/lockstep/mvvm/MessageKind;
+	public static fun values ()[Lio/github/vad4nus/lockstep/mvvm/MessageKind;
+}
+
+public final class io/github/vad4nus/lockstep/mvvm/MvvmEnvironment {
+	public static final field Companion Lio/github/vad4nus/lockstep/mvvm/MvvmEnvironment$Companion;
+	public fun <init> ()V
+	public fun <init> (Lio/github/vad4nus/lockstep/result/ErrorMapper;Lio/github/vad4nus/lockstep/mvvm/MvvmTexts;Lio/github/vad4nus/lockstep/mvvm/ErrorPresenter;Lkotlin/jvm/functions/Function1;)V
+	public synthetic fun <init> (Lio/github/vad4nus/lockstep/result/ErrorMapper;Lio/github/vad4nus/lockstep/mvvm/MvvmTexts;Lio/github/vad4nus/lockstep/mvvm/ErrorPresenter;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getErrorMapper ()Lio/github/vad4nus/lockstep/result/ErrorMapper;
+	public final fun getErrorPresenter ()Lio/github/vad4nus/lockstep/mvvm/ErrorPresenter;
+	public final fun getErrorReporter ()Lkotlin/jvm/functions/Function1;
+	public final fun getTexts ()Lio/github/vad4nus/lockstep/mvvm/MvvmTexts;
+}
+
+public final class io/github/vad4nus/lockstep/mvvm/MvvmEnvironment$Companion {
+	public final fun getDefault ()Lio/github/vad4nus/lockstep/mvvm/MvvmEnvironment;
+	public final fun setDefault (Lio/github/vad4nus/lockstep/mvvm/MvvmEnvironment;)V
+}
+
+public final class io/github/vad4nus/lockstep/mvvm/MvvmTexts {
+	public fun <init> ()V
+	public fun <init> (Ldev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;Lkotlin/jvm/functions/Function1;Ldev/icerock/moko/resources/desc/StringDesc;)V
+	public synthetic fun <init> (Ldev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;Lkotlin/jvm/functions/Function1;Ldev/icerock/moko/resources/desc/StringDesc;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getNoConnection ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public final fun getOk ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public final fun getRetry ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public final fun getServerError ()Lkotlin/jvm/functions/Function1;
+	public final fun getTimeout ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public final fun getUnauthorized ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public final fun getUnknownError ()Ldev/icerock/moko/resources/desc/StringDesc;
+}
+
+public abstract class io/github/vad4nus/lockstep/mvvm/MvvmViewModel : androidx/lifecycle/ViewModel {
+	public fun <init> (Ljava/lang/Object;Lio/github/vad4nus/lockstep/mvvm/MvvmEnvironment;)V
+	public synthetic fun <init> (Ljava/lang/Object;Lio/github/vad4nus/lockstep/mvvm/MvvmEnvironment;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun dialogResult (JLio/github/vad4nus/lockstep/mvvm/DialogResult;)V
+	public final fun getActions ()Lio/github/vad4nus/lockstep/UiFlow;
+	public final fun getChrome ()Lio/github/vad4nus/lockstep/UiStateFlow;
+	protected final fun getCurrentState ()Ljava/lang/Object;
+	public final fun getState ()Lio/github/vad4nus/lockstep/UiStateFlow;
+	protected fun handleError (Lio/github/vad4nus/lockstep/result/AppError;Lio/github/vad4nus/lockstep/mvvm/ErrorDisplay;)V
+	public final fun messageActionClicked (J)V
+	public final fun messageShown (J)V
+	protected fun onAppear ()V
+	protected fun onCleared ()V
+	protected fun onDisappear ()V
+	protected fun onFirstAppear ()V
+	protected final fun request (Lkotlin/jvm/functions/Function1;Lio/github/vad4nus/lockstep/mvvm/LoadingKind;Ljava/lang/Object;Lio/github/vad4nus/lockstep/mvvm/RequestPolicy;Lio/github/vad4nus/lockstep/mvvm/ErrorDisplay;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/Job;
+	public static synthetic fun request$default (Lio/github/vad4nus/lockstep/mvvm/MvvmViewModel;Lkotlin/jvm/functions/Function1;Lio/github/vad4nus/lockstep/mvvm/LoadingKind;Ljava/lang/Object;Lio/github/vad4nus/lockstep/mvvm/RequestPolicy;Lio/github/vad4nus/lockstep/mvvm/ErrorDisplay;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
+	public final fun retry ()V
+	public final fun screenAppeared ()V
+	public final fun screenDisappeared ()V
+	protected final fun sendAction (Ljava/lang/Object;)V
+	protected final fun showDialog (Ldev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;ZLkotlin/jvm/functions/Function1;)V
+	public static synthetic fun showDialog$default (Lio/github/vad4nus/lockstep/mvvm/MvvmViewModel;Ldev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+	protected final fun showMessage (Ldev/icerock/moko/resources/desc/StringDesc;Lio/github/vad4nus/lockstep/mvvm/MessageKind;Lio/github/vad4nus/lockstep/mvvm/MessageAction;J)V
+	public static synthetic fun showMessage$default (Lio/github/vad4nus/lockstep/mvvm/MvvmViewModel;Ldev/icerock/moko/resources/desc/StringDesc;Lio/github/vad4nus/lockstep/mvvm/MessageKind;Lio/github/vad4nus/lockstep/mvvm/MessageAction;JILjava/lang/Object;)V
+	protected final fun updateState (Lkotlin/jvm/functions/Function1;)V
+}
+
+public final class io/github/vad4nus/lockstep/mvvm/RequestPolicy : java/lang/Enum {
+	public static final field CancelPrevious Lio/github/vad4nus/lockstep/mvvm/RequestPolicy;
+	public static final field KeepRunning Lio/github/vad4nus/lockstep/mvvm/RequestPolicy;
+	public static final field Parallel Lio/github/vad4nus/lockstep/mvvm/RequestPolicy;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lio/github/vad4nus/lockstep/mvvm/RequestPolicy;
+	public static fun values ()[Lio/github/vad4nus/lockstep/mvvm/RequestPolicy;
+}
+
+public final class io/github/vad4nus/lockstep/mvvm/ScreenChrome {
+	public fun <init> ()V
+	public fun <init> (Lio/github/vad4nus/lockstep/mvvm/LoadingKind;ZLio/github/vad4nus/lockstep/mvvm/UiError;Ljava/util/List;Lio/github/vad4nus/lockstep/mvvm/UiDialog;)V
+	public synthetic fun <init> (Lio/github/vad4nus/lockstep/mvvm/LoadingKind;ZLio/github/vad4nus/lockstep/mvvm/UiError;Ljava/util/List;Lio/github/vad4nus/lockstep/mvvm/UiDialog;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Lio/github/vad4nus/lockstep/mvvm/LoadingKind;
+	public final fun component2 ()Z
+	public final fun component3 ()Lio/github/vad4nus/lockstep/mvvm/UiError;
+	public final fun component4 ()Ljava/util/List;
+	public final fun component5 ()Lio/github/vad4nus/lockstep/mvvm/UiDialog;
+	public final fun copy (Lio/github/vad4nus/lockstep/mvvm/LoadingKind;ZLio/github/vad4nus/lockstep/mvvm/UiError;Ljava/util/List;Lio/github/vad4nus/lockstep/mvvm/UiDialog;)Lio/github/vad4nus/lockstep/mvvm/ScreenChrome;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/mvvm/ScreenChrome;Lio/github/vad4nus/lockstep/mvvm/LoadingKind;ZLio/github/vad4nus/lockstep/mvvm/UiError;Ljava/util/List;Lio/github/vad4nus/lockstep/mvvm/UiDialog;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/mvvm/ScreenChrome;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getBackgroundLoading ()Z
+	public final fun getDialog ()Lio/github/vad4nus/lockstep/mvvm/UiDialog;
+	public final fun getError ()Lio/github/vad4nus/lockstep/mvvm/UiError;
+	public final fun getLoading ()Lio/github/vad4nus/lockstep/mvvm/LoadingKind;
+	public final fun getMessages ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/vad4nus/lockstep/mvvm/UiDialog {
+	public fun <init> (JLdev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;Z)V
+	public final fun component1 ()J
+	public final fun component2 ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public final fun component3 ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public final fun component4 ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public final fun component5 ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public final fun component6 ()Z
+	public final fun copy (JLdev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;Z)Lio/github/vad4nus/lockstep/mvvm/UiDialog;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/mvvm/UiDialog;JLdev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;Ldev/icerock/moko/resources/desc/StringDesc;ZILjava/lang/Object;)Lio/github/vad4nus/lockstep/mvvm/UiDialog;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getConfirm ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public final fun getDestructive ()Z
+	public final fun getDismiss ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public final fun getId ()J
+	public final fun getText ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public final fun getTitle ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/vad4nus/lockstep/mvvm/UiError {
+	public fun <init> (Ldev/icerock/moko/resources/desc/StringDesc;Lio/github/vad4nus/lockstep/mvvm/UiErrorKind;Ldev/icerock/moko/resources/desc/StringDesc;)V
+	public synthetic fun <init> (Ldev/icerock/moko/resources/desc/StringDesc;Lio/github/vad4nus/lockstep/mvvm/UiErrorKind;Ldev/icerock/moko/resources/desc/StringDesc;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public final fun component2 ()Lio/github/vad4nus/lockstep/mvvm/UiErrorKind;
+	public final fun component3 ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public final fun copy (Ldev/icerock/moko/resources/desc/StringDesc;Lio/github/vad4nus/lockstep/mvvm/UiErrorKind;Ldev/icerock/moko/resources/desc/StringDesc;)Lio/github/vad4nus/lockstep/mvvm/UiError;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/mvvm/UiError;Ldev/icerock/moko/resources/desc/StringDesc;Lio/github/vad4nus/lockstep/mvvm/UiErrorKind;Ldev/icerock/moko/resources/desc/StringDesc;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/mvvm/UiError;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getKind ()Lio/github/vad4nus/lockstep/mvvm/UiErrorKind;
+	public final fun getMessage ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public final fun getRetryLabel ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/vad4nus/lockstep/mvvm/UiErrorKind : java/lang/Enum {
+	public static final field Network Lio/github/vad4nus/lockstep/mvvm/UiErrorKind;
+	public static final field Server Lio/github/vad4nus/lockstep/mvvm/UiErrorKind;
+	public static final field Unauthorized Lio/github/vad4nus/lockstep/mvvm/UiErrorKind;
+	public static final field Unknown Lio/github/vad4nus/lockstep/mvvm/UiErrorKind;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lio/github/vad4nus/lockstep/mvvm/UiErrorKind;
+	public static fun values ()[Lio/github/vad4nus/lockstep/mvvm/UiErrorKind;
+}
+
+public final class io/github/vad4nus/lockstep/mvvm/UiMessage {
+	public fun <init> (JLdev/icerock/moko/resources/desc/StringDesc;Lio/github/vad4nus/lockstep/mvvm/MessageKind;Ldev/icerock/moko/resources/desc/StringDesc;J)V
+	public final fun component1 ()J
+	public final fun component2 ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public final fun component3 ()Lio/github/vad4nus/lockstep/mvvm/MessageKind;
+	public final fun component4 ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public final fun component5 ()J
+	public final fun copy (JLdev/icerock/moko/resources/desc/StringDesc;Lio/github/vad4nus/lockstep/mvvm/MessageKind;Ldev/icerock/moko/resources/desc/StringDesc;J)Lio/github/vad4nus/lockstep/mvvm/UiMessage;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/mvvm/UiMessage;JLdev/icerock/moko/resources/desc/StringDesc;Lio/github/vad4nus/lockstep/mvvm/MessageKind;Ldev/icerock/moko/resources/desc/StringDesc;JILjava/lang/Object;)Lio/github/vad4nus/lockstep/mvvm/UiMessage;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getActionLabel ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public final fun getDurationMillis ()J
+	public final fun getId ()J
+	public final fun getKind ()Lio/github/vad4nus/lockstep/mvvm/MessageKind;
+	public final fun getText ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/vad4nus/lockstep/mvvm/navigation/NavStack {
+	public fun <init> (Lio/github/vad4nus/lockstep/mvvm/navigation/Route;Ljava/util/List;Lio/github/vad4nus/lockstep/mvvm/navigation/Route;)V
+	public synthetic fun <init> (Lio/github/vad4nus/lockstep/mvvm/navigation/Route;Ljava/util/List;Lio/github/vad4nus/lockstep/mvvm/navigation/Route;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Lio/github/vad4nus/lockstep/mvvm/navigation/Route;
+	public final fun component2 ()Ljava/util/List;
+	public final fun component3 ()Lio/github/vad4nus/lockstep/mvvm/navigation/Route;
+	public final fun copy (Lio/github/vad4nus/lockstep/mvvm/navigation/Route;Ljava/util/List;Lio/github/vad4nus/lockstep/mvvm/navigation/Route;)Lio/github/vad4nus/lockstep/mvvm/navigation/NavStack;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/mvvm/navigation/NavStack;Lio/github/vad4nus/lockstep/mvvm/navigation/Route;Ljava/util/List;Lio/github/vad4nus/lockstep/mvvm/navigation/Route;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/mvvm/navigation/NavStack;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getPath ()Ljava/util/List;
+	public final fun getRoot ()Lio/github/vad4nus/lockstep/mvvm/navigation/Route;
+	public final fun getSheet ()Lio/github/vad4nus/lockstep/mvvm/navigation/Route;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/vad4nus/lockstep/mvvm/navigation/ResultKey {
+	public fun <init> (Ljava/lang/String;)V
+	public final fun getName ()Ljava/lang/String;
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class io/github/vad4nus/lockstep/mvvm/navigation/Route {
+}
+
+public abstract interface class io/github/vad4nus/lockstep/mvvm/navigation/SheetRoute : io/github/vad4nus/lockstep/mvvm/navigation/Route {
+}
+
+public final class io/github/vad4nus/lockstep/mvvm/navigation/StackNavigator {
+	public fun <init> (Lio/github/vad4nus/lockstep/mvvm/navigation/Route;)V
+	public final fun getStack ()Lio/github/vad4nus/lockstep/UiStateFlow;
+	public final fun onSystemDismissSheet (Lio/github/vad4nus/lockstep/mvvm/navigation/Route;)V
+	public final fun onSystemPop (Ljava/util/List;)V
+	public final fun pop ()Z
+	public final fun popTo (Lio/github/vad4nus/lockstep/mvvm/navigation/Route;Z)Z
+	public static synthetic fun popTo$default (Lio/github/vad4nus/lockstep/mvvm/navigation/StackNavigator;Lio/github/vad4nus/lockstep/mvvm/navigation/Route;ZILjava/lang/Object;)Z
+	public final fun popWithResult (Lio/github/vad4nus/lockstep/mvvm/navigation/ResultKey;Ljava/lang/Object;)V
+	public final fun push (Lio/github/vad4nus/lockstep/mvvm/navigation/Route;)V
+	public final fun replaceAll (Lio/github/vad4nus/lockstep/mvvm/navigation/Route;Ljava/util/List;)V
+	public static synthetic fun replaceAll$default (Lio/github/vad4nus/lockstep/mvvm/navigation/StackNavigator;Lio/github/vad4nus/lockstep/mvvm/navigation/Route;Ljava/util/List;ILjava/lang/Object;)V
+	public final fun results (Lio/github/vad4nus/lockstep/mvvm/navigation/ResultKey;)Lkotlinx/coroutines/flow/Flow;
+	public final fun setPath (Ljava/util/List;)V
+}
+

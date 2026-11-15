@@ -1,0 +1,24 @@
+// Klib ABI Dump
+// Targets: [iosArm64, iosSimulatorArm64, iosX64]
+// Rendering settings:
+// - Signature version: 2
+// - Show manifest properties: true
+// - Show declarations: true
+
+// Library unique name: <io.github.vad4nus:lockstep-ktor>
+abstract fun interface io.github.vad4nus.lockstep.ktor/ErrorBodyParser { // io.github.vad4nus.lockstep.ktor/ErrorBodyParser|null[0]
+    abstract suspend fun parse(io.ktor.client.statement/HttpResponse): io.github.vad4nus.lockstep.result/AppError? // io.github.vad4nus.lockstep.ktor/ErrorBodyParser.parse|parse(io.ktor.client.statement.HttpResponse){}[0]
+
+    final object Companion { // io.github.vad4nus.lockstep.ktor/ErrorBodyParser.Companion|null[0]
+        final val None // io.github.vad4nus.lockstep.ktor/ErrorBodyParser.Companion.None|{}None[0]
+            final fun <get-None>(): io.github.vad4nus.lockstep.ktor/ErrorBodyParser // io.github.vad4nus.lockstep.ktor/ErrorBodyParser.Companion.None.<get-None>|<get-None>(){}[0]
+    }
+}
+
+final object io.github.vad4nus.lockstep.ktor/KtorErrorMapper : io.github.vad4nus.lockstep.result/ErrorMapper { // io.github.vad4nus.lockstep.ktor/KtorErrorMapper|null[0]
+    final fun map(kotlin/Throwable): io.github.vad4nus.lockstep.result/AppError // io.github.vad4nus.lockstep.ktor/KtorErrorMapper.map|map(kotlin.Throwable){}[0]
+}
+
+final fun (io.ktor.client/HttpClientConfig<*>).io.github.vad4nus.lockstep.ktor/installLockstepDefaults(kotlin/Int = ..., kotlin.collections/Set<io.ktor.http/HttpMethod> = ...) // io.github.vad4nus.lockstep.ktor/installLockstepDefaults|installLockstepDefaults@io.ktor.client.HttpClientConfig<*>(kotlin.Int;kotlin.collections.Set<io.ktor.http.HttpMethod>){}[0]
+final suspend fun <#A: kotlin/Any?> (io.ktor.client/HttpClient).io.github.vad4nus.lockstep.ktor/executeCall(io.github.vad4nus.lockstep.ktor/ErrorBodyParser, kotlin/Function1<io.ktor.client.request/HttpRequestBuilder, kotlin/Unit>, kotlin.coroutines/SuspendFunction1<io.ktor.client.statement/HttpResponse, #A>): io.github.vad4nus.lockstep.result/AppResult<#A> // io.github.vad4nus.lockstep.ktor/executeCall|executeCall@io.ktor.client.HttpClient(io.github.vad4nus.lockstep.ktor.ErrorBodyParser;kotlin.Function1<io.ktor.client.request.HttpRequestBuilder,kotlin.Unit>;kotlin.coroutines.SuspendFunction1<io.ktor.client.statement.HttpResponse,0:0>){0§<kotlin.Any?>}[0]
+final suspend inline fun <#A: reified kotlin/Any?> (io.ktor.client/HttpClient).io.github.vad4nus.lockstep.ktor/call(io.github.vad4nus.lockstep.ktor/ErrorBodyParser = ..., noinline kotlin/Function1<io.ktor.client.request/HttpRequestBuilder, kotlin/Unit> = ...): io.github.vad4nus.lockstep.result/AppResult<#A> // io.github.vad4nus.lockstep.ktor/call|call@io.ktor.client.HttpClient(io.github.vad4nus.lockstep.ktor.ErrorBodyParser;kotlin.Function1<io.ktor.client.request.HttpRequestBuilder,kotlin.Unit>){0§<kotlin.Any?>}[0]

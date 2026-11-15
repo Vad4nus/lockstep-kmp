@@ -1,0 +1,9 @@
+build/
+.gradle/
+.kotlin/
+.idea/
+local.properties
+*.iml
+.DS_Store
+sample/iosApp/Sample.xcodeproj/
+thoughts/

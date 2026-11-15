@@ -1,0 +1,171 @@
+// Klib ABI Dump
+// Targets: [iosArm64, iosSimulatorArm64, iosX64]
+// Rendering settings:
+// - Signature version: 2
+// - Show manifest properties: true
+// - Show declarations: true
+
+// Library unique name: <io.github.vad4nus:lockstep-result>
+abstract fun interface io.github.vad4nus.lockstep.result/ErrorMapper { // io.github.vad4nus.lockstep.result/ErrorMapper|null[0]
+    abstract fun map(kotlin/Throwable): io.github.vad4nus.lockstep.result/AppError // io.github.vad4nus.lockstep.result/ErrorMapper.map|map(kotlin.Throwable){}[0]
+
+    final object Companion { // io.github.vad4nus.lockstep.result/ErrorMapper.Companion|null[0]
+        final val Default // io.github.vad4nus.lockstep.result/ErrorMapper.Companion.Default|{}Default[0]
+            final fun <get-Default>(): io.github.vad4nus.lockstep.result/ErrorMapper // io.github.vad4nus.lockstep.result/ErrorMapper.Companion.Default.<get-Default>|<get-Default>(){}[0]
+    }
+}
+
+sealed interface <#A: out kotlin/Any?> io.github.vad4nus.lockstep.result/AppResult { // io.github.vad4nus.lockstep.result/AppResult|null[0]
+    final class <#A1: out kotlin/Any?> Success : io.github.vad4nus.lockstep.result/AppResult<#A1> { // io.github.vad4nus.lockstep.result/AppResult.Success|null[0]
+        constructor <init>(#A1) // io.github.vad4nus.lockstep.result/AppResult.Success.<init>|<init>(1:0){}[0]
+
+        final val value // io.github.vad4nus.lockstep.result/AppResult.Success.value|{}value[0]
+            final fun <get-value>(): #A1 // io.github.vad4nus.lockstep.result/AppResult.Success.value.<get-value>|<get-value>(){}[0]
+
+        final fun component1(): #A1 // io.github.vad4nus.lockstep.result/AppResult.Success.component1|component1(){}[0]
+        final fun copy(#A1 = ...): io.github.vad4nus.lockstep.result/AppResult.Success<#A1> // io.github.vad4nus.lockstep.result/AppResult.Success.copy|copy(1:0){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.result/AppResult.Success.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.result/AppResult.Success.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.result/AppResult.Success.toString|toString(){}[0]
+    }
+
+    final class Failure : io.github.vad4nus.lockstep.result/AppResult<kotlin/Nothing> { // io.github.vad4nus.lockstep.result/AppResult.Failure|null[0]
+        constructor <init>(io.github.vad4nus.lockstep.result/AppError) // io.github.vad4nus.lockstep.result/AppResult.Failure.<init>|<init>(io.github.vad4nus.lockstep.result.AppError){}[0]
+
+        final val error // io.github.vad4nus.lockstep.result/AppResult.Failure.error|{}error[0]
+            final fun <get-error>(): io.github.vad4nus.lockstep.result/AppError // io.github.vad4nus.lockstep.result/AppResult.Failure.error.<get-error>|<get-error>(){}[0]
+
+        final fun component1(): io.github.vad4nus.lockstep.result/AppError // io.github.vad4nus.lockstep.result/AppResult.Failure.component1|component1(){}[0]
+        final fun copy(io.github.vad4nus.lockstep.result/AppError = ...): io.github.vad4nus.lockstep.result/AppResult.Failure // io.github.vad4nus.lockstep.result/AppResult.Failure.copy|copy(io.github.vad4nus.lockstep.result.AppError){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.result/AppResult.Failure.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.result/AppResult.Failure.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.result/AppResult.Failure.toString|toString(){}[0]
+    }
+
+    final object Companion { // io.github.vad4nus.lockstep.result/AppResult.Companion|null[0]
+        final fun <#A2: kotlin/Any?, #B2: kotlin/Any?> zip(io.github.vad4nus.lockstep.result/AppResult<#A2>, io.github.vad4nus.lockstep.result/AppResult<#B2>): io.github.vad4nus.lockstep.result/AppResult<kotlin/Pair<#A2, #B2>> // io.github.vad4nus.lockstep.result/AppResult.Companion.zip|zip(io.github.vad4nus.lockstep.result.AppResult<0:0>;io.github.vad4nus.lockstep.result.AppResult<0:1>){0§<kotlin.Any?>;1§<kotlin.Any?>}[0]
+        final fun <#A2: kotlin/Any?> combine(kotlin.collections/List<io.github.vad4nus.lockstep.result/AppResult<#A2>>): io.github.vad4nus.lockstep.result/AppResult<kotlin.collections/List<#A2>> // io.github.vad4nus.lockstep.result/AppResult.Companion.combine|combine(kotlin.collections.List<io.github.vad4nus.lockstep.result.AppResult<0:0>>){0§<kotlin.Any?>}[0]
+    }
+}
+
+sealed interface io.github.vad4nus.lockstep.result/AppError { // io.github.vad4nus.lockstep.result/AppError|null[0]
+    final class Custom : io.github.vad4nus.lockstep.result/AppError { // io.github.vad4nus.lockstep.result/AppError.Custom|null[0]
+        constructor <init>(kotlin/String, dev.icerock.moko.resources.desc/StringDesc? = ...) // io.github.vad4nus.lockstep.result/AppError.Custom.<init>|<init>(kotlin.String;dev.icerock.moko.resources.desc.StringDesc?){}[0]
+
+        final val code // io.github.vad4nus.lockstep.result/AppError.Custom.code|{}code[0]
+            final fun <get-code>(): kotlin/String // io.github.vad4nus.lockstep.result/AppError.Custom.code.<get-code>|<get-code>(){}[0]
+        final val message // io.github.vad4nus.lockstep.result/AppError.Custom.message|{}message[0]
+            final fun <get-message>(): dev.icerock.moko.resources.desc/StringDesc? // io.github.vad4nus.lockstep.result/AppError.Custom.message.<get-message>|<get-message>(){}[0]
+
+        final fun component1(): kotlin/String // io.github.vad4nus.lockstep.result/AppError.Custom.component1|component1(){}[0]
+        final fun component2(): dev.icerock.moko.resources.desc/StringDesc? // io.github.vad4nus.lockstep.result/AppError.Custom.component2|component2(){}[0]
+        final fun copy(kotlin/String = ..., dev.icerock.moko.resources.desc/StringDesc? = ...): io.github.vad4nus.lockstep.result/AppError.Custom // io.github.vad4nus.lockstep.result/AppError.Custom.copy|copy(kotlin.String;dev.icerock.moko.resources.desc.StringDesc?){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.result/AppError.Custom.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.result/AppError.Custom.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.result/AppError.Custom.toString|toString(){}[0]
+    }
+
+    final class Http : io.github.vad4nus.lockstep.result/AppError { // io.github.vad4nus.lockstep.result/AppError.Http|null[0]
+        constructor <init>(kotlin/Int, kotlin/String?, kotlin.collections/List<io.github.vad4nus.lockstep.result/ApiErrorDetail> = ...) // io.github.vad4nus.lockstep.result/AppError.Http.<init>|<init>(kotlin.Int;kotlin.String?;kotlin.collections.List<io.github.vad4nus.lockstep.result.ApiErrorDetail>){}[0]
+
+        final val code // io.github.vad4nus.lockstep.result/AppError.Http.code|{}code[0]
+            final fun <get-code>(): kotlin/Int // io.github.vad4nus.lockstep.result/AppError.Http.code.<get-code>|<get-code>(){}[0]
+        final val details // io.github.vad4nus.lockstep.result/AppError.Http.details|{}details[0]
+            final fun <get-details>(): kotlin.collections/List<io.github.vad4nus.lockstep.result/ApiErrorDetail> // io.github.vad4nus.lockstep.result/AppError.Http.details.<get-details>|<get-details>(){}[0]
+        final val message // io.github.vad4nus.lockstep.result/AppError.Http.message|{}message[0]
+            final fun <get-message>(): kotlin/String? // io.github.vad4nus.lockstep.result/AppError.Http.message.<get-message>|<get-message>(){}[0]
+
+        final fun component1(): kotlin/Int // io.github.vad4nus.lockstep.result/AppError.Http.component1|component1(){}[0]
+        final fun component2(): kotlin/String? // io.github.vad4nus.lockstep.result/AppError.Http.component2|component2(){}[0]
+        final fun component3(): kotlin.collections/List<io.github.vad4nus.lockstep.result/ApiErrorDetail> // io.github.vad4nus.lockstep.result/AppError.Http.component3|component3(){}[0]
+        final fun copy(kotlin/Int = ..., kotlin/String? = ..., kotlin.collections/List<io.github.vad4nus.lockstep.result/ApiErrorDetail> = ...): io.github.vad4nus.lockstep.result/AppError.Http // io.github.vad4nus.lockstep.result/AppError.Http.copy|copy(kotlin.Int;kotlin.String?;kotlin.collections.List<io.github.vad4nus.lockstep.result.ApiErrorDetail>){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.result/AppError.Http.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.result/AppError.Http.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.result/AppError.Http.toString|toString(){}[0]
+    }
+
+    final class Serialization : io.github.vad4nus.lockstep.result/AppError { // io.github.vad4nus.lockstep.result/AppError.Serialization|null[0]
+        constructor <init>(kotlin/String?) // io.github.vad4nus.lockstep.result/AppError.Serialization.<init>|<init>(kotlin.String?){}[0]
+
+        final val message // io.github.vad4nus.lockstep.result/AppError.Serialization.message|{}message[0]
+            final fun <get-message>(): kotlin/String? // io.github.vad4nus.lockstep.result/AppError.Serialization.message.<get-message>|<get-message>(){}[0]
+
+        final fun component1(): kotlin/String? // io.github.vad4nus.lockstep.result/AppError.Serialization.component1|component1(){}[0]
+        final fun copy(kotlin/String? = ...): io.github.vad4nus.lockstep.result/AppError.Serialization // io.github.vad4nus.lockstep.result/AppError.Serialization.copy|copy(kotlin.String?){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.result/AppError.Serialization.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.result/AppError.Serialization.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.result/AppError.Serialization.toString|toString(){}[0]
+    }
+
+    final class Unauthorized : io.github.vad4nus.lockstep.result/AppError { // io.github.vad4nus.lockstep.result/AppError.Unauthorized|null[0]
+        constructor <init>(kotlin/Boolean = ..., kotlin/String? = ...) // io.github.vad4nus.lockstep.result/AppError.Unauthorized.<init>|<init>(kotlin.Boolean;kotlin.String?){}[0]
+
+        final val guestLoginRequired // io.github.vad4nus.lockstep.result/AppError.Unauthorized.guestLoginRequired|{}guestLoginRequired[0]
+            final fun <get-guestLoginRequired>(): kotlin/Boolean // io.github.vad4nus.lockstep.result/AppError.Unauthorized.guestLoginRequired.<get-guestLoginRequired>|<get-guestLoginRequired>(){}[0]
+        final val message // io.github.vad4nus.lockstep.result/AppError.Unauthorized.message|{}message[0]
+            final fun <get-message>(): kotlin/String? // io.github.vad4nus.lockstep.result/AppError.Unauthorized.message.<get-message>|<get-message>(){}[0]
+
+        final fun component1(): kotlin/Boolean // io.github.vad4nus.lockstep.result/AppError.Unauthorized.component1|component1(){}[0]
+        final fun component2(): kotlin/String? // io.github.vad4nus.lockstep.result/AppError.Unauthorized.component2|component2(){}[0]
+        final fun copy(kotlin/Boolean = ..., kotlin/String? = ...): io.github.vad4nus.lockstep.result/AppError.Unauthorized // io.github.vad4nus.lockstep.result/AppError.Unauthorized.copy|copy(kotlin.Boolean;kotlin.String?){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.result/AppError.Unauthorized.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.result/AppError.Unauthorized.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.result/AppError.Unauthorized.toString|toString(){}[0]
+    }
+
+    final class Unknown : io.github.vad4nus.lockstep.result/AppError { // io.github.vad4nus.lockstep.result/AppError.Unknown|null[0]
+        constructor <init>(kotlin/String?, kotlin/Throwable? = ...) // io.github.vad4nus.lockstep.result/AppError.Unknown.<init>|<init>(kotlin.String?;kotlin.Throwable?){}[0]
+
+        final val cause // io.github.vad4nus.lockstep.result/AppError.Unknown.cause|{}cause[0]
+            final fun <get-cause>(): kotlin/Throwable? // io.github.vad4nus.lockstep.result/AppError.Unknown.cause.<get-cause>|<get-cause>(){}[0]
+        final val message // io.github.vad4nus.lockstep.result/AppError.Unknown.message|{}message[0]
+            final fun <get-message>(): kotlin/String? // io.github.vad4nus.lockstep.result/AppError.Unknown.message.<get-message>|<get-message>(){}[0]
+
+        final fun component1(): kotlin/String? // io.github.vad4nus.lockstep.result/AppError.Unknown.component1|component1(){}[0]
+        final fun component2(): kotlin/Throwable? // io.github.vad4nus.lockstep.result/AppError.Unknown.component2|component2(){}[0]
+        final fun copy(kotlin/String? = ..., kotlin/Throwable? = ...): io.github.vad4nus.lockstep.result/AppError.Unknown // io.github.vad4nus.lockstep.result/AppError.Unknown.copy|copy(kotlin.String?;kotlin.Throwable?){}[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.result/AppError.Unknown.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.result/AppError.Unknown.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.result/AppError.Unknown.toString|toString(){}[0]
+    }
+
+    final object NoConnection : io.github.vad4nus.lockstep.result/AppError { // io.github.vad4nus.lockstep.result/AppError.NoConnection|null[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.result/AppError.NoConnection.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.result/AppError.NoConnection.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.result/AppError.NoConnection.toString|toString(){}[0]
+    }
+
+    final object Timeout : io.github.vad4nus.lockstep.result/AppError { // io.github.vad4nus.lockstep.result/AppError.Timeout|null[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.result/AppError.Timeout.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.result/AppError.Timeout.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // io.github.vad4nus.lockstep.result/AppError.Timeout.toString|toString(){}[0]
+    }
+}
+
+final class io.github.vad4nus.lockstep.result/ApiErrorDetail { // io.github.vad4nus.lockstep.result/ApiErrorDetail|null[0]
+    constructor <init>(kotlin/String?, kotlin/String) // io.github.vad4nus.lockstep.result/ApiErrorDetail.<init>|<init>(kotlin.String?;kotlin.String){}[0]
+
+    final val field // io.github.vad4nus.lockstep.result/ApiErrorDetail.field|{}field[0]
+        final fun <get-field>(): kotlin/String? // io.github.vad4nus.lockstep.result/ApiErrorDetail.field.<get-field>|<get-field>(){}[0]
+    final val message // io.github.vad4nus.lockstep.result/ApiErrorDetail.message|{}message[0]
+        final fun <get-message>(): kotlin/String // io.github.vad4nus.lockstep.result/ApiErrorDetail.message.<get-message>|<get-message>(){}[0]
+
+    final fun component1(): kotlin/String? // io.github.vad4nus.lockstep.result/ApiErrorDetail.component1|component1(){}[0]
+    final fun component2(): kotlin/String // io.github.vad4nus.lockstep.result/ApiErrorDetail.component2|component2(){}[0]
+    final fun copy(kotlin/String? = ..., kotlin/String = ...): io.github.vad4nus.lockstep.result/ApiErrorDetail // io.github.vad4nus.lockstep.result/ApiErrorDetail.copy|copy(kotlin.String?;kotlin.String){}[0]
+    final fun equals(kotlin/Any?): kotlin/Boolean // io.github.vad4nus.lockstep.result/ApiErrorDetail.equals|equals(kotlin.Any?){}[0]
+    final fun hashCode(): kotlin/Int // io.github.vad4nus.lockstep.result/ApiErrorDetail.hashCode|hashCode(){}[0]
+    final fun toString(): kotlin/String // io.github.vad4nus.lockstep.result/ApiErrorDetail.toString|toString(){}[0]
+}
+
+final fun <#A: kotlin/Any> (io.github.vad4nus.lockstep.result/AppResult<#A?>).io.github.vad4nus.lockstep.result/ensureNotNull(kotlin/Function0<io.github.vad4nus.lockstep.result/AppError> = ...): io.github.vad4nus.lockstep.result/AppResult<#A> // io.github.vad4nus.lockstep.result/ensureNotNull|ensureNotNull@io.github.vad4nus.lockstep.result.AppResult<0:0?>(kotlin.Function0<io.github.vad4nus.lockstep.result.AppError>){0§<kotlin.Any>}[0]
+final fun <#A: kotlin/Any?> (io.github.vad4nus.lockstep.result/AppResult<#A>).io.github.vad4nus.lockstep.result/getOrNull(): #A? // io.github.vad4nus.lockstep.result/getOrNull|getOrNull@io.github.vad4nus.lockstep.result.AppResult<0:0>(){0§<kotlin.Any?>}[0]
+final inline fun <#A: kotlin/Any?, #B: kotlin/Any?> (io.github.vad4nus.lockstep.result/AppResult<#A>).io.github.vad4nus.lockstep.result/flatMap(kotlin/Function1<#A, io.github.vad4nus.lockstep.result/AppResult<#B>>): io.github.vad4nus.lockstep.result/AppResult<#B> // io.github.vad4nus.lockstep.result/flatMap|flatMap@io.github.vad4nus.lockstep.result.AppResult<0:0>(kotlin.Function1<0:0,io.github.vad4nus.lockstep.result.AppResult<0:1>>){0§<kotlin.Any?>;1§<kotlin.Any?>}[0]
+final inline fun <#A: kotlin/Any?, #B: kotlin/Any?> (io.github.vad4nus.lockstep.result/AppResult<#A>).io.github.vad4nus.lockstep.result/fold(kotlin/Function1<#A, #B>, kotlin/Function1<io.github.vad4nus.lockstep.result/AppError, #B>): #B // io.github.vad4nus.lockstep.result/fold|fold@io.github.vad4nus.lockstep.result.AppResult<0:0>(kotlin.Function1<0:0,0:1>;kotlin.Function1<io.github.vad4nus.lockstep.result.AppError,0:1>){0§<kotlin.Any?>;1§<kotlin.Any?>}[0]
+final inline fun <#A: kotlin/Any?, #B: kotlin/Any?> (io.github.vad4nus.lockstep.result/AppResult<#A>).io.github.vad4nus.lockstep.result/map(kotlin/Function1<#A, #B>): io.github.vad4nus.lockstep.result/AppResult<#B> // io.github.vad4nus.lockstep.result/map|map@io.github.vad4nus.lockstep.result.AppResult<0:0>(kotlin.Function1<0:0,0:1>){0§<kotlin.Any?>;1§<kotlin.Any?>}[0]
+final inline fun <#A: kotlin/Any?> (io.github.vad4nus.lockstep.result/AppResult<#A>).io.github.vad4nus.lockstep.result/getOrElse(kotlin/Function1<io.github.vad4nus.lockstep.result/AppError, #A>): #A // io.github.vad4nus.lockstep.result/getOrElse|getOrElse@io.github.vad4nus.lockstep.result.AppResult<0:0>(kotlin.Function1<io.github.vad4nus.lockstep.result.AppError,0:0>){0§<kotlin.Any?>}[0]
+final inline fun <#A: kotlin/Any?> (io.github.vad4nus.lockstep.result/AppResult<#A>).io.github.vad4nus.lockstep.result/mapError(kotlin/Function1<io.github.vad4nus.lockstep.result/AppError, io.github.vad4nus.lockstep.result/AppError>): io.github.vad4nus.lockstep.result/AppResult<#A> // io.github.vad4nus.lockstep.result/mapError|mapError@io.github.vad4nus.lockstep.result.AppResult<0:0>(kotlin.Function1<io.github.vad4nus.lockstep.result.AppError,io.github.vad4nus.lockstep.result.AppError>){0§<kotlin.Any?>}[0]
+final inline fun <#A: kotlin/Any?> (io.github.vad4nus.lockstep.result/AppResult<#A>).io.github.vad4nus.lockstep.result/onFailure(kotlin/Function1<io.github.vad4nus.lockstep.result/AppError, kotlin/Unit>): io.github.vad4nus.lockstep.result/AppResult<#A> // io.github.vad4nus.lockstep.result/onFailure|onFailure@io.github.vad4nus.lockstep.result.AppResult<0:0>(kotlin.Function1<io.github.vad4nus.lockstep.result.AppError,kotlin.Unit>){0§<kotlin.Any?>}[0]
+final inline fun <#A: kotlin/Any?> (io.github.vad4nus.lockstep.result/AppResult<#A>).io.github.vad4nus.lockstep.result/onSuccess(kotlin/Function1<#A, kotlin/Unit>): io.github.vad4nus.lockstep.result/AppResult<#A> // io.github.vad4nus.lockstep.result/onSuccess|onSuccess@io.github.vad4nus.lockstep.result.AppResult<0:0>(kotlin.Function1<0:0,kotlin.Unit>){0§<kotlin.Any?>}[0]
+final inline fun <#A: kotlin/Any?> (io.github.vad4nus.lockstep.result/AppResult<#A>).io.github.vad4nus.lockstep.result/recover(kotlin/Function1<io.github.vad4nus.lockstep.result/AppError, #A>): io.github.vad4nus.lockstep.result/AppResult<#A> // io.github.vad4nus.lockstep.result/recover|recover@io.github.vad4nus.lockstep.result.AppResult<0:0>(kotlin.Function1<io.github.vad4nus.lockstep.result.AppError,0:0>){0§<kotlin.Any?>}[0]
+final suspend fun <#A: kotlin/Any?> io.github.vad4nus.lockstep.result/catching(io.github.vad4nus.lockstep.result/ErrorMapper = ..., kotlin.coroutines/SuspendFunction0<#A>): io.github.vad4nus.lockstep.result/AppResult<#A> // io.github.vad4nus.lockstep.result/catching|catching(io.github.vad4nus.lockstep.result.ErrorMapper;kotlin.coroutines.SuspendFunction0<0:0>){0§<kotlin.Any?>}[0]

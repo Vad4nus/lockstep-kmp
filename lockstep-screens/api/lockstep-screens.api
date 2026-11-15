@@ -1,0 +1,1010 @@
+public final class io/github/vad4nus/lockstep/screens/A11y {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/A11y$Companion;
+	public fun <init> ()V
+	public fun <init> (Ljava/lang/String;ZZ)V
+	public synthetic fun <init> (Ljava/lang/String;ZZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Z
+	public final fun component3 ()Z
+	public final fun copy (Ljava/lang/String;ZZ)Lio/github/vad4nus/lockstep/screens/A11y;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/A11y;Ljava/lang/String;ZZILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/A11y;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getHeading ()Z
+	public final fun getHidden ()Z
+	public final fun getLabel ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/A11y$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/A11y$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/A11y;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/A11y;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/A11y$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class io/github/vad4nus/lockstep/screens/Bounded {
+}
+
+public final class io/github/vad4nus/lockstep/screens/ButtonVariant : java/lang/Enum {
+	public static final field Primary Lio/github/vad4nus/lockstep/screens/ButtonVariant;
+	public static final field Secondary Lio/github/vad4nus/lockstep/screens/ButtonVariant;
+	public static final field Text Lio/github/vad4nus/lockstep/screens/ButtonVariant;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lio/github/vad4nus/lockstep/screens/ButtonVariant;
+	public static fun values ()[Lio/github/vad4nus/lockstep/screens/ButtonVariant;
+}
+
+public final class io/github/vad4nus/lockstep/screens/ColorToken : java/lang/Enum {
+	public static final field Background Lio/github/vad4nus/lockstep/screens/ColorToken;
+	public static final field Error Lio/github/vad4nus/lockstep/screens/ColorToken;
+	public static final field Primary Lio/github/vad4nus/lockstep/screens/ColorToken;
+	public static final field Secondary Lio/github/vad4nus/lockstep/screens/ColorToken;
+	public static final field Surface Lio/github/vad4nus/lockstep/screens/ColorToken;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lio/github/vad4nus/lockstep/screens/ColorToken;
+	public static fun values ()[Lio/github/vad4nus/lockstep/screens/ColorToken;
+}
+
+public final class io/github/vad4nus/lockstep/screens/FormState {
+	public fun <init> ()V
+	public fun <init> (Ljava/util/Map;Ljava/util/Map;)V
+	public synthetic fun <init> (Ljava/util/Map;Ljava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/util/Map;
+	public final fun component2 ()Ljava/util/Map;
+	public final fun copy (Ljava/util/Map;Ljava/util/Map;)Lio/github/vad4nus/lockstep/screens/FormState;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/FormState;Ljava/util/Map;Ljava/util/Map;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/FormState;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getErrors ()Ljava/util/Map;
+	public final fun getValues ()Ljava/util/Map;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/vad4nus/lockstep/screens/HAlign : java/lang/Enum {
+	public static final field Center Lio/github/vad4nus/lockstep/screens/HAlign;
+	public static final field End Lio/github/vad4nus/lockstep/screens/HAlign;
+	public static final field Start Lio/github/vad4nus/lockstep/screens/HAlign;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lio/github/vad4nus/lockstep/screens/HAlign;
+	public static fun values ()[Lio/github/vad4nus/lockstep/screens/HAlign;
+}
+
+public final class io/github/vad4nus/lockstep/screens/InputKind : java/lang/Enum {
+	public static final field Email Lio/github/vad4nus/lockstep/screens/InputKind;
+	public static final field Number Lio/github/vad4nus/lockstep/screens/InputKind;
+	public static final field Password Lio/github/vad4nus/lockstep/screens/InputKind;
+	public static final field Text Lio/github/vad4nus/lockstep/screens/InputKind;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lio/github/vad4nus/lockstep/screens/InputKind;
+	public static fun values ()[Lio/github/vad4nus/lockstep/screens/InputKind;
+}
+
+public abstract interface class io/github/vad4nus/lockstep/screens/InputRule {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/InputRule$Companion;
+	public abstract fun getMessage ()Ljava/lang/String;
+}
+
+public final class io/github/vad4nus/lockstep/screens/InputRule$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/InputRule$MinLength : io/github/vad4nus/lockstep/screens/InputRule {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/InputRule$MinLength$Companion;
+	public fun <init> (ILjava/lang/String;)V
+	public final fun component1 ()I
+	public final fun component2 ()Ljava/lang/String;
+	public final fun copy (ILjava/lang/String;)Lio/github/vad4nus/lockstep/screens/InputRule$MinLength;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/InputRule$MinLength;ILjava/lang/String;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/InputRule$MinLength;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getLength ()I
+	public fun getMessage ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/InputRule$MinLength$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/InputRule$MinLength$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/InputRule$MinLength;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/InputRule$MinLength;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/InputRule$MinLength$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/InputRule$Pattern : io/github/vad4nus/lockstep/screens/InputRule {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/InputRule$Pattern$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lio/github/vad4nus/lockstep/screens/InputRule$Pattern;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/InputRule$Pattern;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/InputRule$Pattern;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getMessage ()Ljava/lang/String;
+	public final fun getRegex ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/InputRule$Pattern$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/InputRule$Pattern$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/InputRule$Pattern;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/InputRule$Pattern;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/InputRule$Pattern$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/InputRule$Required : io/github/vad4nus/lockstep/screens/InputRule {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/InputRule$Required$Companion;
+	public fun <init> (Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;)Lio/github/vad4nus/lockstep/screens/InputRule$Required;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/InputRule$Required;Ljava/lang/String;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/InputRule$Required;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getMessage ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/InputRule$Required$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/InputRule$Required$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/InputRule$Required;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/InputRule$Required;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/InputRule$Required$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/InputRule$Unknown : io/github/vad4nus/lockstep/screens/InputRule {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/InputRule$Unknown$Companion;
+	public fun <init> ()V
+	public fun <init> (Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;)Lio/github/vad4nus/lockstep/screens/InputRule$Unknown;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/InputRule$Unknown;Ljava/lang/String;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/InputRule$Unknown;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getMessage ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/InputRule$Unknown$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/InputRule$Unknown$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/InputRule$Unknown;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/InputRule$Unknown;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/InputRule$Unknown$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/LayoutViolation {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lio/github/vad4nus/lockstep/screens/LayoutViolation;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/LayoutViolation;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/LayoutViolation;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getMessage ()Ljava/lang/String;
+	public final fun getNodeId ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/vad4nus/lockstep/screens/ListAxis : java/lang/Enum {
+	public static final field Horizontal Lio/github/vad4nus/lockstep/screens/ListAxis;
+	public static final field Vertical Lio/github/vad4nus/lockstep/screens/ListAxis;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lio/github/vad4nus/lockstep/screens/ListAxis;
+	public static fun values ()[Lio/github/vad4nus/lockstep/screens/ListAxis;
+}
+
+public abstract interface class io/github/vad4nus/lockstep/screens/Node {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/Node$Companion;
+	public abstract fun getA11y ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public abstract fun getId ()Ljava/lang/String;
+	public abstract fun getStyle ()Lio/github/vad4nus/lockstep/screens/Style;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Box : io/github/vad4nus/lockstep/screens/Node {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/Node$Box$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/util/List;
+	public final fun component3 ()Lio/github/vad4nus/lockstep/screens/NodeEvent;
+	public final fun component4 ()Lio/github/vad4nus/lockstep/screens/Style;
+	public final fun component5 ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun copy (Ljava/lang/String;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)Lio/github/vad4nus/lockstep/screens/Node$Box;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/Node$Box;Ljava/lang/String;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/Node$Box;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getA11y ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun getChildren ()Ljava/util/List;
+	public final fun getEvent ()Lio/github/vad4nus/lockstep/screens/NodeEvent;
+	public fun getId ()Ljava/lang/String;
+	public fun getStyle ()Lio/github/vad4nus/lockstep/screens/Style;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/Node$Box$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/Node$Box$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/Node$Box;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/Node$Box;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Box$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Button : io/github/vad4nus/lockstep/screens/Node {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/Node$Button$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/ButtonVariant;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/ButtonVariant;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Lio/github/vad4nus/lockstep/screens/NodeEvent;
+	public final fun component4 ()Lio/github/vad4nus/lockstep/screens/ButtonVariant;
+	public final fun component5 ()Lio/github/vad4nus/lockstep/screens/Style;
+	public final fun component6 ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/ButtonVariant;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)Lio/github/vad4nus/lockstep/screens/Node$Button;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/Node$Button;Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/ButtonVariant;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/Node$Button;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getA11y ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun getEvent ()Lio/github/vad4nus/lockstep/screens/NodeEvent;
+	public fun getId ()Ljava/lang/String;
+	public final fun getLabel ()Ljava/lang/String;
+	public fun getStyle ()Lio/github/vad4nus/lockstep/screens/Style;
+	public final fun getVariant ()Lio/github/vad4nus/lockstep/screens/ButtonVariant;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/Node$Button$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/Node$Button$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/Node$Button;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/Node$Button;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Button$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Column : io/github/vad4nus/lockstep/screens/Node {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/Node$Column$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/HAlign;ZLio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/HAlign;ZLio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/util/List;
+	public final fun component3 ()Lio/github/vad4nus/lockstep/screens/Space;
+	public final fun component4 ()Lio/github/vad4nus/lockstep/screens/HAlign;
+	public final fun component5 ()Z
+	public final fun component6 ()Lio/github/vad4nus/lockstep/screens/NodeEvent;
+	public final fun component7 ()Lio/github/vad4nus/lockstep/screens/Style;
+	public final fun component8 ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun copy (Ljava/lang/String;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/HAlign;ZLio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)Lio/github/vad4nus/lockstep/screens/Node$Column;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/Node$Column;Ljava/lang/String;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/HAlign;ZLio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/Node$Column;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getA11y ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun getAlign ()Lio/github/vad4nus/lockstep/screens/HAlign;
+	public final fun getChildren ()Ljava/util/List;
+	public final fun getEvent ()Lio/github/vad4nus/lockstep/screens/NodeEvent;
+	public fun getId ()Ljava/lang/String;
+	public final fun getScroll ()Z
+	public final fun getSpacing ()Lio/github/vad4nus/lockstep/screens/Space;
+	public fun getStyle ()Lio/github/vad4nus/lockstep/screens/Style;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/Node$Column$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/Node$Column$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/Node$Column;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/Node$Column;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Column$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Custom : io/github/vad4nus/lockstep/screens/Node {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/Node$Custom$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/util/Map;
+	public final fun component4 ()Lio/github/vad4nus/lockstep/screens/Style;
+	public final fun component5 ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)Lio/github/vad4nus/lockstep/screens/Node$Custom;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/Node$Custom;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/Node$Custom;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getA11y ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public fun getId ()Ljava/lang/String;
+	public final fun getKey ()Ljava/lang/String;
+	public final fun getProps ()Ljava/util/Map;
+	public fun getStyle ()Lio/github/vad4nus/lockstep/screens/Style;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/Node$Custom$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/Node$Custom$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/Node$Custom;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/Node$Custom;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Custom$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Image : io/github/vad4nus/lockstep/screens/Node {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/Node$Image$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;ILio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;ILio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()I
+	public final fun component4 ()Lio/github/vad4nus/lockstep/screens/Style;
+	public final fun component5 ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;ILio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)Lio/github/vad4nus/lockstep/screens/Node$Image;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/Node$Image;Ljava/lang/String;Ljava/lang/String;ILio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/Node$Image;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getA11y ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public fun getId ()Ljava/lang/String;
+	public final fun getName ()Ljava/lang/String;
+	public final fun getSize ()I
+	public fun getStyle ()Lio/github/vad4nus/lockstep/screens/Style;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/Node$Image$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/Node$Image$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/Node$Image;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/Node$Image;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Image$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Input : io/github/vad4nus/lockstep/screens/Node {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/Node$Input$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/InputKind;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/InputKind;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Lio/github/vad4nus/lockstep/screens/InputKind;
+	public final fun component5 ()Ljava/util/List;
+	public final fun component6 ()Lio/github/vad4nus/lockstep/screens/Style;
+	public final fun component7 ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/InputKind;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)Lio/github/vad4nus/lockstep/screens/Node$Input;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/Node$Input;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/InputKind;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/Node$Input;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getA11y ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun getField ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public final fun getKind ()Lio/github/vad4nus/lockstep/screens/InputKind;
+	public final fun getLabel ()Ljava/lang/String;
+	public final fun getRules ()Ljava/util/List;
+	public fun getStyle ()Lio/github/vad4nus/lockstep/screens/Style;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/Node$Input$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/Node$Input$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/Node$Input;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/Node$Input;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Input$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$LazyList : io/github/vad4nus/lockstep/screens/Node {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/Node$LazyList$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/ListAxis;Lio/github/vad4nus/lockstep/screens/Space;Ljava/lang/Integer;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/ListAxis;Lio/github/vad4nus/lockstep/screens/Space;Ljava/lang/Integer;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/util/List;
+	public final fun component3 ()Lio/github/vad4nus/lockstep/screens/ListAxis;
+	public final fun component4 ()Lio/github/vad4nus/lockstep/screens/Space;
+	public final fun component5 ()Ljava/lang/Integer;
+	public final fun component6 ()Lio/github/vad4nus/lockstep/screens/Style;
+	public final fun component7 ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun copy (Ljava/lang/String;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/ListAxis;Lio/github/vad4nus/lockstep/screens/Space;Ljava/lang/Integer;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)Lio/github/vad4nus/lockstep/screens/Node$LazyList;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/Node$LazyList;Ljava/lang/String;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/ListAxis;Lio/github/vad4nus/lockstep/screens/Space;Ljava/lang/Integer;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/Node$LazyList;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getA11y ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun getAxis ()Lio/github/vad4nus/lockstep/screens/ListAxis;
+	public fun getId ()Ljava/lang/String;
+	public final fun getItems ()Ljava/util/List;
+	public final fun getSize ()Ljava/lang/Integer;
+	public final fun getSpacing ()Lio/github/vad4nus/lockstep/screens/Space;
+	public fun getStyle ()Lio/github/vad4nus/lockstep/screens/Style;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/Node$LazyList$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/Node$LazyList$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/Node$LazyList;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/Node$LazyList;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$LazyList$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Row : io/github/vad4nus/lockstep/screens/Node {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/Node$Row$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/VAlign;ZLio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/VAlign;ZLio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/util/List;
+	public final fun component3 ()Lio/github/vad4nus/lockstep/screens/Space;
+	public final fun component4 ()Lio/github/vad4nus/lockstep/screens/VAlign;
+	public final fun component5 ()Z
+	public final fun component6 ()Lio/github/vad4nus/lockstep/screens/NodeEvent;
+	public final fun component7 ()Lio/github/vad4nus/lockstep/screens/Style;
+	public final fun component8 ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun copy (Ljava/lang/String;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/VAlign;ZLio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)Lio/github/vad4nus/lockstep/screens/Node$Row;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/Node$Row;Ljava/lang/String;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/VAlign;ZLio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/Node$Row;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getA11y ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun getAlign ()Lio/github/vad4nus/lockstep/screens/VAlign;
+	public final fun getChildren ()Ljava/util/List;
+	public final fun getEvent ()Lio/github/vad4nus/lockstep/screens/NodeEvent;
+	public fun getId ()Ljava/lang/String;
+	public final fun getScroll ()Z
+	public final fun getSpacing ()Lio/github/vad4nus/lockstep/screens/Space;
+	public fun getStyle ()Lio/github/vad4nus/lockstep/screens/Style;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/Node$Row$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/Node$Row$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/Node$Row;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/Node$Row;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Row$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Spacer : io/github/vad4nus/lockstep/screens/Node {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/Node$Spacer$Companion;
+	public fun <init> (Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;ZLio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)V
+	public synthetic fun <init> (Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;ZLio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Lio/github/vad4nus/lockstep/screens/Space;
+	public final fun component3 ()Z
+	public final fun component4 ()Lio/github/vad4nus/lockstep/screens/Style;
+	public final fun component5 ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun copy (Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;ZLio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)Lio/github/vad4nus/lockstep/screens/Node$Spacer;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/Node$Spacer;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;ZLio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/Node$Spacer;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getA11y ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun getFlexible ()Z
+	public fun getId ()Ljava/lang/String;
+	public final fun getSize ()Lio/github/vad4nus/lockstep/screens/Space;
+	public fun getStyle ()Lio/github/vad4nus/lockstep/screens/Style;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/Node$Spacer$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/Node$Spacer$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/Node$Spacer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/Node$Spacer;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Spacer$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Text : io/github/vad4nus/lockstep/screens/Node {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/Node$Text$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/TextStyleToken;Lio/github/vad4nus/lockstep/screens/ColorToken;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/TextStyleToken;Lio/github/vad4nus/lockstep/screens/ColorToken;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Lio/github/vad4nus/lockstep/screens/TextStyleToken;
+	public final fun component4 ()Lio/github/vad4nus/lockstep/screens/ColorToken;
+	public final fun component5 ()Lio/github/vad4nus/lockstep/screens/Style;
+	public final fun component6 ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/TextStyleToken;Lio/github/vad4nus/lockstep/screens/ColorToken;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)Lio/github/vad4nus/lockstep/screens/Node$Text;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/Node$Text;Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/TextStyleToken;Lio/github/vad4nus/lockstep/screens/ColorToken;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/Node$Text;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getA11y ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun getColor ()Lio/github/vad4nus/lockstep/screens/ColorToken;
+	public fun getId ()Ljava/lang/String;
+	public fun getStyle ()Lio/github/vad4nus/lockstep/screens/Style;
+	public final fun getText ()Ljava/lang/String;
+	public final fun getTextStyle ()Lio/github/vad4nus/lockstep/screens/TextStyleToken;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/Node$Text$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/Node$Text$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/Node$Text;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/Node$Text;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Text$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Toggle : io/github/vad4nus/lockstep/screens/Node {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/Node$Toggle$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Lio/github/vad4nus/lockstep/screens/Style;
+	public final fun component5 ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)Lio/github/vad4nus/lockstep/screens/Node$Toggle;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/Node$Toggle;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/Node$Toggle;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getA11y ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun getField ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public final fun getLabel ()Ljava/lang/String;
+	public fun getStyle ()Lio/github/vad4nus/lockstep/screens/Style;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/Node$Toggle$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/Node$Toggle$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/Node$Toggle;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/Node$Toggle;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Toggle$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Unknown : io/github/vad4nus/lockstep/screens/Node {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/Node$Unknown$Companion;
+	public fun <init> ()V
+	public fun <init> (Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Node;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Node;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Lio/github/vad4nus/lockstep/screens/Node;
+	public final fun component3 ()Lio/github/vad4nus/lockstep/screens/Style;
+	public final fun component4 ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun component5 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Node;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Ljava/lang/String;)Lio/github/vad4nus/lockstep/screens/Node$Unknown;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/Node$Unknown;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Node;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Ljava/lang/String;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/Node$Unknown;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getA11y ()Lio/github/vad4nus/lockstep/screens/A11y;
+	public final fun getError ()Ljava/lang/String;
+	public final fun getFallback ()Lio/github/vad4nus/lockstep/screens/Node;
+	public fun getId ()Ljava/lang/String;
+	public fun getStyle ()Lio/github/vad4nus/lockstep/screens/Style;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/Node$Unknown$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/Node$Unknown$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/Node$Unknown;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/Node$Unknown;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Node$Unknown$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/NodeColumnScope : io/github/vad4nus/lockstep/screens/NodeScope {
+}
+
+public abstract interface class io/github/vad4nus/lockstep/screens/NodeEvent {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/NodeEvent$Companion;
+}
+
+public final class io/github/vad4nus/lockstep/screens/NodeEvent$Click : io/github/vad4nus/lockstep/screens/NodeEvent {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/NodeEvent$Click$Companion;
+	public fun <init> (Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;)Lio/github/vad4nus/lockstep/screens/NodeEvent$Click;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/NodeEvent$Click;Ljava/lang/String;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/NodeEvent$Click;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getId ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/NodeEvent$Click$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/NodeEvent$Click$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/NodeEvent$Click;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/NodeEvent$Click;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/NodeEvent$Click$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/NodeEvent$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/NodeEvent$Custom : io/github/vad4nus/lockstep/screens/NodeEvent {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/NodeEvent$Custom$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/util/Map;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/util/Map;
+	public final fun copy (Ljava/lang/String;Ljava/util/Map;)Lio/github/vad4nus/lockstep/screens/NodeEvent$Custom;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/NodeEvent$Custom;Ljava/lang/String;Ljava/util/Map;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/NodeEvent$Custom;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getKey ()Ljava/lang/String;
+	public final fun getPayload ()Ljava/util/Map;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/NodeEvent$Custom$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/NodeEvent$Custom$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/NodeEvent$Custom;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/NodeEvent$Custom;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/NodeEvent$Custom$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/NodeEvent$Navigate : io/github/vad4nus/lockstep/screens/NodeEvent {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/NodeEvent$Navigate$Companion;
+	public fun <init> (Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;)Lio/github/vad4nus/lockstep/screens/NodeEvent$Navigate;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/NodeEvent$Navigate;Ljava/lang/String;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/NodeEvent$Navigate;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getDestination ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/NodeEvent$Navigate$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/NodeEvent$Navigate$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/NodeEvent$Navigate;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/NodeEvent$Navigate;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/NodeEvent$Navigate$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/NodeEvent$Submit : io/github/vad4nus/lockstep/screens/NodeEvent {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/NodeEvent$Submit;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/vad4nus/lockstep/screens/NodeEvent$Unknown : io/github/vad4nus/lockstep/screens/NodeEvent {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/NodeEvent$Unknown;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/vad4nus/lockstep/screens/NodeEvent$ValueChanged : io/github/vad4nus/lockstep/screens/NodeEvent {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/NodeEvent$ValueChanged$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lio/github/vad4nus/lockstep/screens/NodeEvent$ValueChanged;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/NodeEvent$ValueChanged;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/NodeEvent$ValueChanged;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getField ()Ljava/lang/String;
+	public final fun getValue ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/NodeEvent$ValueChanged$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/NodeEvent$ValueChanged$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/NodeEvent$ValueChanged;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/NodeEvent$ValueChanged;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/NodeEvent$ValueChanged$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/NodeRowScope : io/github/vad4nus/lockstep/screens/NodeScope {
+}
+
+public class io/github/vad4nus/lockstep/screens/NodeScope {
+}
+
+public final class io/github/vad4nus/lockstep/screens/NodesKt {
+	public static final fun getScreenJson ()Lkotlinx/serialization/json/Json;
+}
+
+public abstract interface annotation class io/github/vad4nus/lockstep/screens/ScreenDsl : java/lang/annotation/Annotation {
+}
+
+public final class io/github/vad4nus/lockstep/screens/ScreenDslKt {
+	public static final fun box (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;)V
+	public static synthetic fun box$default (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+	public static final fun button (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/ButtonVariant;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)V
+	public static synthetic fun button$default (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/ButtonVariant;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILjava/lang/Object;)V
+	public static final fun column (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/HAlign;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;)V
+	public static synthetic fun column$default (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/HAlign;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+	public static final fun custom (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)V
+	public static synthetic fun custom$default (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILjava/lang/Object;)V
+	public static final fun flexibleSpacer (Lio/github/vad4nus/lockstep/screens/NodeColumnScope;Ljava/lang/String;)V
+	public static final fun flexibleSpacer (Lio/github/vad4nus/lockstep/screens/NodeRowScope;Ljava/lang/String;)V
+	public static final fun flexibleSpacer (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;)V
+	public static final fun image (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Ljava/lang/String;ILio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)V
+	public static synthetic fun image$default (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Ljava/lang/String;ILio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILjava/lang/Object;)V
+	public static final fun input (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/InputKind;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)V
+	public static synthetic fun input$default (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/InputKind;Ljava/util/List;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILjava/lang/Object;)V
+	public static final fun lazyColumn (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;ILio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;)V
+	public static final fun lazyColumn (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;)V
+	public static synthetic fun lazyColumn$default (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;ILio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+	public static synthetic fun lazyColumn$default (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+	public static final fun lazyColumnInVerticalScroll (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;)V
+	public static synthetic fun lazyColumnInVerticalScroll$default (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+	public static final fun lazyRow (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;ILio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;)V
+	public static final fun lazyRow (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;)V
+	public static synthetic fun lazyRow$default (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;ILio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+	public static synthetic fun lazyRow$default (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+	public static final fun lazyRowInHorizontalScroll (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;)V
+	public static synthetic fun lazyRowInHorizontalScroll$default (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+	public static final fun row (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/VAlign;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;)V
+	public static synthetic fun row$default (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/VAlign;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+	public static final fun screen (Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lio/github/vad4nus/lockstep/screens/ScreenSpec;
+	public static synthetic fun screen$default (Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/ScreenSpec;
+	public static final fun scrollColumn (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/HAlign;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;)V
+	public static synthetic fun scrollColumn$default (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/HAlign;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+	public static final fun scrollColumnInVerticalScroll (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/HAlign;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;)V
+	public static synthetic fun scrollColumnInVerticalScroll$default (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/HAlign;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+	public static final fun scrollRow (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/VAlign;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;)V
+	public static synthetic fun scrollRow$default (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/VAlign;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+	public static final fun scrollRowInHorizontalScroll (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/VAlign;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;)V
+	public static synthetic fun scrollRowInHorizontalScroll$default (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/VAlign;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+	public static final fun spacer (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Space;)V
+	public static final fun text (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/TextStyleToken;Lio/github/vad4nus/lockstep/screens/ColorToken;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)V
+	public static synthetic fun text$default (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/TextStyleToken;Lio/github/vad4nus/lockstep/screens/ColorToken;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILjava/lang/Object;)V
+	public static final fun toggle (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;)V
+	public static synthetic fun toggle$default (Lio/github/vad4nus/lockstep/screens/NodeScope;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/A11y;ILjava/lang/Object;)V
+}
+
+public final class io/github/vad4nus/lockstep/screens/ScreenRulesKt {
+	public static final fun checked (Lio/github/vad4nus/lockstep/screens/ScreenSpec;Lkotlin/jvm/functions/Function1;)Lio/github/vad4nus/lockstep/screens/ScreenSpec;
+	public static synthetic fun checked$default (Lio/github/vad4nus/lockstep/screens/ScreenSpec;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/ScreenSpec;
+	public static final fun reduce (Lio/github/vad4nus/lockstep/screens/FormState;Lio/github/vad4nus/lockstep/screens/NodeEvent;Lio/github/vad4nus/lockstep/screens/Node;)Lio/github/vad4nus/lockstep/screens/FormState;
+	public static final fun violations (Lio/github/vad4nus/lockstep/screens/Node;)Ljava/util/List;
+}
+
+public final class io/github/vad4nus/lockstep/screens/ScreenSpec {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/ScreenSpec$Companion;
+	public static final field SCHEMA I
+	public fun <init> (Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Node;I)V
+	public synthetic fun <init> (Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Node;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Lio/github/vad4nus/lockstep/screens/Node;
+	public final fun component3 ()I
+	public final fun copy (Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Node;I)Lio/github/vad4nus/lockstep/screens/ScreenSpec;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/ScreenSpec;Ljava/lang/String;Lio/github/vad4nus/lockstep/screens/Node;IILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/ScreenSpec;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getId ()Ljava/lang/String;
+	public final fun getRoot ()Lio/github/vad4nus/lockstep/screens/Node;
+	public final fun getSchema ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/ScreenSpec$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/ScreenSpec$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/ScreenSpec;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/ScreenSpec;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/ScreenSpec$Companion {
+	public final fun decode (Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lio/github/vad4nus/lockstep/screens/ScreenSpec;
+	public static synthetic fun decode$default (Lio/github/vad4nus/lockstep/screens/ScreenSpec$Companion;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/ScreenSpec;
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class io/github/vad4nus/lockstep/screens/Scrolled {
+}
+
+public final class io/github/vad4nus/lockstep/screens/Space : java/lang/Enum {
+	public static final field L Lio/github/vad4nus/lockstep/screens/Space;
+	public static final field M Lio/github/vad4nus/lockstep/screens/Space;
+	public static final field S Lio/github/vad4nus/lockstep/screens/Space;
+	public static final field Xl Lio/github/vad4nus/lockstep/screens/Space;
+	public static final field Xs Lio/github/vad4nus/lockstep/screens/Space;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lio/github/vad4nus/lockstep/screens/Space;
+	public static fun values ()[Lio/github/vad4nus/lockstep/screens/Space;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Style {
+	public static final field Companion Lio/github/vad4nus/lockstep/screens/Style$Companion;
+	public fun <init> ()V
+	public fun <init> (Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/ColorToken;Lio/github/vad4nus/lockstep/screens/Space;)V
+	public synthetic fun <init> (Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/ColorToken;Lio/github/vad4nus/lockstep/screens/Space;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Lio/github/vad4nus/lockstep/screens/Space;
+	public final fun component2 ()Lio/github/vad4nus/lockstep/screens/ColorToken;
+	public final fun component3 ()Lio/github/vad4nus/lockstep/screens/Space;
+	public final fun copy (Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/ColorToken;Lio/github/vad4nus/lockstep/screens/Space;)Lio/github/vad4nus/lockstep/screens/Style;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/screens/Style;Lio/github/vad4nus/lockstep/screens/Space;Lio/github/vad4nus/lockstep/screens/ColorToken;Lio/github/vad4nus/lockstep/screens/Space;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/screens/Style;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getBackground ()Lio/github/vad4nus/lockstep/screens/ColorToken;
+	public final fun getCorner ()Lio/github/vad4nus/lockstep/screens/Space;
+	public final fun getPadding ()Lio/github/vad4nus/lockstep/screens/Space;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class io/github/vad4nus/lockstep/screens/Style$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/screens/Style$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/vad4nus/lockstep/screens/Style;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/vad4nus/lockstep/screens/Style;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/Style$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class io/github/vad4nus/lockstep/screens/TextStyleToken : java/lang/Enum {
+	public static final field Body Lio/github/vad4nus/lockstep/screens/TextStyleToken;
+	public static final field Caption Lio/github/vad4nus/lockstep/screens/TextStyleToken;
+	public static final field Headline Lio/github/vad4nus/lockstep/screens/TextStyleToken;
+	public static final field Title Lio/github/vad4nus/lockstep/screens/TextStyleToken;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lio/github/vad4nus/lockstep/screens/TextStyleToken;
+	public static fun values ()[Lio/github/vad4nus/lockstep/screens/TextStyleToken;
+}
+
+public final class io/github/vad4nus/lockstep/screens/VAlign : java/lang/Enum {
+	public static final field Bottom Lio/github/vad4nus/lockstep/screens/VAlign;
+	public static final field Center Lio/github/vad4nus/lockstep/screens/VAlign;
+	public static final field Top Lio/github/vad4nus/lockstep/screens/VAlign;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lio/github/vad4nus/lockstep/screens/VAlign;
+	public static fun values ()[Lio/github/vad4nus/lockstep/screens/VAlign;
+}
+

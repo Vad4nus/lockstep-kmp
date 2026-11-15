@@ -1,0 +1,156 @@
+public final class io/github/vad4nus/lockstep/result/ApiErrorDetail {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lio/github/vad4nus/lockstep/result/ApiErrorDetail;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/result/ApiErrorDetail;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/result/ApiErrorDetail;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getField ()Ljava/lang/String;
+	public final fun getMessage ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class io/github/vad4nus/lockstep/result/AppError {
+}
+
+public final class io/github/vad4nus/lockstep/result/AppError$Custom : io/github/vad4nus/lockstep/result/AppError {
+	public fun <init> (Ljava/lang/String;Ldev/icerock/moko/resources/desc/StringDesc;)V
+	public synthetic fun <init> (Ljava/lang/String;Ldev/icerock/moko/resources/desc/StringDesc;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public final fun copy (Ljava/lang/String;Ldev/icerock/moko/resources/desc/StringDesc;)Lio/github/vad4nus/lockstep/result/AppError$Custom;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/result/AppError$Custom;Ljava/lang/String;Ldev/icerock/moko/resources/desc/StringDesc;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/result/AppError$Custom;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCode ()Ljava/lang/String;
+	public final fun getMessage ()Ldev/icerock/moko/resources/desc/StringDesc;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/vad4nus/lockstep/result/AppError$Http : io/github/vad4nus/lockstep/result/AppError {
+	public fun <init> (ILjava/lang/String;Ljava/util/List;)V
+	public synthetic fun <init> (ILjava/lang/String;Ljava/util/List;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()I
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/util/List;
+	public final fun copy (ILjava/lang/String;Ljava/util/List;)Lio/github/vad4nus/lockstep/result/AppError$Http;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/result/AppError$Http;ILjava/lang/String;Ljava/util/List;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/result/AppError$Http;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCode ()I
+	public final fun getDetails ()Ljava/util/List;
+	public final fun getMessage ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/vad4nus/lockstep/result/AppError$NoConnection : io/github/vad4nus/lockstep/result/AppError {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/result/AppError$NoConnection;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/vad4nus/lockstep/result/AppError$Serialization : io/github/vad4nus/lockstep/result/AppError {
+	public fun <init> (Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;)Lio/github/vad4nus/lockstep/result/AppError$Serialization;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/result/AppError$Serialization;Ljava/lang/String;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/result/AppError$Serialization;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getMessage ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/vad4nus/lockstep/result/AppError$Timeout : io/github/vad4nus/lockstep/result/AppError {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/result/AppError$Timeout;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/vad4nus/lockstep/result/AppError$Unauthorized : io/github/vad4nus/lockstep/result/AppError {
+	public fun <init> ()V
+	public fun <init> (ZLjava/lang/String;)V
+	public synthetic fun <init> (ZLjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Z
+	public final fun component2 ()Ljava/lang/String;
+	public final fun copy (ZLjava/lang/String;)Lio/github/vad4nus/lockstep/result/AppError$Unauthorized;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/result/AppError$Unauthorized;ZLjava/lang/String;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/result/AppError$Unauthorized;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getGuestLoginRequired ()Z
+	public final fun getMessage ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/vad4nus/lockstep/result/AppError$Unknown : io/github/vad4nus/lockstep/result/AppError {
+	public fun <init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/Throwable;
+	public final fun copy (Ljava/lang/String;Ljava/lang/Throwable;)Lio/github/vad4nus/lockstep/result/AppError$Unknown;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/result/AppError$Unknown;Ljava/lang/String;Ljava/lang/Throwable;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/result/AppError$Unknown;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCause ()Ljava/lang/Throwable;
+	public final fun getMessage ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class io/github/vad4nus/lockstep/result/AppResult {
+	public static final field Companion Lio/github/vad4nus/lockstep/result/AppResult$Companion;
+}
+
+public final class io/github/vad4nus/lockstep/result/AppResult$Companion {
+	public final fun combine (Ljava/util/List;)Lio/github/vad4nus/lockstep/result/AppResult;
+	public final fun zip (Lio/github/vad4nus/lockstep/result/AppResult;Lio/github/vad4nus/lockstep/result/AppResult;)Lio/github/vad4nus/lockstep/result/AppResult;
+}
+
+public final class io/github/vad4nus/lockstep/result/AppResult$Failure : io/github/vad4nus/lockstep/result/AppResult {
+	public fun <init> (Lio/github/vad4nus/lockstep/result/AppError;)V
+	public final fun component1 ()Lio/github/vad4nus/lockstep/result/AppError;
+	public final fun copy (Lio/github/vad4nus/lockstep/result/AppError;)Lio/github/vad4nus/lockstep/result/AppResult$Failure;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/result/AppResult$Failure;Lio/github/vad4nus/lockstep/result/AppError;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/result/AppResult$Failure;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getError ()Lio/github/vad4nus/lockstep/result/AppError;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/vad4nus/lockstep/result/AppResult$Success : io/github/vad4nus/lockstep/result/AppResult {
+	public fun <init> (Ljava/lang/Object;)V
+	public final fun component1 ()Ljava/lang/Object;
+	public final fun copy (Ljava/lang/Object;)Lio/github/vad4nus/lockstep/result/AppResult$Success;
+	public static synthetic fun copy$default (Lio/github/vad4nus/lockstep/result/AppResult$Success;Ljava/lang/Object;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/result/AppResult$Success;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getValue ()Ljava/lang/Object;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/github/vad4nus/lockstep/result/AppResultKt {
+	public static final fun catching (Lio/github/vad4nus/lockstep/result/ErrorMapper;Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static synthetic fun catching$default (Lio/github/vad4nus/lockstep/result/ErrorMapper;Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public static final fun ensureNotNull (Lio/github/vad4nus/lockstep/result/AppResult;Lkotlin/jvm/functions/Function0;)Lio/github/vad4nus/lockstep/result/AppResult;
+	public static synthetic fun ensureNotNull$default (Lio/github/vad4nus/lockstep/result/AppResult;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)Lio/github/vad4nus/lockstep/result/AppResult;
+	public static final fun flatMap (Lio/github/vad4nus/lockstep/result/AppResult;Lkotlin/jvm/functions/Function1;)Lio/github/vad4nus/lockstep/result/AppResult;
+	public static final fun fold (Lio/github/vad4nus/lockstep/result/AppResult;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
+	public static final fun getOrElse (Lio/github/vad4nus/lockstep/result/AppResult;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
+	public static final fun getOrNull (Lio/github/vad4nus/lockstep/result/AppResult;)Ljava/lang/Object;
+	public static final fun map (Lio/github/vad4nus/lockstep/result/AppResult;Lkotlin/jvm/functions/Function1;)Lio/github/vad4nus/lockstep/result/AppResult;
+	public static final fun mapError (Lio/github/vad4nus/lockstep/result/AppResult;Lkotlin/jvm/functions/Function1;)Lio/github/vad4nus/lockstep/result/AppResult;
+	public static final fun onFailure (Lio/github/vad4nus/lockstep/result/AppResult;Lkotlin/jvm/functions/Function1;)Lio/github/vad4nus/lockstep/result/AppResult;
+	public static final fun onSuccess (Lio/github/vad4nus/lockstep/result/AppResult;Lkotlin/jvm/functions/Function1;)Lio/github/vad4nus/lockstep/result/AppResult;
+	public static final fun recover (Lio/github/vad4nus/lockstep/result/AppResult;Lkotlin/jvm/functions/Function1;)Lio/github/vad4nus/lockstep/result/AppResult;
+}
+
+public abstract interface class io/github/vad4nus/lockstep/result/ErrorMapper {
+	public static final field Companion Lio/github/vad4nus/lockstep/result/ErrorMapper$Companion;
+	public abstract fun map (Ljava/lang/Throwable;)Lio/github/vad4nus/lockstep/result/AppError;
+}
+
+public final class io/github/vad4nus/lockstep/result/ErrorMapper$Companion {
+	public final fun getDefault ()Lio/github/vad4nus/lockstep/result/ErrorMapper;
+}
+

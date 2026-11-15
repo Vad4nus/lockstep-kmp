@@ -1,0 +1,20 @@
+public abstract interface class io/github/vad4nus/lockstep/ktor/ErrorBodyParser {
+	public static final field Companion Lio/github/vad4nus/lockstep/ktor/ErrorBodyParser$Companion;
+	public abstract fun parse (Lio/ktor/client/statement/HttpResponse;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class io/github/vad4nus/lockstep/ktor/ErrorBodyParser$Companion {
+	public final fun getNone ()Lio/github/vad4nus/lockstep/ktor/ErrorBodyParser;
+}
+
+public final class io/github/vad4nus/lockstep/ktor/HttpCallsKt {
+	public static final fun executeCall (Lio/ktor/client/HttpClient;Lio/github/vad4nus/lockstep/ktor/ErrorBodyParser;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static final fun installLockstepDefaults (Lio/ktor/client/HttpClientConfig;ILjava/util/Set;)V
+	public static synthetic fun installLockstepDefaults$default (Lio/ktor/client/HttpClientConfig;ILjava/util/Set;ILjava/lang/Object;)V
+}
+
+public final class io/github/vad4nus/lockstep/ktor/KtorErrorMapper : io/github/vad4nus/lockstep/result/ErrorMapper {
+	public static final field INSTANCE Lio/github/vad4nus/lockstep/ktor/KtorErrorMapper;
+	public fun map (Ljava/lang/Throwable;)Lio/github/vad4nus/lockstep/result/AppError;
+}
+

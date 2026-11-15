@@ -1,0 +1,33 @@
+// Klib ABI Dump
+// Targets: [iosArm64, iosSimulatorArm64, iosX64]
+// Rendering settings:
+// - Signature version: 2
+// - Show manifest properties: true
+// - Show declarations: true
+
+// Library unique name: <io.github.vad4nus:lockstep>
+abstract fun interface io.github.vad4nus.lockstep/UiSubscription { // io.github.vad4nus.lockstep/UiSubscription|null[0]
+    abstract fun cancel() // io.github.vad4nus.lockstep/UiSubscription.cancel|cancel(){}[0]
+}
+
+final class <#A: kotlin/Any?> io.github.vad4nus.lockstep/UiFlow : kotlinx.coroutines.flow/Flow<#A> { // io.github.vad4nus.lockstep/UiFlow|null[0]
+    constructor <init>(kotlinx.coroutines.flow/Flow<#A>) // io.github.vad4nus.lockstep/UiFlow.<init>|<init>(kotlinx.coroutines.flow.Flow<1:0>){}[0]
+
+    final fun subscribe(kotlin/Function1<#A, kotlin/Unit>, kotlin/Function1<kotlin/Throwable?, kotlin/Unit>): io.github.vad4nus.lockstep/UiSubscription // io.github.vad4nus.lockstep/UiFlow.subscribe|subscribe(kotlin.Function1<1:0,kotlin.Unit>;kotlin.Function1<kotlin.Throwable?,kotlin.Unit>){}[0]
+    final suspend fun collect(kotlinx.coroutines.flow/FlowCollector<#A>) // io.github.vad4nus.lockstep/UiFlow.collect|collect(kotlinx.coroutines.flow.FlowCollector<1:0>){}[0]
+}
+
+final class <#A: kotlin/Any?> io.github.vad4nus.lockstep/UiStateFlow : kotlinx.coroutines.flow/StateFlow<#A> { // io.github.vad4nus.lockstep/UiStateFlow|null[0]
+    constructor <init>(kotlinx.coroutines.flow/StateFlow<#A>) // io.github.vad4nus.lockstep/UiStateFlow.<init>|<init>(kotlinx.coroutines.flow.StateFlow<1:0>){}[0]
+
+    final val replayCache // io.github.vad4nus.lockstep/UiStateFlow.replayCache|{}replayCache[0]
+        final fun <get-replayCache>(): kotlin.collections/List<#A> // io.github.vad4nus.lockstep/UiStateFlow.replayCache.<get-replayCache>|<get-replayCache>(){}[0]
+    final val value // io.github.vad4nus.lockstep/UiStateFlow.value|{}value[0]
+        final fun <get-value>(): #A // io.github.vad4nus.lockstep/UiStateFlow.value.<get-value>|<get-value>(){}[0]
+
+    final fun subscribe(kotlin/Function1<#A, kotlin/Unit>): io.github.vad4nus.lockstep/UiSubscription // io.github.vad4nus.lockstep/UiStateFlow.subscribe|subscribe(kotlin.Function1<1:0,kotlin.Unit>){}[0]
+    final suspend fun collect(kotlinx.coroutines.flow/FlowCollector<#A>): kotlin/Nothing // io.github.vad4nus.lockstep/UiStateFlow.collect|collect(kotlinx.coroutines.flow.FlowCollector<1:0>){}[0]
+}
+
+final fun <#A: kotlin/Any?> (kotlinx.coroutines.flow/Flow<#A>).io.github.vad4nus.lockstep/asUiFlow(): io.github.vad4nus.lockstep/UiFlow<#A> // io.github.vad4nus.lockstep/asUiFlow|asUiFlow@kotlinx.coroutines.flow.Flow<0:0>(){0§<kotlin.Any?>}[0]
+final fun <#A: kotlin/Any?> (kotlinx.coroutines.flow/StateFlow<#A>).io.github.vad4nus.lockstep/asUiStateFlow(): io.github.vad4nus.lockstep/UiStateFlow<#A> // io.github.vad4nus.lockstep/asUiStateFlow|asUiStateFlow@kotlinx.coroutines.flow.StateFlow<0:0>(){0§<kotlin.Any?>}[0]

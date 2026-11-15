@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Library tests
+        run: >
+          ./gradlew --continue
+          :lockstep:testAndroidHostTest :lockstep:iosSimulatorArm64Test
+          :lockstep-result:testAndroidHostTest :lockstep-result:iosSimulatorArm64Test
+          :lockstep-mvvm:testAndroidHostTest :lockstep-mvvm:iosSimulatorArm64Test
+          :lockstep-ktor:testAndroidHostTest :lockstep-ktor:iosSimulatorArm64Test
+          :lockstep-screens:testAndroidHostTest :lockstep-screens:iosSimulatorArm64Test
+          :lockstep-compose:testDebugUnitTest
+
+      - name: Public API
+        run: ./gradlew checkKotlinAbi
+
+      - name: Plugin tests
+        run: ./gradlew -p lockstep-plugin :lockstep-skie-plugin:test :lockstep-gradle-plugin:test
+
+      - name: Sample
+        run: ./gradlew :sample:shared:linkDebugFrameworkIosSimulatorArm64 :sample:androidApp:assembleDebug
+
+      - name: Generated Swift
+        run: |
+          scripts/check-generated-swift.sh
+          scripts/typecheck-swift.sh sample/shared/build/bin/iosSimulatorArm64/debugFramework sample/swift-check/Generated.swift

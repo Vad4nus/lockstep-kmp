@@ -1,0 +1,26 @@
+public final class io/github/vad4nus/lockstep/UiFlow : kotlinx/coroutines/flow/Flow {
+	public fun <init> (Lkotlinx/coroutines/flow/Flow;)V
+	public fun collect (Lkotlinx/coroutines/flow/FlowCollector;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun subscribe (Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lio/github/vad4nus/lockstep/UiSubscription;
+}
+
+public final class io/github/vad4nus/lockstep/UiFlowKt {
+	public static final fun asUiFlow (Lkotlinx/coroutines/flow/Flow;)Lio/github/vad4nus/lockstep/UiFlow;
+}
+
+public final class io/github/vad4nus/lockstep/UiStateFlow : kotlinx/coroutines/flow/StateFlow {
+	public fun <init> (Lkotlinx/coroutines/flow/StateFlow;)V
+	public fun collect (Lkotlinx/coroutines/flow/FlowCollector;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun getReplayCache ()Ljava/util/List;
+	public fun getValue ()Ljava/lang/Object;
+	public final fun subscribe (Lkotlin/jvm/functions/Function1;)Lio/github/vad4nus/lockstep/UiSubscription;
+}
+
+public final class io/github/vad4nus/lockstep/UiStateFlowKt {
+	public static final fun asUiStateFlow (Lkotlinx/coroutines/flow/StateFlow;)Lio/github/vad4nus/lockstep/UiStateFlow;
+}
+
+public abstract interface class io/github/vad4nus/lockstep/UiSubscription {
+	public abstract fun cancel ()V
+}
+
